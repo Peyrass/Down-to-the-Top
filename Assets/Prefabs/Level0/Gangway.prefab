@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5460138042616147374}
   m_Layer: 0
-  m_Name: Pasarel1
+  m_Name: Gangway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
