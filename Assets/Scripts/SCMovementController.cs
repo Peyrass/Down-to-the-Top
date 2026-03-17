@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ThirdPersonController : MonoBehaviour
+public class ThirdPersonCharacter : MonoBehaviour
 {
-    [Header("Movement")] 
+    [Header("Movement")]
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpHeight;
     [SerializeField] private float gravityScale;
@@ -68,6 +68,9 @@ public class ThirdPersonController : MonoBehaviour
 
     private void MoveAndRotate()
     {
+        //Se aplica al cuerpo la rotación que tenga la cámara.
+        transform.rotation = Quaternion.Euler(0, cam.transform.eulerAngles.y, 0);
+        
         // Calcular velocidad objetivo (respeta magnitud del joystick)
         float targetSpeed = movementSpeed * inputVector.magnitude;
             
@@ -84,7 +87,7 @@ public class ThirdPersonController : MonoBehaviour
                 
             // Rotar suavemente
             float smoothAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, angle, ref rotationVelocity, rotationSmoothFactor);
-            transform.rotation = Quaternion.Euler(0, smoothAngle, 0);
+            transform.rotation = Quaternion.Euler(0, smoothAngle, 0);//todo
                 
             // Mover hacia adelante
             movement = transform.forward * currentSpeed;
