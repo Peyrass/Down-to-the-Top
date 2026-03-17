@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 2737773375566410376}
   - component: {fileID: 5795731818480416039}
   m_Layer: 0
-  m_Name: escalera
+  m_Name: Stair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

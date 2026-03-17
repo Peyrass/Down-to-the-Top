@@ -317,6 +317,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1553406059}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -369,9 +381,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (6)
+      value: Gangway 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -425,6 +441,18 @@ PrefabInstance:
     - target: {fileID: 366424660812463299, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698091398568382885, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 968278385229343123, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360490456658096122, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
       objectReference: {fileID: 0}
     - target: {fileID: 8297981872429408502, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
       propertyPath: m_Name
@@ -521,9 +549,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894808630}
     m_Modifications:
+    - target: {fileID: 1690923841614396479, guid: fb6c80bc33b72f8449661c708d196d65, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710275004262612757, guid: fb6c80bc33b72f8449661c708d196d65, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
     - target: {fileID: 4569506575162637687, guid: fb6c80bc33b72f8449661c708d196d65, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 1
+      value: Gangway2
       objectReference: {fileID: 0}
     - target: {fileID: 5176839995575834044, guid: fb6c80bc33b72f8449661c708d196d65, type: 3}
       propertyPath: m_LocalScale.x
@@ -576,6 +612,10 @@ PrefabInstance:
     - target: {fileID: 5176839995575834044, guid: fb6c80bc33b72f8449661c708d196d65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885082804936199659, guid: fb6c80bc33b72f8449661c708d196d65, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -633,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (16)
+      value: Beams18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -698,6 +738,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 698091398568382885, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 968278385229343123, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360490456658096122, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 8297981872429408502, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
       propertyPath: m_Name
       value: Shelf3 (1)
@@ -720,9 +772,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752438806}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -763,6 +831,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -934,7 +1006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (32)
+      value: Beams27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1139,7 +1211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191203338}
   m_Layer: 0
-  m_Name: Pasarel
+  m_Name: Gangway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1175,7 +1247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200933830}
   m_Layer: 0
-  m_Name: Barril
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1289,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (8)
+      value: Beams23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1351,7 +1423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (6)
+      value: Beams9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1450,7 +1522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (31)
+      value: Beams20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1512,7 +1584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (21)
+      value: Beams18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1569,7 +1641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4430402241986798248, guid: 448be0422c41f8547a6d9d71decedb08, type: 3}
       propertyPath: m_Name
-      value: Caja de carton (1)
+      value: Box_Cardboard16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1586,7 +1658,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3675202458596397794, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.000 (2)
+      value: Box_Cardboard8
       objectReference: {fileID: 0}
     - target: {fileID: 4056372746185574488, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1688,7 +1760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (2)
+      value: Beams7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1781,6 +1853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 820497270802118807, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.42
@@ -1820,6 +1896,10 @@ PrefabInstance:
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200663705352270090, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1881,7 +1961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (17)
+      value: Beams24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1974,6 +2054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 820497270802118807, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.603775
@@ -2013,6 +2097,10 @@ PrefabInstance:
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200663705352270090, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2074,7 +2162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (15)
+      value: Beams10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2096,7 +2184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 334550233}
   m_Layer: 0
-  m_Name: Vigas
+  m_Name: Beams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2161,7 +2249,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 234078595529944465, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.001
+      value: Box_Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 609197141388556075, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2341,7 +2429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1
+      value: Beams
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2408,7 +2496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (29)
+      value: Beams5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2491,7 +2579,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 234078595529944465, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.001 (2)
+      value: Box_Cardboard10
       objectReference: {fileID: 0}
     - target: {fileID: 609197141388556075, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2588,7 +2676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (32)
+      value: Beams26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2645,7 +2733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (3)
+      value: Beams21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2739,7 +2827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (27)
+      value: Beams34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2801,7 +2889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (27)
+      value: Beams33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2858,7 +2946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (25)
+      value: Beams13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2915,7 +3003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (4)
+      value: Beams28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2947,7 +3035,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 396296422135681568, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.003 (1)
+      value: Box_Cardboard1
       objectReference: {fileID: 0}
     - target: {fileID: 1023510994209966234, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3002,6 +3090,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1553406059}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: 'Gangway '
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3054,9 +3154,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (2)
+      value: Gangway
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3076,6 +3180,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1553406059}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: 'Gangway '
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3128,9 +3244,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (3)
+      value: Gangway 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3192,7 +3312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (12)
+      value: Beams24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3208,11 +3328,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3432421045451826258, guid: b5d3dff75681f2742a5d050221b3d3ef, type: 3}
   m_PrefabInstance: {fileID: 2088863450}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &547193014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-  m_PrefabInstance: {fileID: 1669084938}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &548832878 stripped
 Transform:
@@ -3269,7 +3384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (23)
+      value: Beams30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3326,7 +3441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (2)
+      value: Beams8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3393,7 +3508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (20)
+      value: Beams11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3450,7 +3565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (25)
+      value: Beams14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3517,7 +3632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5725646062500551043, guid: b43e1a3711017d24999704a37dfa05a8, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.002
+      value: Box_Cardboard6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3574,7 +3689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (9)
+      value: Beams3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3597,6 +3712,10 @@ PrefabInstance:
     - target: {fileID: 40582466027084666, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_Name
       value: Shelf2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820497270802118807, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
       objectReference: {fileID: 0}
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3637,6 +3756,10 @@ PrefabInstance:
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200663705352270090, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3698,7 +3821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (5)
+      value: Beams1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3725,7 +3848,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 396296422135681568, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.003 (3)
+      value: Box_Cardboard12
       objectReference: {fileID: 0}
     - target: {fileID: 1023510994209966234, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3827,7 +3950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5725646062500551043, guid: b43e1a3711017d24999704a37dfa05a8, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.002 (1)
+      value: Box_Cardboard3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3884,7 +4007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (5)
+      value: Beams2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3907,6 +4030,10 @@ PrefabInstance:
     - target: {fileID: 40582466027084666, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_Name
       value: Shelf2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820497270802118807, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
       objectReference: {fileID: 0}
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3948,6 +4075,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3200663705352270090, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3966,6 +4097,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1553406059}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4018,9 +4161,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (4)
+      value: Gangway 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4069,7 +4216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3675202458596397794, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.000 (3)
+      value: Box_Cardboard7
       objectReference: {fileID: 0}
     - target: {fileID: 4056372746185574488, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4129,6 +4276,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 140548690}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (2)
@@ -4173,6 +4344,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4191,9 +4366,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 140548690}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4235,6 +4426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4258,6 +4453,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 140548690}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (1)
@@ -4301,6 +4520,10 @@ PrefabInstance:
     - target: {fileID: 8470171825222384367, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4367,7 +4590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (24)
+      value: Beams6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4442,7 +4665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 685aa624dd1431c408d9a156ceaeb4a5, type: 3}
       propertyPath: m_Name
-      value: Puerta de almacen (1)
+      value: WarehouseDoor2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4459,7 +4682,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 234078595529944465, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.001 (1)
+      value: Box_Cardboard2
       objectReference: {fileID: 0}
     - target: {fileID: 609197141388556075, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4516,7 +4739,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 396296422135681568, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.003 (4)
+      value: Box_Cardboard11
       objectReference: {fileID: 0}
     - target: {fileID: 1023510994209966234, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4610,6 +4833,18 @@ PrefabInstance:
     - target: {fileID: 366424660812463299, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 698091398568382885, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 968278385229343123, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360490456658096122, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
       objectReference: {fileID: 0}
     - target: {fileID: 8297981872429408502, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
       propertyPath: m_Name
@@ -4709,7 +4944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 234078595529944465, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.001 (3)
+      value: Box_Cardboard9
       objectReference: {fileID: 0}
     - target: {fileID: 609197141388556075, guid: 5eb492967d518034abb0b752453f49f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4766,7 +5001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812095899}
   m_Layer: 0
-  m_Name: Vigas
+  m_Name: Beams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4869,6 +5104,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 698091398568382885, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 968278385229343123, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360490456658096122, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 8297981872429408502, guid: 8250414650bfc4f429b0304b975efeb6, type: 3}
       propertyPath: m_Name
       value: Shelf3
@@ -4928,7 +5175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (19)
+      value: Beams4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4985,7 +5232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (6)
+      value: Beams8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5092,7 +5339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5725646062500551043, guid: b43e1a3711017d24999704a37dfa05a8, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.002 (2)
+      value: Box_Cardboard14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5265,7 +5512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1
+      value: Beams
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5280,6 +5527,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1947935695}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1
@@ -5324,6 +5595,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5342,6 +5617,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 191203338}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5394,9 +5681,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (3)
+      value: Gangway 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5416,6 +5707,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752438806}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (1)
@@ -5460,6 +5775,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5485,7 +5804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894808630}
   m_Layer: 0
-  m_Name: Pasarels
+  m_Name: Gangways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5518,6 +5837,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1553406059}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5570,9 +5901,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (5)
+      value: Gangway 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5629,7 +5964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (30)
+      value: Beams12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5707,6 +6042,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 853679138}
     m_Modifications:
+    - target: {fileID: 1632786383240108006, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 4296027057576600660, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
       propertyPath: m_Name
       value: Shelf5 (2)
@@ -5769,6 +6108,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1075544662}
     m_Modifications:
+    - target: {fileID: 1632786383240108006, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 4296027057576600660, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
       propertyPath: m_Name
       value: Shelf5 (2)
@@ -5934,7 +6277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (13)
+      value: Beams29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5996,7 +6339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (14)
+      value: Beams3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6053,7 +6396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (22)
+      value: Beams26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6073,6 +6416,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 853679138}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (4)
@@ -6116,6 +6483,10 @@ PrefabInstance:
     - target: {fileID: 8470171825222384367, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6177,7 +6548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (14)
+      value: Beams4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6239,7 +6610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5725646062500551043, guid: b43e1a3711017d24999704a37dfa05a8, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.002 (3)
+      value: Box_Cardboard13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6296,7 +6667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (26)
+      value: Beams21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6316,6 +6687,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 853679138}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (3)
@@ -6360,6 +6755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6378,9 +6777,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752438806}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6421,6 +6836,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: 'Box_Yellow '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6482,7 +6901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (26)
+      value: Beams20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6572,7 +6991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (28)
+      value: Beams33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6634,7 +7053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (29)
+      value: Beams6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6736,7 +7155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (16)
+      value: Beams17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6798,7 +7217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (19)
+      value: Beams5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6854,6 +7273,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1947935695}
     m_Modifications:
+    - target: {fileID: 1632786383240108006, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540409663782349969, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
+      propertyPath: m_Name
+      value: Box_Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 4296027057576600660, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
       propertyPath: m_Name
       value: Shelf5
@@ -6897,6 +7324,14 @@ PrefabInstance:
     - target: {fileID: 7850615912408140372, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8779051780179500416, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
+      propertyPath: m_Name
+      value: Box_Cardboard2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038237600265914365, guid: b93bd5930822f3b42a982c42258a71ff, type: 3}
+      propertyPath: m_Name
+      value: Box_Cardboard3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7045,6 +7480,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 191203338}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7097,9 +7544,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (2)
+      value: Gangway 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7119,9 +7570,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 853679138}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7162,6 +7629,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7223,7 +7694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (10)
+      value: Beams9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7336,7 +7807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (31)
+      value: Beams19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7432,7 +7903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167213844}
   m_Layer: 0
-  m_Name: LongPasarel
+  m_Name: LongGangway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7668,6 +8139,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 191203338}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7720,9 +8203,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (5)
+      value: Gangway 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7780,9 +8267,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1075544662}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7823,6 +8326,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7917,7 +8424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (24)
+      value: Beams7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7979,7 +8486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (10)
+      value: Beams10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8120,7 +8627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (11)
+      value: Beams17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8219,7 +8726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (23)
+      value: Beams31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8286,7 +8793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4430402241986798248, guid: 448be0422c41f8547a6d9d71decedb08, type: 3}
       propertyPath: m_Name
-      value: Caja de carton
+      value: Box_Cardboard4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8304,6 +8811,10 @@ PrefabInstance:
     - target: {fileID: 40582466027084666, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_Name
       value: Shelf2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 820497270802118807, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
       objectReference: {fileID: 0}
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8344,6 +8855,10 @@ PrefabInstance:
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200663705352270090, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8410,7 +8925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (3)
+      value: Beams22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8430,6 +8945,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1752438806}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (2)
@@ -8473,6 +9012,10 @@ PrefabInstance:
     - target: {fileID: 8470171825222384367, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8643,7 +9186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 685aa624dd1431c408d9a156ceaeb4a5, type: 3}
       propertyPath: m_Name
-      value: Puerta de almacen
+      value: WarehouseDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8734,7 +9277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (1)
+      value: Beams14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8749,6 +9292,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 191203338}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8801,9 +9356,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (6)
+      value: Gangway 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8865,7 +9424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (18)
+      value: Beams29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8922,7 +9481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (15)
+      value: Beams11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8984,7 +9543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (33)
+      value: Beams32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9046,7 +9605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929393681526828387, guid: d243e1e861058a644b29e167e7f9476b, type: 3}
       propertyPath: m_Name
-      value: escalera (1)
+      value: Stair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9182,7 +9741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (1)
+      value: Beams15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9249,7 +9808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (11)
+      value: Beams16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9264,6 +9823,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 191203338}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9316,9 +9887,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (4)
+      value: Gangway 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9345,7 +9920,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3675202458596397794, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.000
+      value: Box_Cardboard3
       objectReference: {fileID: 0}
     - target: {fileID: 4056372746185574488, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9412,7 +9987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553406059}
   m_Layer: 0
-  m_Name: Pasarel
+  m_Name: Gangway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9446,6 +10021,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1167213844}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9500,7 +10083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (3)
+      value: Gangway4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -9547,7 +10130,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 396296422135681568, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.003
+      value: Box_Cardboard5
       objectReference: {fileID: 0}
     - target: {fileID: 1023510994209966234, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9607,9 +10190,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1075544662}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9650,6 +10249,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9711,7 +10314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (4)
+      value: Beams27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9824,7 +10427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (17)
+      value: Beams25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9883,75 +10486,6 @@ Transform:
   - {fileID: 1237989614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1669084938
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2002635043}
-    m_Modifications:
-    - target: {fileID: 6916444996930368766, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_Name
-      value: Giro Pasarela (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.06418
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9483271
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.1187048
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 29.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -34.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 29.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7990452198762349288, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 69f891858bc3a5f4c95c5bb1ea3ae09f, type: 3}
 --- !u!1 &1688521411
 GameObject:
   m_ObjectHideFlags: 0
@@ -10071,7 +10605,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3675202458596397794, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.000 (1)
+      value: Box_Cardboard15
       objectReference: {fileID: 0}
     - target: {fileID: 4056372746185574488, guid: dfdb710fbc57651438342d9aa724a4b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10126,9 +10660,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 140548690}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10169,6 +10719,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10235,7 +10789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (7)
+      value: Beams16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10302,7 +10856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (8)
+      value: Beams22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10364,7 +10918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (7)
+      value: Beams15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10422,6 +10976,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1075544662}
     m_Modifications:
+    - target: {fileID: 6148691778186262, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 548531748589517007, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 894528128512676936, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584630569107005212, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545916244799067071, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549027890191852470, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Red2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044435642077120317, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
       propertyPath: m_Name
       value: Shelf1 (4)
@@ -10466,6 +11044,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9125386718672027897, guid: 87a331cce49bd7a4784d706e758fdc1d, type: 3}
+      propertyPath: m_Name
+      value: Box_Green2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10486,7 +11068,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 396296422135681568, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_Name
-      value: Caja Madera.003 (2)
+      value: Box_Cardboard17
       objectReference: {fileID: 0}
     - target: {fileID: 1023510994209966234, guid: dc7bd50cb49deb5409a202982c30cbe9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10598,7 +11180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (20)
+      value: Beams12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10628,6 +11210,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 894808630}
     m_Modifications:
+    - target: {fileID: 826202269035820255, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway
+      objectReference: {fileID: 0}
+    - target: {fileID: 844797316600491638, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877713546721881934, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway3
+      objectReference: {fileID: 0}
     - target: {fileID: 5460138042616147374, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.725119
@@ -10668,9 +11262,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5680385355426929813, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 9184298516844524362, guid: 0af7f89b4da3adb4aafa3e03d2eb1dfa, type: 3}
       propertyPath: m_Name
-      value: Pasarel1 (1)
+      value: Gangway2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10727,7 +11325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (12)
+      value: Beams23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10794,7 +11392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e0d7ae9ec36cf1e47994bbd2e921abff, type: 3}
       propertyPath: m_Name
-      value: Barril
+      value: Barrel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10896,7 +11494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (30)
+      value: Beams13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10958,7 +11556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (22)
+      value: Beams25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11015,7 +11613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (28)
+      value: Beams32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11072,7 +11670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (9)
+      value: Beams2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11092,9 +11690,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1947935695}
     m_Modifications:
+    - target: {fileID: 45250912562638701, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf2
+      objectReference: {fileID: 0}
     - target: {fileID: 2076812989447642566, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_Name
       value: Shelf4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077267446808109071, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100023306602251433, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Cardboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112240055247303097, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806318505933318353, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Red
       objectReference: {fileID: 0}
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11135,6 +11753,10 @@ PrefabInstance:
     - target: {fileID: 7119512748205230673, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987141400604099104, guid: c9700b2243760d14794d3bbd9fa31d2b, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11191,7 +11813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (18)
+      value: Beams30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11369,7 +11991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (13)
+      value: Beams28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11431,7 +12053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929393681526828387, guid: d243e1e861058a644b29e167e7f9476b, type: 3}
       propertyPath: m_Name
-      value: escalera (2)
+      value: Stair2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11488,7 +12110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (33)
+      value: Beams31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11511,6 +12133,14 @@ PrefabInstance:
     - target: {fileID: 40582466027084666, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_Name
       value: Shelf2
+      objectReference: {fileID: 0}
+    - target: {fileID: 820497270802118807, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Big_Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707975627240143520, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11551,6 +12181,14 @@ PrefabInstance:
     - target: {fileID: 3132678550810348901, guid: 27f38739391c269428caa482c168e9f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200663705352270090, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533309913817168075, guid: 27f38739391c269428caa482c168e9f6, type: 3}
+      propertyPath: m_Name
+      value: Box_Cardboard2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11783,7 +12421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b46e7105d7278142846513418a37d6b, type: 3}
       propertyPath: m_Name
-      value: Vigas Estilo1 (21)
+      value: Beams19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11890,6 +12528,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1664546306}
     m_Modifications:
+    - target: {fileID: 4734993671427661199, guid: eb44e56a04ee290458ba629c7ff33dad, type: 3}
+      propertyPath: m_Name
+      value: Gangway4
+      objectReference: {fileID: 0}
     - target: {fileID: 8169406609001004850, guid: eb44e56a04ee290458ba629c7ff33dad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.380248
@@ -11932,14 +12574,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8273034207053091134, guid: eb44e56a04ee290458ba629c7ff33dad, type: 3}
       propertyPath: m_Name
-      value: Salida
+      value: Exit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8169406609001004850, guid: eb44e56a04ee290458ba629c7ff33dad, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 547193014}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb44e56a04ee290458ba629c7ff33dad, type: 3}
 --- !u!33 &5530402728658135371
@@ -12009,7 +12648,7 @@ GameObject:
   - component: {fileID: 5530402728658135371}
   - component: {fileID: 7735803942295313793}
   m_Layer: 0
-  m_Name: Plataforma elebadora
+  m_Name: Lifting Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
