@@ -68,9 +68,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 
     private void MoveAndRotate()
     {
-        //Se aplica al cuerpo la rotación que tenga la cámara.
-        transform.rotation = Quaternion.Euler(0, cam.transform.eulerAngles.y, 0);
-        
         // Calcular velocidad objetivo (respeta magnitud del joystick)
         float targetSpeed = movementSpeed * inputVector.magnitude;
             
