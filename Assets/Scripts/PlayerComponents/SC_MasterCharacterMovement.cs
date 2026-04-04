@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
-    private TPC_InputMapping controls;
+    public TPC_InputMapping controls;
     
     [Header("Movement")]
     private float moveSpeed;
@@ -15,8 +15,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     [SerializeField] private float groundDrag;
     [SerializeField] private float airMultiplier;
     //nuevo input system
-    private Vector2 moveInput; 
-    private Vector3 moveDirection; 
+    public Vector2 moveInput; 
+    public Vector3 moveDirection; 
     
     
     [Header("Jumping")]
@@ -76,6 +76,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     
     private void Start()
     {
+        moveSpeed = walkSpeed;
         rb.freezeRotation = true;
 
         readyToJump = true;
@@ -197,12 +198,12 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         //está en el suelo
         if (grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 100f, ForceMode.Force);
         }
         
         //está en el aire
         else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 100f * airMultiplier, ForceMode.Force);
     }
 
     private void HandleDrag()
