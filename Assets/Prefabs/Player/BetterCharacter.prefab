@@ -734,6 +734,9 @@ GameObject:
   - component: {fileID: 6203304368605208358}
   - component: {fileID: 6203304368605208359}
   - component: {fileID: 7265088406155351940}
+  - component: {fileID: 8711211479216220298}
+  - component: {fileID: 5749407942504746099}
+  - component: {fileID: 2582007683997369263}
   - component: {fileID: 6203304368605208348}
   - component: {fileID: 8360601670542781271}
   m_Layer: 13
@@ -805,27 +808,59 @@ MonoBehaviour:
   runMultiplier: 2
   gravityScale: 40
   groundDrag: 5
-  airMultiplier: 0.4
-  rotationSpeed: 12
+  rotationSpeed: 10
   moveInput: {x: 0, y: 0}
   moveDirection: {x: 0, y: 0, z: 0}
-  jumpForce: 23
-  jumpCooldown: 0.25
-  doubleJump: 1
-  crouchMultiplier: 0.5
-  crouchYScale: 0.5
-  maxDashTime: 0.2
-  dashForce: 25
-  dashCooldown: 1
   feet: {fileID: 6203304366790174987}
   detectionRadius: 1.8
-  playerHeight: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  orientation: {fileID: 6203304367961361731}
   cameraTransform: {fileID: 1056179353290192119}
   courrentState: 0
+--- !u!114 &8711211479216220298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203304368605208357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5b23282a9450d45888ee29c264a444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_DashComponent
+  maxDashTime: 0.3
+  dashForce: 22
+  dashCooldown: 1
+--- !u!114 &5749407942504746099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203304368605208357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89be801f5958ce244975375d99561baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_CrouchComponent
+  crouchMultiplier: 0.5
+--- !u!114 &2582007683997369263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203304368605208357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b14cd927d287194991f5c2f4fc3de79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_JumpComponent
+  jumpForce: 20
+  jumpCooldown: 0.4
+  doubleJump: 1
 --- !u!136 &6203304368605208348
 CapsuleCollider:
   m_ObjectHideFlags: 0

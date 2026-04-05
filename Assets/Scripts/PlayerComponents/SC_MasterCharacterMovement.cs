@@ -1,10 +1,19 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+//ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER 
+//ADEMÁS MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER ASÍ COMO LA CÁMARA
+//(en próximas entregas habrá un componente aparte para la cámara)
 
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
     private PlayerInput controls;
+    private Rigidbody rb;
+
+    // referencias a los componentes (cada uno se encarga de lo suyo)
+    private SC_CrouchComponent crouchComponent;
+    private SC_DashComponent dashComponent;
+    private SC_JumpComponent jumpComponent;
     
     [Header("Movement")]
     private float moveSpeed;
@@ -14,54 +23,38 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     
     [SerializeField] private float gravityScale = 20f;
     [SerializeField] private float groundDrag;
-    [SerializeField] private float airMultiplier;
 
     [SerializeField] private float rotationSpeed = 10f;
     public Vector2 moveInput;
     public Vector3 moveDirection;
-    
-    [Header("Jumping")]
-    bool readyToJump;
-    [SerializeField] private float jumpForce;
-    [SerializeField] private float jumpCooldown;
-    [SerializeField] private int doubleJump;
-    private int doubleJumpsLeft;
-
-    [Header("Crouch")] 
-    [SerializeField] private float crouchMultiplier;
-    [SerializeField] private float crouchYScale;
-    private bool crouchActive = false;
-
-    [Header("Dash")]
-    [SerializeField] private float maxDashTime = 0.3f;
-    [SerializeField] private float dashForce = 12f; 
-    [SerializeField] private float dashCooldown = 1f;
-    private float dashTimer; // tiempo que dura el dash
-    private bool readyToDash = true;
-    private bool dashActive;
-    private Vector3 dashDirection; // dirección bloqueada del dash
 
     [Header("Ground Check")]
     [SerializeField] private Transform feet;
     [SerializeField] private float detectionRadius = 0.3f;
-    [SerializeField] private float playerHeight;
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private Transform orientation;
     private bool grounded;
-    
-    Rigidbody rb;
-    
+
     [Header("Camera")]
     [SerializeField] private Transform cameraTransform;
     
     public MovementState courrentState;
     public enum MovementState
     { walking, running, crouching, dashing, air }
-    
+
+    // getters para que los otros componentes puedan manejar info sin romper todo
+    public Rigidbody Rb => rb;
+    public bool Grounded => grounded;
+    public Vector2 MoveInput => moveInput;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         controls = GetComponent<PlayerInput>();
+
+        // se referencian los otros componentes del mismo objeto
+        crouchComponent = GetComponent<SC_CrouchComponent>();
+        dashComponent = GetComponent<SC_DashComponent>();
+        jumpComponent = GetComponent<SC_JumpComponent>();
     }
 
     private void OnEnable()
@@ -90,23 +83,13 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     private void MoveAction(InputAction.CallbackContext obj)
     {
-        // aquí solo guardamos el input
-        // la dirección real se recalcula continuamente en FixedUpdate
+        // solo guarda el input, la dirección se recalcula continuamente
         moveInput = obj.ReadValue<Vector2>();
     }
 
     private void JumpAction(InputAction.CallbackContext obj)
     {
-        if (readyToJump && grounded)
-        {
-            readyToJump = false;
-            Jump();
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
-        else if(!grounded)
-        {
-            DoubleJump();
-        }
+        jumpComponent.HandleJumpInput();
     }
 
     private void RunStartedAction(InputAction.CallbackContext obj)
@@ -123,58 +106,61 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     {
         if (grounded)
         {
-            crouchActive = true;
+            crouchComponent.StartCrouch();
         }
     }
 
     private void CrouchCanceledAction(InputAction.CallbackContext obj)
     {
-        crouchActive = false;
+        crouchComponent.StopCrouch();
     }
     
     private void DashAction(InputAction.CallbackContext obj)
     {
-        StartDash();
+        dashComponent.StartDash();
     }
 
     private void Start()
     {
+        // bloquea cursor y lo oculta
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         
         moveSpeed = walkSpeed;
         rb.freezeRotation = true;
-        readyToJump = true;
     }
 
     private void Update()
     {
         GroundCheck();
 
-        if (grounded && doubleJumpsLeft != doubleJump)
+        // tocando suelo reseteamos doble salto
+        if (grounded)
         {
-            ResetDoubleJumps();
+            jumpComponent.ResetDoubleJumpsIfNeeded();
         }
 
         StateHandler();
         HandleDrag();
 
-        if (dashActive) { HandleDashTimer(); }
+        // control del tiempo del dash
+        if (dashComponent.DashActive)
+        {
+            dashComponent.HandleDashTimer();
+        }
     }
 
     private void FixedUpdate()
     {
         ApplyGravity();
-
         HandleRotation();
 
-        // como el player rota con la cámara,
-        // recalculamos la dirección cada frame con su forward actual
+        // se recalcula la dirección SIEMPRE en base al forward actual
         moveDirection = transform.forward * moveInput.y + transform.right * moveInput.x;
 
-        if (dashActive)
+        if (dashComponent.DashActive)
         {
-            DashMovement();
+            dashComponent.DashMovement();
         }
         else
         {
@@ -189,15 +175,6 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         grounded = Physics.CheckSphere(feet.position, detectionRadius, whatIsGround);
     }
 
-    private void OnDrawGizmos()
-    {
-        if (feet != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawSphere(feet.position, detectionRadius);
-        }
-    }
-    
     private void ApplyGravity()
     {
         if (grounded && rb.linearVelocity.y < 0)
@@ -212,9 +189,9 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     private void StateHandler()
     {
-        if (dashActive)
+        if (dashComponent.DashActive)
             courrentState = MovementState.dashing;
-        else if (crouchActive)
+        else if (crouchComponent.CrouchActive)
             courrentState = MovementState.crouching;
         else if (runActive && grounded)
             courrentState = MovementState.running;
@@ -229,10 +206,12 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         float targetSpeed = walkSpeed;
 
         if (runActive) targetSpeed *= runMultiplier;
-        if (crouchActive) targetSpeed *= crouchMultiplier;
+        if (crouchComponent.CrouchActive) targetSpeed *= crouchComponent.CrouchMultiplier;
 
         Vector3 desiredVelocity = moveDirection.normalized * targetSpeed;
         Vector3 currentVelocity = rb.linearVelocity;
+
+        // cuánto hay que ajustar velocidad
         Vector3 velocityChange = desiredVelocity - new Vector3(currentVelocity.x, 0, currentVelocity.z);
 
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
@@ -240,10 +219,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     private void HandleRotation()
     {
+        // el player se mueve hacia donde mira la cámara (solo en plano horizontal)
         Vector3 camForward = cameraTransform.forward;
         camForward.y = 0f;
 
-        // copiamos solo el giro horizontal de la cámara
         if (camForward.sqrMagnitude > 0.01f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(camForward);
@@ -254,74 +233,13 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     private void HandleDrag()
     {
-        // durante el dash el drag es menor 
-        if (dashActive)
-        { 
-            rb.linearDamping = 0.5f; 
-        }
+        // menos drag en dash para que deslice más
+        if (dashComponent.DashActive)
+            rb.linearDamping = 0.5f;
         else if (grounded)
-        { 
-            rb.linearDamping = groundDrag; 
-        }
-        else // en el aire
-        { 
-            rb.linearDamping = 0; 
-        }
-    }
-
-    private void StartDash()
-    {
-        // evita spamear dash mientras ya estás en uno o en cooldown
-        if (dashActive || !readyToDash) return;
-
-        readyToDash = false;
-        dashActive = true;
-        dashTimer = maxDashTime;
-
-        // calculamos dirección en base al forward actual del player
-        Vector3 inputDir = transform.forward * moveInput.y + transform.right * moveInput.x;
-        inputDir.y = 0f;
-
-        // si hay input -> dash en esa dirección
-        if (inputDir.sqrMagnitude > 0.01f)
-        {
-            dashDirection = inputDir.normalized;
-        }
+            rb.linearDamping = groundDrag;
         else
-        {
-            // si NO hay input -> dash hacia atrás
-            dashDirection = -transform.forward;
-            dashDirection.y = 0f;
-            dashDirection.Normalize();
-        }
-
-        Invoke(nameof(ResetDash), dashCooldown);
-    }
-
-    private void DashMovement()
-    {
-        // igual que tu antiguo slide: empuje durante unos frames
-        rb.AddForce(dashDirection * dashForce, ForceMode.Impulse);
-    }
-
-    private void HandleDashTimer()
-    {
-        dashTimer -= Time.deltaTime;
-
-        if (dashTimer <= 0f)
-        {
-            StopDash();
-        }
-    }
-
-    private void StopDash()
-    {
-        dashActive = false;
-    }
-    
-    private void ResetDash()
-    {
-        readyToDash = true;
+            rb.linearDamping = 0f;
     }
 
     private void SpeedControl()
@@ -330,15 +248,14 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     
         float maxSpeed = walkSpeed;
 
-        // durante dash usamos otro límite para no caparlo raro
-        if (dashActive)
+        if (dashComponent.DashActive)
         {
-            maxSpeed = dashForce;
+            maxSpeed = dashComponent.DashForce;
         }
         else
         {
             if (runActive) maxSpeed *= runMultiplier;
-            if (crouchActive) maxSpeed *= crouchMultiplier;
+            if (crouchComponent.CrouchActive) maxSpeed *= crouchComponent.CrouchMultiplier;
         }
 
         if(flatVel.magnitude > maxSpeed)
@@ -346,30 +263,5 @@ public class SC_MasterCharacterMovement : MonoBehaviour
             Vector3 limitedVel = flatVel.normalized * maxSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
-    }
-
-    private void Jump()
-    {
-        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-    }
-    
-    public void DoubleJump()
-    {
-        if (doubleJumpsLeft <= 0) return;
-
-        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        doubleJumpsLeft--;
-    }
-    
-    private void ResetJump()
-    {
-        readyToJump = true;
-    }
-
-    public void ResetDoubleJumps()
-    {
-        doubleJumpsLeft = doubleJump;
     }
 }
