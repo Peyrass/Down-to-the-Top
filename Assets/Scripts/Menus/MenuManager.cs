@@ -5,7 +5,6 @@ using TMPro;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] Transform[] MainMenu;
-    private int CurrentLions;
     public TMP_Text text;
 
     void Awake()
@@ -52,17 +51,6 @@ public class MenuManager : MonoBehaviour
     {
         SetCursor(true);
         SetMenu(0);
-    }
-
-    public void AddLions()
-    {
-        CurrentLions++;
-        text.text = $"{CurrentLions} / 4";
-        if (CurrentLions >= 4)
-        {
-            SetCursor(true);
-            SetMenu(2);
-        }
     }
 
     public void LoadGameScene(int index)
