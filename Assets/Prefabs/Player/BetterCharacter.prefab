@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10084272, y: -0.00000003056293, z: 0.000000003097841, w: 0.9949024}
-  m_LocalPosition: {x: -0.108, y: 0.6157794, z: -1.6146269}
+  m_LocalRotation: {x: 0.10084273, y: -0.000000020885395, z: 0.0000000021169315, w: 0.99490243}
+  m_LocalPosition: {x: -0.108, y: 0.7404311, z: -1.9993994}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,8 +250,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10084273, y: -0.000000030562934, z: 0.000000003097841, w: 0.9949024}
-  m_LocalPosition: {x: -0.108, y: 0.6157794, z: -1.6146269}
+  m_LocalRotation: {x: 0.100842744, y: -0.000000020885398, z: 0.0000000021169322, w: 0.9949024}
+  m_LocalPosition: {x: -0.108, y: 0.7404311, z: -1.9993994}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -417,7 +417,7 @@ Transform:
   m_GameObject: {fileID: 6203304366790174986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.029, z: 0}
+  m_LocalPosition: {x: 0, y: -0.675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -539,8 +539,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 84.4, y: 14.1, z: -20.3}
-  m_LocalScale: {x: 3.6078322, y: 4, z: 3.6078322}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3.21, y: 3.558924, z: 3.21}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6203304368605208358}
   m_Father: {fileID: 0}
@@ -803,25 +803,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SC_CharacterMovement
   walkSpeed: 13
   runMultiplier: 2
-  gravityScale: 20
+  gravityScale: 40
   groundDrag: 5
   airMultiplier: 0.4
+  rotationSpeed: 12
   moveInput: {x: 0, y: 0}
   moveDirection: {x: 0, y: 0, z: 0}
-  jumpForce: 12
+  jumpForce: 23
   jumpCooldown: 0.25
   doubleJump: 1
   crouchMultiplier: 0.5
   crouchYScale: 0.5
-  maxSlideTime: 0.3
-  slideForce: 20
+  maxDashTime: 0.2
+  dashForce: 25
+  dashCooldown: 1
   feet: {fileID: 6203304366790174987}
-  detectionRadius: 0.3
+  detectionRadius: 1.8
   playerHeight: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   orientation: {fileID: 6203304367961361731}
+  cameraTransform: {fileID: 1056179353290192119}
   courrentState: 0
 --- !u!136 &6203304368605208348
 CapsuleCollider:
