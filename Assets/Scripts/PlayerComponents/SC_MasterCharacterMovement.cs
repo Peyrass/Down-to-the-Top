@@ -1,23 +1,24 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
-    public TPC_InputMapping controls;
+    private PlayerInput controls;
     
     [Header("Movement")]
     private float moveSpeed;
     [SerializeField] private float walkSpeed;
-    [SerializeField] private float runSpeed;
+    [SerializeField] private float runMultiplier; 
+    private bool runActive = false;
+    
+    [SerializeField] private float gravityScale = 20f;
     [SerializeField] private float groundDrag;
     [SerializeField] private float airMultiplier;
+
     //nuevo input system
-    public Vector2 moveInput; 
-    public Vector3 moveDirection; 
-    
+    public Vector2 moveInput;
+    public Vector3 moveDirection;
     
     [Header("Jumping")]
     bool readyToJump;
@@ -27,27 +28,25 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private int doubleJumpsLeft;
 
     [Header("Crouch & Sliding")] 
-    [SerializeField] private float crouchSpeed;
+    [SerializeField] private float crouchMultiplier;
     [SerializeField] private float crouchYScale;
+    private bool crouchActive = false;
     
     [SerializeField] private float maxSlideTime;
     [SerializeField] private float slideForce;
     private float regularYScale;
     private float slideTimer;
     private bool slidingActive;
-    
 
     [Header("Ground Check")]
+    [SerializeField] private Transform feet;
+    [SerializeField] private float detectionRadius = 0.3f;
     [SerializeField] private float playerHeight;
     [SerializeField] private LayerMask whatIsGround;
-    private bool grounded;
     [SerializeField] private Transform orientation;
+    private bool grounded;
     
     Rigidbody rb;
-    
-    
-    
-    
     
     public MovementState courrentState;
     public enum MovementState
@@ -56,24 +55,70 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        //instanciación de los controles
-        controls = new TPC_InputMapping();
+        controls = GetComponent<PlayerInput>();
     }
 
     // Suscripciones de eventos
     private void OnEnable()
     {
-        controls.Enable();
+        controls.actions["moveInput"].performed += MoveAction;
+        controls.actions["moveInput"].canceled += MoveAction;
+        controls.actions["jumpInput"].started += JumpAction;
+        controls.actions["runInput"].started += RunStartedAction;
+        controls.actions["runInput"].canceled += RunCanceledAction;
+        controls.actions["crouchInput"].started += CrouchStartedAction;
+        controls.actions["crouchInput"].canceled += CrouchCanceledAction;
     }
 
     private void OnDisable()
     {
-        controls.Disable();
+        controls.actions["moveInput"].performed -= MoveAction;
+        controls.actions["moveInput"].canceled -= MoveAction;
     }
 
+    private void MoveAction(InputAction.CallbackContext obj)
+    {
+        // guardamos el input (NO movemos aquí al personaje)
+        moveInput = obj.ReadValue<Vector2>();
 
+        // convertimos el input a dirección relativa a la cámara
+        moveDirection = orientation.forward * moveInput.y + orientation.right * moveInput.x;
+    }
     
-    
+    private void JumpAction(InputAction.CallbackContext obj)
+    {
+        if (readyToJump && grounded)
+        {
+            readyToJump = false;
+            Jump();
+            Invoke(nameof(ResetJump), jumpCooldown);
+        }
+        else if(!grounded)
+        {
+            DoubleJump();
+        }
+    }
+
+    private void RunStartedAction(InputAction.CallbackContext obj)
+    {
+        runActive = true;
+    }
+
+    private void RunCanceledAction(InputAction.CallbackContext obj)
+    {
+        runActive = false;
+    }
+
+    private void CrouchStartedAction(InputAction.CallbackContext obj)
+    {
+        crouchActive = true;
+    }
+
+    private void CrouchCanceledAction(InputAction.CallbackContext obj)
+    {
+        crouchActive = false;
+    }
+
     private void Start()
     {
         moveSpeed = walkSpeed;
@@ -81,20 +126,13 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
         readyToJump = true;
 
-        //empieza con la altura normal (2)
+        //empieza con la altura normal
         regularYScale = transform.localScale.y;
-        
-        //tatakaeMode = false;
     }
 
     private void Update()
     {
-        
-        moveInput = controls.Player.moveInput.ReadValue<Vector2>();
-        
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
-
+        GroundCheck();
         // recupera los saltos dobles siempre que se toque el suelo
         if (grounded && doubleJumpsLeft != doubleJump)
         {
@@ -102,108 +140,104 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         }
         
         MyInput();
-        SpeedControl();
         StateHandler();
         HandleDrag();
         
         if(slidingActive) {HandleSlidingTimer();}
-        
     }
-
+    
+// TODA la física del Rigidbody va aquí)
     private void FixedUpdate()
     {
-        if (slidingActive) {SlidingMovement();}
-        else {Movement();}
+        ApplyGravity();
+        
+        if (slidingActive) 
+        { SlidingMovement(); }
+        else 
+        { Movement(); }
+        
+        if (!grounded)
+        {
+            rb.AddForce(Vector3.down * 20f, ForceMode.Force);
+        }
+        
+        SpeedControl();
+        
     }
-
+    
+    private void GroundCheck()
+    {
+        grounded = Physics.CheckSphere(feet.position, detectionRadius, whatIsGround);
+    }
+    
+    private void ApplyGravity()
+    {
+        // si está en el suelo y cayendo → lo “pegamos” al suelo
+        if (grounded && rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, -2f, rb.linearVelocity.z);
+        }
+        else
+        {
+            // aplicamos gravedad extra
+            rb.AddForce(Vector3.down * gravityScale, ForceMode.Force);
+        }
+    }
     private void MyInput()
     {
         //Crouch
-        if (controls.Player.crouchInput.WasPerformedThisFrame() && grounded)
+        if (crouchActive)
         {
-            //si se esta moviendo al agacharse entra al estado "Sliding"
-            if(moveInput.magnitude >= 0.1f)
+            // el personaje se encoge
+            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
+
+            // si se mueve mientras está agachado → slide
+            if(moveInput.magnitude >= 0.1f && grounded)
             {
                 StartSlide();
             }
-            //el personaje se encoge
-            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-            rb.AddForce(Vector3.down * 1f, ForceMode.Impulse);
-            
         }
-        
         //Uncrouch
-        if (controls.Player.crouchInput.WasReleasedThisFrame())
+        else
         {
             transform.localScale = new Vector3(transform.localScale.x, regularYScale, transform.localScale.z);
-        }
-        
-        // Jump
-        if(controls.Player.jumpInput.WasPressedThisFrame())
-        {
-            if (readyToJump && grounded)
-            {
-                readyToJump = false;
-                Jump();
-                Invoke(nameof(ResetJump), jumpCooldown);
-            }
-            else if(!grounded)
-             {
-                 DoubleJump();
-             }
-        }
+        }   
     }
-
 
     private void StateHandler()
     {
-        // Mode - Crouch
         if (slidingActive)
-        {
             courrentState = MovementState.sliding;
-        }
-        
-        // Mode - Crouch
-        else if (controls.Player.crouchInput.IsPressed())
-        {
+        else if (crouchActive)
             courrentState = MovementState.crouching;
-            moveSpeed = crouchSpeed;
-        }
-        
-        // Mode - Running
-        else if (grounded && controls.Player.runInput.IsPressed())
-        {
+        else if (runActive && grounded)
             courrentState = MovementState.running;
-            moveSpeed = runSpeed;
-        }
-        
-        // Mode - Walking
-        else if(grounded)
-        {
+        else if (grounded)
             courrentState = MovementState.walking;
-            moveSpeed = walkSpeed;
-        }
-        
-        //Mode - Air
         else
-        {
             courrentState = MovementState.air;
-        }
     }
     
     private void Movement()
     {
-        moveDirection = orientation.forward * moveInput.y + orientation.right * moveInput.x;
-        
-        //está en el suelo
-        if (grounded)
-        {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 100f, ForceMode.Force);
-        }
-        
-        //está en el aire
-        else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 100f * airMultiplier, ForceMode.Force);
+        //Se calcula la velocidad objetivo
+
+        float targetSpeed = walkSpeed;
+
+        if (runActive) {targetSpeed *= runMultiplier;}
+        if (crouchActive) {targetSpeed *= crouchMultiplier;}
+
+        // velocidad que queremos alcanzar
+        Vector3 desiredVelocity = moveDirection.normalized * targetSpeed;
+
+        // velocidad actual del rigidbody
+        Vector3 currentVelocity = rb.linearVelocity;
+
+        // diferencia entre los valores para saber cuanta velocidad hay que aplicar
+        Vector3 velocityChange = desiredVelocity - new Vector3(currentVelocity.x, 0, currentVelocity.z);
+
+        // se usa VelocityChange para controlar directamente la velocidad en lugar de acumular fuerzas
+        rb.AddForce(velocityChange, ForceMode.VelocityChange);
     }
 
     private void HandleDrag()
@@ -216,30 +250,32 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         { rb.linearDamping = 0; }
     }
 
-    private void HandleSlidingTimer()
-    {
-        slideTimer -= Time.deltaTime;
-        if(slideTimer<=0) {StopSlide();}
-        
-    }
     //Presentación
     private void StartSlide()
     {
-        // se activa el bool para mandar la acción al State Handler
         slidingActive = true;
         slideTimer = maxSlideTime;
 
         // Reducir escala igual que al agacharse
         transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-        rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+
+        // ❗ANTES: aplicabas impulso cada frame → roto
+        // ❗AHORA: solo un impulso inicial → sensación de inercia
+        rb.AddForce(moveDirection.normalized * slideForce, ForceMode.Impulse);
     }
+
     //Nudo
     private void SlidingMovement()
     {
-        Vector3 inputDir = orientation.forward * moveInput.y + orientation.right * moveInput.x;
-        // se aplica una fuerza constante durante el slide
-        rb.AddForce(inputDir.normalized * slideForce, ForceMode.Impulse);
+        // ya NO metemos fuerza constante → dejamos que la física haga su trabajo
     }
+
+    private void HandleSlidingTimer()
+    {
+        slideTimer -= Time.deltaTime;
+        if(slideTimer<=0) {StopSlide();}
+    }
+
     //Desenlace
     private void StopSlide()
     {
@@ -247,40 +283,41 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         transform.localScale = new Vector3(transform.localScale.x, regularYScale, transform.localScale.z);
     }
 
-    
     private void SpeedControl()
     {
+        // limitamos velocidad horizontal
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+    
+        float maxSpeed = walkSpeed;
 
-        // limito la velocidad por si acaso
-        if(flatVel.magnitude > moveSpeed)
+        if (runActive) maxSpeed *= runMultiplier;
+        if (crouchActive) maxSpeed *= crouchMultiplier;
+
+        // ❗SIN ESTO → velocidad infinita
+        if(flatVel.magnitude > maxSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            Vector3 limitedVel = flatVel.normalized * maxSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }
 
     private void Jump()
     {
-        //calcula (corrobora que la velocidad vertical sea nula)
+        // reseteamos velocidad vertical para salto consistente
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        //aplica el salto
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+
+        // aplica el salto
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
     
     public void DoubleJump()
     {
         if (doubleJumpsLeft <= 0) return;
-        
-        // get flat velocity
-        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        float flatVelMag = flatVel.magnitude;
 
-        // reinicia la velocidad vertical para que siempre salte a la misma altura
-        rb.linearVelocity = orientation.forward * flatVelMag;
+        // mismo principio → reset vertical
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
         
-        // aplica la fuerza
-        rb.AddForce(orientation.up * jumpForce, ForceMode.Impulse);
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
         doubleJumpsLeft--;
     }
@@ -289,6 +326,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     {
         readyToJump = true;
     }
+
     public void ResetDoubleJumps()
     {
         doubleJumpsLeft = doubleJump;
