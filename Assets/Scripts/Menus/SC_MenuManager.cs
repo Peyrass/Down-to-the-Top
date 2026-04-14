@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class MenuManager : MonoBehaviour
+public class SC_MenuManager : MonoBehaviour
 {
     [SerializeField] Transform[] MainMenu;
     public TMP_Text text;

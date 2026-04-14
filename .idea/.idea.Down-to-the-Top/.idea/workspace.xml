@@ -6,11 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menus/AC_Transition.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menus/AC_Transition.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menus/AN_TransitionExit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menus/AN_TransitionExit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menus/AN_TransitionExit.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menus/AN_TransitionExit.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AC_PlayerAnimator.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AC_PlayerAnimator.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_Dash.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_Dash.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_IdleTatakae.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_IdleTatakae.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_ProvJump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_ProvJump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_ProvKick.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_ProvKick.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_ProvWalk.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AN_ProvWalk.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inputs/TPC_InputMapping.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/TPC_InputMapping.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/BetterCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/MenuManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/MenuManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +39,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SC_EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Core/InputAxisControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Helpers/CinemachineInputAxisController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -45,7 +62,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Sergio&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Pey&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -57,7 +74,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -69,7 +86,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -132,6 +149,8 @@
       <workItem from="1776181727960" duration="1430000" />
       <workItem from="1776192009418" duration="299000" />
       <workItem from="1776192362174" duration="149000" />
+      <workItem from="1776196593118" duration="1037000" />
+      <workItem from="1776197690136" duration="6590000" />
     </task>
     <servers />
   </component>
