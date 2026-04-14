@@ -37,9 +37,16 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     [Header("Camera")]
     [SerializeField] private Transform cameraTransform;
     
-    public MovementState courrentState;
-    public enum MovementState
-    { walking, running, crouching, dashing, air }
+    public EMovementState courrentState;
+
+    public enum EMovementState
+    {
+        Walking   = 0,
+        Running   = 1,
+        Crouching = 2, 
+        dashing   = 3,
+        air       = 4
+    }
 
     // getters para que los otros componentes puedan manejar info sin romper todo
     public Rigidbody Rb => rb;
@@ -156,7 +163,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         HandleRotation();
 
         // se recalcula la dirección SIEMPRE en base al forward actual
-        moveDirection = transform.forward * moveInput.y + transform.right * moveInput.x;
+        moveDirection = transform.forward 
+            * moveInput.y 
+            + transform.right 
+            * moveInput.x;
 
         if (dashComponent.DashActive)
         {
@@ -172,7 +182,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     private void GroundCheck()
     {
-        grounded = Physics.CheckSphere(feet.position, detectionRadius, whatIsGround);
+        grounded = Physics.CheckSphere(feet.position, 
+            detectionRadius,
+            whatIsGround
+            );
     }
 
     private void ApplyGravity()
@@ -188,25 +201,27 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     }
 
     private void StateHandler()
-    {
+    {//switch mejor
         if (dashComponent.DashActive)
-            courrentState = MovementState.dashing;
+            courrentState = EMovementState.dashing;
         else if (crouchComponent.CrouchActive)
-            courrentState = MovementState.crouching;
+            courrentState = EMovementState.Crouching;
         else if (runActive && grounded)
-            courrentState = MovementState.running;
+            courrentState = EMovementState.Running;
         else if (grounded)
-            courrentState = MovementState.walking;
+            courrentState = EMovementState.Walking;
         else
-            courrentState = MovementState.air;
+            courrentState = EMovementState.air;
     }
     
     private void Movement()
     {
         float targetSpeed = walkSpeed;
 
-        if (runActive) targetSpeed *= runMultiplier;
-        if (crouchComponent.CrouchActive) targetSpeed *= crouchComponent.CrouchMultiplier;
+        if (runActive) 
+            targetSpeed *= runMultiplier;
+        if (crouchComponent.CrouchActive) 
+            targetSpeed *= crouchComponent.CrouchMultiplier;
 
         Vector3 desiredVelocity = moveDirection.normalized * targetSpeed;
         Vector3 currentVelocity = rb.linearVelocity;
@@ -226,7 +241,11 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         if (camForward.sqrMagnitude > 0.01f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(camForward);
-            Quaternion smoothRotation = Quaternion.Slerp(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
+            Quaternion smoothRotation = Quaternion.Slerp(
+                rb.rotation,
+                targetRotation,
+                rotationSpeed * Time.fixedDeltaTime
+                );
             rb.MoveRotation(smoothRotation);
         }
     }
@@ -254,14 +273,20 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         }
         else
         {
-            if (runActive) maxSpeed *= runMultiplier;
-            if (crouchComponent.CrouchActive) maxSpeed *= crouchComponent.CrouchMultiplier;
+            if (runActive)
+                maxSpeed *= runMultiplier;
+            if (crouchComponent.CrouchActive)
+                maxSpeed *= crouchComponent.CrouchMultiplier;
         }
 
         if(flatVel.magnitude > maxSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * maxSpeed;
-            rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
+            rb.linearVelocity = new Vector3(
+                limitedVel.x,
+                rb.linearVelocity.y,
+                limitedVel.z
+                );
         }
     }
 }
