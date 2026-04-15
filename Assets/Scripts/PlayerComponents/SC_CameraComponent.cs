@@ -1,3 +1,4 @@
+using System;
 using Unity.Cinemachine;
 using UnityEngine;
 
@@ -14,11 +15,11 @@ namespace PlayerComponents
         [SerializeField] private LayerMask whatIsEnemy;
         [SerializeField] private Transform player;
         private bool inCombat;
+        
 
         private void Update()
         {
-            //CheckCombat();
-            //UpdateCameraState();
+            // TODO: reactivar en siguiente commit (combat camera system)
         }
 
         private void CheckCombat()

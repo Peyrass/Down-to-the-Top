@@ -41,11 +41,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private bool grounded;
     
     [Header("Camera")]
-    [SerializeField] private Transform cameraTransform;
+    
     [SerializeField] private float rotationSpeed = 15f;
-    
-    
-    
+    [SerializeField] private Transform cameraTransform;
+
 
     public enum EMovementState
     {
@@ -60,7 +59,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     public Rigidbody Rb => rb;
     public bool Grounded => grounded;
     public Vector2 MoveInput => moveInput;
-
+    public Transform CameraTransform => cameraTransform;
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -141,6 +141,11 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         
+        if (cameraTransform == null)
+        {
+            cameraTransform = Camera.main.transform;
+        }
+        
         moveSpeed = walkSpeed;
         rb.freezeRotation = true;
     }
@@ -168,9 +173,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         ApplyGravity();
-        HandleRotation();
 
-        // se recalcula la dirección SIEMPRE en base al forward actual
+// 1. calcular dirección
         Vector3 camForward = cameraTransform.forward;
         Vector3 camRight = cameraTransform.right;
 
@@ -182,6 +186,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
         moveDirection = camForward * moveInput.y + camRight * moveInput.x;
 
+// 2. rotar con esa dirección
+        HandleRotation();
+
+// 3. mover
         if (dashComponent.DashActive)
         {
             dashComponent.DashMovement();

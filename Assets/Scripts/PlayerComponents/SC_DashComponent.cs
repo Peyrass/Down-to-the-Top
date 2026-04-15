@@ -19,34 +19,55 @@ public class SC_DashComponent : MonoBehaviour
 
     private void Awake()
     {
-        master = GetComponent<SC_MasterCharacterMovement>();
-        GetComponentInChildren<Animator>();
+        master = GetComponentInParent<SC_MasterCharacterMovement>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     public void StartDash()
     {
-        // evita spam y cooldown
-        if (DashActive || !readyToDash) return;
+        if (DashActive || !readyToDash|| master==null) return;
 
         readyToDash = false;
         DashActive = true;
         dashTimer = maxDashTime;
+
+        // 1. Se extrae la orientación de la cámara (igual que en el Master)
+        Transform cam = master.CameraTransform;
         
-        anim.SetTrigger("Dash");
+        // Si la cámara del master no está asignada, buscamos la principal como plan B
+        if (cam == null)
+            cam = Camera.main?.transform; 
         
-        // dirección en base al input actual
-        Vector3 inputDir = 
-            transform.forward
-            * master.MoveInput.y 
-            + transform.right 
-            * master.MoveInput.x;
+        if (cam == null)
+        {
+            Debug.LogError("No se encontró una cámara para calcular el Dash.");
+            return;
+        }
+
+        Vector3 camForward = cam.forward;
+        Vector3 camRight = cam.right;
+
+        camForward.y = 0f;
+        camRight.y = 0f;
+        camForward.Normalize();
+        camRight.Normalize();
+
+        //anim.SetTrigger("Dash");
         
-        inputDir.y = 0f;
+        // 2. Calculamos la dirección relativa a la CÁMARA, no al jugador
+        Vector3 inputDir = camForward * master.MoveInput.y + camRight * master.MoveInput.x;
 
         if (inputDir.sqrMagnitude > 0.01f)
+        {
+            // Dash hacia donde apunta el joystick/teclado
             dashDirection = inputDir.normalized;
+        }
         else
+        {
+            // 3. Si NO hay input: Dash hacia la espalda del personaje (Esquiva)
+            // Aquí sí usamos transform.forward porque es una reacción física del cuerpo
             dashDirection = -transform.forward;
+        }
 
         Invoke(nameof(ResetDash), dashCooldown);
     }

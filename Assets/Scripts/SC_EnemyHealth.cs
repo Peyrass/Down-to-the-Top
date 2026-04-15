@@ -23,7 +23,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         if(invencibility) return;
         invencibility = true;
         health -= damage;
-        anim.SetTrigger("Hit");
+        //anim.SetTrigger("Hit");
         
         //knockback
         Vector3 dir = (transform.position - attacker.position).normalized;

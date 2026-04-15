@@ -7,7 +7,7 @@ public class SC_AnimationEventReceiver : MonoBehaviour
 
     public void OnAnimationEventTriggered(string eventName) 
     {
-        SC_AnimationEvent matchingEvent = animationEvents.Find(se => se.eventName == eventName);
-        matchingEvent?.OnAnimationEvent?.Invoke();
+        SC_AnimationEvent matchingEvent = animationEvents.Find(se => se.recivedEventName == eventName);
+        matchingEvent?.onAnimationEvent?.Invoke();
     }
 }

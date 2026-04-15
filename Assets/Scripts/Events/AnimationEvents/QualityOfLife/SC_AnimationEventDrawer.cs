@@ -8,8 +8,8 @@ public class SC_AnimationEventDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
-        SerializedProperty stateNameProperty = property.FindPropertyRelative("eventName");
-        SerializedProperty stateEventProperty = property.FindPropertyRelative("OnAnimationEvent");
+        SerializedProperty stateNameProperty = property.FindPropertyRelative("recivedEventName");
+        SerializedProperty stateEventProperty = property.FindPropertyRelative("onAnimationEvent");
 
         Rect stateNameRect = new(
             position.x,
@@ -33,7 +33,7 @@ public class SC_AnimationEventDrawer : PropertyDrawer
 
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
-        SerializedProperty stateEventProperty = property.FindPropertyRelative("OnAnimationEvent");
+        SerializedProperty stateEventProperty = property.FindPropertyRelative("onAnimationEvent");
         return EditorGUIUtility.singleLineHeight + EditorGUI.GetPropertyHeight(stateEventProperty) + 4;
     }
 }
