@@ -1,5 +1,8 @@
+using PlayerComponents;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+
 
 //ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER 
 //ADEMÁS MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER ASÍ COMO LA CÁMARA
@@ -14,6 +17,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private SC_CrouchComponent crouchComponent;
     private SC_DashComponent dashComponent;
     private SC_JumpComponent jumpComponent;
+    private SC_CameraComponent cameraComponent;
     
     [Header("Movement")]
     private float moveSpeed;
@@ -24,20 +28,24 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     [SerializeField] private float gravityScale = 20f;
     [SerializeField] private float groundDrag;
 
-    [SerializeField] private float rotationSpeed = 10f;
+    //[SerializeField] private float rotationSpeed = 10f;
     public Vector2 moveInput;
     public Vector3 moveDirection;
 
+    public EMovementState courrentState;
+    
     [Header("Ground Check")]
     [SerializeField] private Transform feet;
     [SerializeField] private float detectionRadius = 0.3f;
     [SerializeField] private LayerMask whatIsGround;
     private bool grounded;
-
+    
     [Header("Camera")]
     [SerializeField] private Transform cameraTransform;
+    [SerializeField] private float rotationSpeed = 15f;
     
-    public EMovementState courrentState;
+    
+    
 
     public enum EMovementState
     {
@@ -163,10 +171,16 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         HandleRotation();
 
         // se recalcula la dirección SIEMPRE en base al forward actual
-        moveDirection = transform.forward 
-            * moveInput.y 
-            + transform.right 
-            * moveInput.x;
+        Vector3 camForward = cameraTransform.forward;
+        Vector3 camRight = cameraTransform.right;
+
+        camForward.y = 0f;
+        camRight.y = 0f;
+
+        camForward.Normalize();
+        camRight.Normalize();
+
+        moveDirection = camForward * moveInput.y + camRight * moveInput.x;
 
         if (dashComponent.DashActive)
         {
@@ -234,20 +248,17 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     private void HandleRotation()
     {
-        // el player se mueve hacia donde mira la cámara (solo en plano horizontal)
-        Vector3 camForward = cameraTransform.forward;
-        camForward.y = 0f;
+        if (moveDirection.sqrMagnitude < 0.01f) return;
 
-        if (camForward.sqrMagnitude > 0.01f)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(camForward);
-            Quaternion smoothRotation = Quaternion.Slerp(
-                rb.rotation,
-                targetRotation,
-                rotationSpeed * Time.fixedDeltaTime
-                );
-            rb.MoveRotation(smoothRotation);
-        }
+        Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+
+        Quaternion smoothRotation = Quaternion.Slerp(
+            rb.rotation,
+            targetRotation,
+            rotationSpeed * Time.fixedDeltaTime
+        );
+
+        rb.MoveRotation(smoothRotation);
     }
 
     private void HandleDrag()

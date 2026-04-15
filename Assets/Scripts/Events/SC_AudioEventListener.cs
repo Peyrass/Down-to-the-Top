@@ -6,7 +6,7 @@ public class SC_AudioEventListener : MonoBehaviour
     [SerializeField] private SC_ScriptableAudioEvents Event;
     [SerializeField] private bool VFX;
     [SerializeField] private AudioSource playAudio;
-
+    
     public void OnEnable()
     {
         Event.RegisterListener(this);

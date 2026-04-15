@@ -10,6 +10,7 @@ public class SC_TatakaeComponent : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange = 2f;
     [SerializeField] private float attackDamage = 1f;
+    [SerializeField] private float attackCooldown = 0.5f;
     [SerializeField] private LayerMask whatIsEnemy;
     [SerializeField] private Animator anim;
 
@@ -38,7 +39,7 @@ public class SC_TatakaeComponent : MonoBehaviour
         anim.SetTrigger("Kick");
         Debug.Log("KIAAA!");
         
-        Invoke(nameof(ResetAttack),0.2f);
+        Invoke(nameof(ResetAttack),attackCooldown);
     }
 
     public void AttackEvent()
@@ -50,7 +51,7 @@ public class SC_TatakaeComponent : MonoBehaviour
             if (collider.TryGetComponent(out SC_IHittable hit))
             {
                 hit.Damage(attackDamage, transform);
-                StartCoroutine(HitStop(0.2f));
+                StartCoroutine(HitStop(0.05f));
             }
         }
     }

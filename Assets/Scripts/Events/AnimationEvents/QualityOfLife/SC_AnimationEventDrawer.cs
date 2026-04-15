@@ -26,7 +26,7 @@ public class SC_AnimationEventDrawer : PropertyDrawer
         );
 
         EditorGUI.PropertyField(stateNameRect, stateNameProperty);
-        EditorGUI.PropertyField(stateEventRect, stateNameProperty, true);
+        EditorGUI.PropertyField(stateEventRect, stateEventProperty, true);
         
         EditorGUI.EndProperty();
     }
@@ -36,5 +36,4 @@ public class SC_AnimationEventDrawer : PropertyDrawer
         SerializedProperty stateEventProperty = property.FindPropertyRelative("OnAnimationEvent");
         return EditorGUIUtility.singleLineHeight + EditorGUI.GetPropertyHeight(stateEventProperty) + 4;
     }
-        
 }
