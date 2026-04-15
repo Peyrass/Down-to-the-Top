@@ -8,6 +8,7 @@ public class SC_DashComponent : MonoBehaviour
     [SerializeField] private float maxDashTime = 0.3f;
     [SerializeField] private float dashForce = 12f; 
     [SerializeField] private float dashCooldown = 1f;
+    [SerializeField] private Animator anim;
 
     private float dashTimer;
     private bool readyToDash = true;
@@ -19,6 +20,7 @@ public class SC_DashComponent : MonoBehaviour
     private void Awake()
     {
         master = GetComponent<SC_MasterCharacterMovement>();
+        GetComponentInChildren<Animator>();
     }
 
     public void StartDash()
@@ -29,9 +31,16 @@ public class SC_DashComponent : MonoBehaviour
         readyToDash = false;
         DashActive = true;
         dashTimer = maxDashTime;
-
+        
+        anim.SetTrigger("Dash");
+        
         // dirección en base al input actual
-        Vector3 inputDir = transform.forward * master.MoveInput.y + transform.right * master.MoveInput.x;
+        Vector3 inputDir = 
+            transform.forward
+            * master.MoveInput.y 
+            + transform.right 
+            * master.MoveInput.x;
+        
         inputDir.y = 0f;
 
         if (inputDir.sqrMagnitude > 0.01f)

@@ -46,8 +46,9 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     }
     private IEnumerator OnDeath()
     {
-        Debug.Log("He muerto");
-        yield return new WaitForSeconds(0.5f);
+        Debug.Log("He muerto x_x");
+        rb.freezeRotation = false;
+        yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
 }

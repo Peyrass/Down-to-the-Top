@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -36,11 +38,10 @@ public class SC_TatakaeComponent : MonoBehaviour
         anim.SetTrigger("Kick");
         Debug.Log("KIAAA!");
         
-        Invoke(nameof(AttackEvent),0.2f);
         Invoke(nameof(ResetAttack),0.2f);
     }
 
-    private void AttackEvent()
+    public void AttackEvent()
     {
         Collider[] colliders = Physics.OverlapSphere(attackPoint.position, attackRange, whatIsEnemy);
        
@@ -49,8 +50,17 @@ public class SC_TatakaeComponent : MonoBehaviour
             if (collider.TryGetComponent(out SC_IHittable hit))
             {
                 hit.Damage(attackDamage, transform);
+                StartCoroutine(HitStop(0.2f));
             }
         }
+    }
+
+    IEnumerator HitStop(float duration)
+    {
+        Time.timeScale = 0.1f;
+        Debug.Log("HitStop");
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = 1f;
     }
 
     private void ResetAttack()
