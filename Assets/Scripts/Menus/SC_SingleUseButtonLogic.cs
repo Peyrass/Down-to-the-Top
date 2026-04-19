@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class SC_SingleUseButtonLogic : MonoBehaviour
 {
     [SerializeField] private float transitionWait;
-
+    
     public void LoadGameScene(int index)
     {
         StartCoroutine(WaitTillLoadScene(index));
@@ -23,5 +22,4 @@ public class SC_SingleUseButtonLogic : MonoBehaviour
         yield return new WaitForSeconds(transitionWait);
         SceneManager.LoadScene(index);
     }
-
 }
