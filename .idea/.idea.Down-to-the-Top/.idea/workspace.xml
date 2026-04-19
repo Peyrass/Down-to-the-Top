@@ -6,35 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionExit.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionExit.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionStart.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionStart.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionStayIn.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionStayIn.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionStayOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AN_TransitionStayOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CT_Transition.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CT_Transition.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/SkyBox/SkyBox.hdr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/SkyBox/SkyBox.hdr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/Mapa de texturas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/Mapa de texturas.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/Mapa de texturasEspecial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/Mapa de texturasEspecial.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/Mapa de texturasEspecial2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/Mapa de texturasEspecial2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/paredes y cosas almacen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/paredes y cosas almacen.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/suelo almacen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/Textures/suelo almacen.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/BetterCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/QualityOfLife/SC_AnimationEventDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/QualityOfLife/SC_AnimationEventDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/SC_AudioEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SC_AudioEventListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CameraComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CameraManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CameraComponent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +24,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SC_EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Core/InputAxisControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Helpers/CinemachineInputAxisController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -154,6 +135,13 @@
       <workItem from="1775332670426" duration="8477000" />
       <workItem from="1775388563623" duration="25546000" />
       <workItem from="1776181727960" duration="1430000" />
+      <workItem from="1776192009418" duration="299000" />
+      <workItem from="1776192362174" duration="149000" />
+      <workItem from="1776196593118" duration="1037000" />
+      <workItem from="1776197690136" duration="6590000" />
+      <workItem from="1776245183341" duration="7334000" />
+      <workItem from="1776253348066" duration="140000" />
+      <workItem from="1776260057136" duration="2773000" />
     </task>
     <servers />
   </component>
