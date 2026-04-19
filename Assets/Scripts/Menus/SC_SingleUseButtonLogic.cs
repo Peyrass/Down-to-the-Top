@@ -17,6 +17,8 @@ public class SC_SingleUseButtonLogic : MonoBehaviour
         Application.Quit();
     }
 
+    
+
     private IEnumerator WaitTillLoadScene(int index)
     {
         yield return new WaitForSeconds(transitionWait);
