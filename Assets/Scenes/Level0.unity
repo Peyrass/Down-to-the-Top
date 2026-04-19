@@ -2105,6 +2105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_SingleUseButtonLogic
   transitionWait: 0
+  pauseMenu: {fileID: 181565909}
+  isPaused: 0
 --- !u!114 &181565912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3182,9 +3184,9 @@ GameObject:
   m_Component:
   - component: {fileID: 262193258}
   - component: {fileID: 262193262}
+  - component: {fileID: 262193263}
   - component: {fileID: 262193261}
   - component: {fileID: 262193260}
-  - component: {fileID: 262193259}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -3212,18 +3214,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -118.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &262193259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262193257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b8049039b23a594dbdf0a1c500ea055, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SC_ButtonGrow
 --- !u!114 &262193260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3318,6 +3308,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262193257}
   m_CullTransparentMesh: 1
+--- !u!114 &262193263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262193257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8049039b23a594dbdf0a1c500ea055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_ButtonGrow
 --- !u!1001 &262208778
 PrefabInstance:
   m_ObjectHideFlags: 0
