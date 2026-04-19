@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 23572756}
   - component: {fileID: 23572757}
   m_Layer: 0
-  m_Name: Decal1 (8)
+  m_Name: Decal 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -941,7 +941,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 181565910}
+  - {fileID: 1086151720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 118533861}
   - component: {fileID: 118533862}
   m_Layer: 0
-  m_Name: Decal1 (12)
+  m_Name: Decal 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1589,7 +1589,7 @@ GameObject:
   - component: {fileID: 149348520}
   - component: {fileID: 149348521}
   m_Layer: 0
-  m_Name: Decal1 (5)
+  m_Name: Decal 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2063,9 +2063,8 @@ GameObject:
   - component: {fileID: 181565910}
   - component: {fileID: 181565913}
   - component: {fileID: 181565912}
-  - component: {fileID: 181565911}
   m_Layer: 5
-  m_Name: PauseMenu
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2078,35 +2077,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181565909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 262193258}
   - {fileID: 1843198134}
-  m_Father: {fileID: 80842535}
+  m_Father: {fileID: 1086151720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 64.1}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 138.6672, y: 44.4243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &181565911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181565909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c7e2bec85c45f42af2389f49e07e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SC_SingleUseButtonLogic
-  transitionWait: 0
-  pauseMenu: {fileID: 181565909}
-  isPaused: 0
 --- !u!114 &181565912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2797,7 +2781,7 @@ GameObject:
   - component: {fileID: 221103197}
   - component: {fileID: 221103198}
   m_Layer: 0
-  m_Name: Decal1 (7)
+  m_Name: Decal 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3258,7 +3242,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181565909}
+      - m_Target: {fileID: 1086151719}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -4491,7 +4475,7 @@ GameObject:
   - component: {fileID: 408679566}
   - component: {fileID: 408679567}
   m_Layer: 0
-  m_Name: Decal1
+  m_Name: Decal 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9899,7 +9883,7 @@ GameObject:
   - component: {fileID: 994275255}
   - component: {fileID: 994275256}
   m_Layer: 0
-  m_Name: Decal1 (11)
+  m_Name: Decal 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10298,7 +10282,7 @@ GameObject:
   - component: {fileID: 1052482113}
   - component: {fileID: 1052482114}
   m_Layer: 0
-  m_Name: Decal1 (9)
+  m_Name: Decal 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10507,6 +10491,56 @@ Transform:
   - {fileID: 924926028}
   m_Father: {fileID: 1947935695}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1086151719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086151720}
+  - component: {fileID: 1086151721}
+  m_Layer: 5
+  m_Name: PauseMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1086151720
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086151719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 181565910}
+  m_Father: {fileID: 80842535}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 64.1}
+  m_SizeDelta: {x: 138.6672, y: 44.4243}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1086151721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086151719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c7e2bec85c45f42af2389f49e07e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_SingleUseButtonLogic
+  transitionWait: 0
 --- !u!1001 &1089539439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11647,7 +11681,7 @@ GameObject:
   - component: {fileID: 1198004132}
   - component: {fileID: 1198004133}
   m_Layer: 0
-  m_Name: Decal1 (14)
+  m_Name: Decal 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11755,7 +11789,7 @@ GameObject:
   - component: {fileID: 1224069357}
   - component: {fileID: 1224069358}
   m_Layer: 0
-  m_Name: Decal1 (6)
+  m_Name: Decal 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13916,7 +13950,7 @@ GameObject:
   - component: {fileID: 1427321844}
   - component: {fileID: 1427321845}
   m_Layer: 0
-  m_Name: Decal1 (17)
+  m_Name: Decal 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14363,7 +14397,7 @@ GameObject:
   - component: {fileID: 1479495628}
   - component: {fileID: 1479495629}
   m_Layer: 0
-  m_Name: Decal1 (10)
+  m_Name: Decal 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15867,7 +15901,7 @@ GameObject:
   - component: {fileID: 1683618815}
   - component: {fileID: 1683618816}
   m_Layer: 0
-  m_Name: Decal1 (16)
+  m_Name: Decal 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16135,7 +16169,7 @@ GameObject:
   - component: {fileID: 1696288221}
   - component: {fileID: 1696288222}
   m_Layer: 0
-  m_Name: Decal1 (13)
+  m_Name: Decal 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16585,7 +16619,7 @@ GameObject:
   - component: {fileID: 1735847464}
   - component: {fileID: 1735847465}
   m_Layer: 0
-  m_Name: Decal1 (15)
+  m_Name: Decal 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16913,7 +16947,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181565911}
+      - m_Target: {fileID: 1086151721}
         m_TargetAssemblyTypeName: SC_SingleUseButtonLogic, Assembly-CSharp
         m_MethodName: ExitButton
         m_Mode: 1
