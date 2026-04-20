@@ -7,6 +7,10 @@ public class SC_SceneLogic : MonoBehaviour
 {
     [SerializeField] private float transitionWait;
     [SerializeField] private UnityEvent onCall;
+
+    [SerializeField] private UnityEvent onRemoveEvent;
+    [SerializeField] private UnityEvent onRemoveAudioEvent;
+    [SerializeField] private UnityEvent onRemoveFloatEvent;
     
     public void LoadGameScene(int index)
     {
@@ -22,12 +26,18 @@ public class SC_SceneLogic : MonoBehaviour
     {
         onCall.Invoke();
         yield return new WaitForSeconds(transitionWait);
+        onRemoveEvent.Invoke();
+        onRemoveAudioEvent.Invoke();
+        onRemoveFloatEvent.Invoke();
         SceneManager.LoadScene(index);
     }
     private IEnumerator WaitTillQuit()
     {
         onCall.Invoke();
         yield return new WaitForSeconds(transitionWait);
+        onRemoveEvent.Invoke();
+        onRemoveAudioEvent.Invoke();
+        onRemoveFloatEvent.Invoke();
         Application.Quit();
     }
 }

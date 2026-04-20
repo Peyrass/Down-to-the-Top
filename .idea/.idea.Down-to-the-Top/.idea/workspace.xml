@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menus/AC_Transition.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menus/AC_Transition.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/Music.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/Music.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/VFX.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/VFX.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/SC_CallPauseMessager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SC_CallPauseMessager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/SC_GameEventListeners.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SC_GameEventListeners.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_SceneLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_SceneLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableAudioEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableAudioEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableFloatEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableFloatEvent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +144,8 @@
       <workItem from="1776260057136" duration="2773000" />
       <workItem from="1776637231730" duration="3171000" />
       <workItem from="1776674642182" duration="2131000" />
-      <workItem from="1776677593855" duration="2066000" />
+      <workItem from="1776677593855" duration="2868000" />
+      <workItem from="1776704890518" duration="4539000" />
     </task>
     <servers />
   </component>

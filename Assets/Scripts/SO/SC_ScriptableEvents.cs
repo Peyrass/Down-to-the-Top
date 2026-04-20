@@ -14,13 +14,29 @@ public class SC_ScriptableEvents : ScriptableObject
     public void RegisterListener(SC_GameEventListeners listener)
     {
         if (!eventListeners.Contains(listener))
+        {
+            eventListeners.Remove(listener);
+            
             eventListeners.Add(listener);
+        }
+            
     }
 
     public void UnregisterListener(SC_GameEventListeners listener)
     {
         if (eventListeners.Contains(listener))
             eventListeners.Remove(listener);
+    }
+
+    public void UnregisterAll()
+    {
+        if(eventListeners.Count!=0)
+        {
+            for (int i = eventListeners.Count; i > 0; i--)
+            {
+                eventListeners.RemoveAt(i-1);
+            }
+        }
     }
 
 }
