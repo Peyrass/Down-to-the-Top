@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29f98af1d04a40b4bbd5d0b46d78b4f5, type: 3}
-  m_Name: Music
-  m_EditorClassIdentifier: Assembly-CSharp::SC_ScriptableAudioEvents
+  m_Script: {fileID: 11500000, guid: eaf23e28238105c4490b9c2a77a3ef25, type: 3}
+  m_Name: SO_PlayerManaDown
+  m_EditorClassIdentifier: Assembly-CSharp::SC_ScriptableFloatEvent
