@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_1/Nivel1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_1/Nivel1.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/Music.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/Music.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/VFX.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/AudioEvent/VFX.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SH_TransparentMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SH_TransparentMaterial.mat.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menus/PlayerRelated/SC_PlayerManaBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menus/SC_YokaiDialogLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SC_EnemyHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/SC_YokaiText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Core/InputAxisControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Helpers/CinemachineInputAxisController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -141,7 +141,9 @@
       <workItem from="1776260057136" duration="2773000" />
       <workItem from="1776637231730" duration="3171000" />
       <workItem from="1776674642182" duration="2131000" />
-      <workItem from="1776677593855" duration="2066000" />
+      <workItem from="1776677593855" duration="2868000" />
+      <workItem from="1776704890518" duration="4539000" />
+      <workItem from="1776764285411" duration="3527000" />
     </task>
     <servers />
   </component>

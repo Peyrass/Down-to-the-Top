@@ -22,4 +22,14 @@ public class SC_ScriptableAudioEvents : ScriptableObject
         if (eventListeners.Contains(listener))
             eventListeners.Remove(listener);
     }
+    public void UnregisterAll()
+    {
+        if(eventListeners.Count!=0)
+        {
+            for (int i = eventListeners.Count; i > 0; i--)
+            {
+                eventListeners.RemoveAt(i-1);
+            }
+        }
+    }
 }

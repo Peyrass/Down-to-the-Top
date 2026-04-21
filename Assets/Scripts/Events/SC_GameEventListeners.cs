@@ -6,9 +6,10 @@ public class SC_GameEventListeners : MonoBehaviour
 {
   [SerializeField] private SC_ScriptableEvents Event;
   [SerializeField] private UnityEvent Response;
-
+  
   public void OnEnable()
   {
+     
       Event.RegisterListener(this);
   }
 
@@ -19,6 +20,7 @@ public class SC_GameEventListeners : MonoBehaviour
 
   public void OnEventRaise()
     {
+        
       Response.Invoke();
     }
 }
