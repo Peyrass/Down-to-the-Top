@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TransparentMat
-    second: {fileID: 2100000, guid: fcb2610c61020de43810d1d0e8c3d9a1, type: 2}
+    second: {fileID: 2100000, guid: 87fb7862c518b3b48a9196b3ab57e9d3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
