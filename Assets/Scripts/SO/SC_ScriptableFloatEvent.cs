@@ -22,4 +22,15 @@ public class SC_ScriptableFloatEvent : ScriptableObject
         if (eventListeners.Contains(listener))
             eventListeners.Remove(listener);
     }
+    
+    public void UnregisterAll()
+    {
+        if(eventListeners.Count!=0)
+        {
+            for (int i = eventListeners.Count; i > 0; i--)
+            {
+                eventListeners.RemoveAt(i-1);
+            }
+        }
+    }
 }
