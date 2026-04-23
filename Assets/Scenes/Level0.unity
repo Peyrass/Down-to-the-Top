@@ -13545,7 +13545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiDialogLogic
   characterText: {fileID: 646991134}
   initialDialog: {fileID: 11400000, guid: 2f81b0bb9e264f741a1d99eb3a7084d2, type: 2}
-  skillLines: []
+  skillLines:
+  - {fileID: 11400000, guid: dc431cc5b883c2a40bf759acd51c05ab, type: 2}
   healthlines: []
   batterylines: []
   randomlines:
