@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_1/Nivel1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_1/Nivel1.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/UI/TX_Conversation.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI/TX_Conversation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SH_TransparentMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SH_TransparentMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_SceneLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_SceneLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_YokaiDialogLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_YokaiDialogLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_YokaiText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_YokaiText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +151,8 @@
       <workItem from="1776677593855" duration="2868000" />
       <workItem from="1776704890518" duration="4539000" />
       <workItem from="1776764285411" duration="3527000" />
+      <workItem from="1776783816283" duration="2849000" />
+      <workItem from="1776898714958" duration="5222000" />
     </task>
     <servers />
   </component>
