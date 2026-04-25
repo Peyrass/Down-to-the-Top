@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 8718498523077088956}
   - component: {fileID: 2184163491328883501}
   - component: {fileID: 170382514031281663}
-  - component: {fileID: 5312495959880192810}
+  - component: {fileID: 7752682150029041932}
+  - component: {fileID: 6360579592040653308}
   - component: {fileID: 6438957937998008064}
+  - component: {fileID: 5312495959880192810}
   m_Layer: 3
   m_Name: ExplorationCam
   m_TagString: Untagged
@@ -171,7 +173,7 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
---- !u!114 &5312495959880192810
+--- !u!114 &7752682150029041932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,27 +182,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 30231175396431579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca7de3aefa901374ba29464584a3109a, type: 3}
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDecollider
-  CameraRadius: 0.4
-  Decollision:
-    Enabled: 0
-    ObstacleLayers:
-      serializedVersion: 2
-      m_Bits: 1
-    UseFollowTarget:
-      Enabled: 0
-      YOffset: 0
-    Damping: 0.5
-    SmoothingTime: 0
-  TerrainResolution:
-    Enabled: 1
-    TerrainLayers:
-      serializedVersion: 2
-      m_Bits: 1
-    MaximumRaycast: 10
-    Damping: 0.5
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBasicMultiChannelPerlin
+  NoiseProfile: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 1
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &6360579592040653308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30231175396431579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c8541492ba300499a8936203810d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_CameraShake
 --- !u!114 &6438957937998008064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +254,36 @@ MonoBehaviour:
         DecelTime: 0
   PlayerIndex: -1
   AutoEnableInputs: 1
+--- !u!114 &5312495959880192810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30231175396431579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7de3aefa901374ba29464584a3109a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDecollider
+  CameraRadius: 0.4
+  Decollision:
+    Enabled: 0
+    ObstacleLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    UseFollowTarget:
+      Enabled: 0
+      YOffset: 0
+    Damping: 0.5
+    SmoothingTime: 0
+  TerrainResolution:
+    Enabled: 1
+    TerrainLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    MaximumRaycast: 10
+    Damping: 0.5
 --- !u!1 &394537093867880601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,14 +1590,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f89dee5f954c5e44a5b6d27302fe300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_TatakaeComponent
+  anim: {fileID: 4230606101839507832}
+  attackCooldown: 0.5
+  hitStopTime: 0.2
   attackPoint: {fileID: 1830162605648486347}
   attackRange: 1.5
   attackDamage: 1
-  attackCooldown: 0.5
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 128
-  anim: {fileID: 4230606101839507832}
+  camShake: {fileID: 6360579592040653308}
+  shakeIntensity: 2
+  shakeTime: 0.2
 --- !u!54 &6203304368605208359
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -3570,7 +3570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
   health: 3
-  invencibility: 1
+  invencibility: 0
   rb: {fileID: 461360171}
   anim: {fileID: 5006376011056641682}
 --- !u!65 &461360170
