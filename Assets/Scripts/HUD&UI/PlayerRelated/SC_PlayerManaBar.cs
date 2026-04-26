@@ -22,7 +22,7 @@ public class SC_PlayerManaBar : SC_FloatEventListener
       playerActualMana -= value;
       if (playerActualMana <= 0) playerActualMana = 0;
       manaBar.fillAmount = playerActualMana / playerMaxMana;
-      
+
       StopCoroutine(StartRecovering());
       StartCoroutine(StartRecovering());
    }

@@ -7,13 +7,24 @@ using UnityEngine.InputSystem;
 public class SC_TatakaeComponent : MonoBehaviour
 {
     private PlayerInput controls;
+    
+    [Header("GeneralValues")]
+    [SerializeField] private Animator anim;
+    [SerializeField] private float attackCooldown = 0.5f;
+    [SerializeField] private float hitStopTime;
+    
+    [Header("KickValues")]
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange = 2f;
     [SerializeField] private float attackDamage = 1f;
-    [SerializeField] private float attackCooldown = 0.5f;
     [SerializeField] private LayerMask whatIsEnemy;
-    [SerializeField] private Animator anim;
 
+    [Header("CameraShake")] 
+    [SerializeField] private SC_CameraShake camShake;
+    [SerializeField] private float shakeIntensity;
+    [SerializeField] private float shakeTime;
+
+    
     private bool isAttacking = false;
 
     private void Awake()
@@ -51,6 +62,7 @@ public class SC_TatakaeComponent : MonoBehaviour
             if (collider.TryGetComponent(out SC_IHittable hit))
             {
                 hit.Damage(attackDamage, transform);
+                camShake.ShakeCam(shakeIntensity, shakeTime);
                 StartCoroutine(HitStop(0.05f));
             }
         }
@@ -58,7 +70,7 @@ public class SC_TatakaeComponent : MonoBehaviour
 
     IEnumerator HitStop(float duration)
     {
-        Time.timeScale = 0.1f;
+        Time.timeScale = hitStopTime;
         Debug.Log("HitStop");
         yield return new WaitForSecondsRealtime(duration);
         Time.timeScale = 1f;
@@ -76,17 +88,5 @@ public class SC_TatakaeComponent : MonoBehaviour
             Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
-    }
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
