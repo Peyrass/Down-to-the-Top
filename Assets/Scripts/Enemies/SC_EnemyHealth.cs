@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
 {
@@ -9,13 +9,14 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     public bool invencibility = false;
     public Rigidbody rb;
     public Animator anim;
+    public NavMeshAgent agent;
 
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponentInParent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
-        rb.freezeRotation = true;
+        agent = GetComponent<NavMeshAgent>();
     }
     
     public void Damage(float damage, Transform attacker)
@@ -24,6 +25,8 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         invencibility = true;
         health -= damage;
         //anim.SetTrigger("Hit");
+        
+        if (agent != null) agent.enabled = false;
         
         //knockback
         Vector3 dir = (transform.position - attacker.position).normalized;
@@ -47,7 +50,8 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     private IEnumerator OnDeath()
     {
         Debug.Log("He muerto x_x");
-        rb.freezeRotation = false;
+        
+        if (agent != null) agent.enabled = false;
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }

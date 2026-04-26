@@ -555,8 +555,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 872354496514985283}
-  - component: {fileID: 3474958827926170421}
-  - component: {fileID: 5054452628247027696}
+  - component: {fileID: 8754666120762497164}
+  - component: {fileID: 766940199052819610}
+  - component: {fileID: 4519724960761078417}
   m_Layer: 7
   m_Name: PunchieContainer
   m_TagString: Untagged
@@ -578,31 +579,33 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7787327265405791502}
+  - {fileID: 4139472442222530969}
   m_Father: {fileID: 8873745700952300847}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &3474958827926170421
-NavMeshAgent:
+--- !u!136 &8754666120762497164
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2391259937309157916}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &5054452628247027696
+  serializedVersion: 2
+  m_Radius: 0.97
+  m_Height: 6.141252
+  m_Direction: 1
+  m_Center: {x: 0.024334492, y: 2.5706255, z: 0.09995973}
+--- !u!114 &766940199052819610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -611,41 +614,63 @@ MonoBehaviour:
   m_GameObject: {fileID: 2391259937309157916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Script: {fileID: 11500000, guid: f22dedbac32002348b8f28f4840926e1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: -1822016723341414701, guid: 28995d8d22c96e5468b4e3ad9bc7d601, type: 2}
-  m_BlackboardVariableOverridesList:
-  - rid: 607187207662338698
-  - rid: 607187207662338699
-  m_OriginalGraph: {fileID: -1822016723341414701, guid: 28995d8d22c96e5468b4e3ad9bc7d601, type: 2}
-  m_IsInitialised: 0
-  m_IsStarted: 0
-  references:
-    version: 2
-    RefIds:
-    - rid: 607187207662338698
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 1
-          m_Value1: 0
-        Name: Self
-        m_Value: {fileID: 2391259937309157916}
-    - rid: 607187207662338699
-      type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 11363977253652842359
-          m_Value1: 13804634011692656283
-        Name: PatrolPoints
-        m_Value:
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyAttack
+  attackPoint: {fileID: 4139472442222530969}
+  attackRange: 1
+  attackDamage: 10
+  layerPlayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &4519724960761078417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391259937309157916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
+  health: 3
+  invencibility: 0
+  rb: {fileID: 8539820660959566117}
+  anim: {fileID: 1587612190328160512}
+  agent: {fileID: 2138705604966149358}
+--- !u!1 &2540881263749358162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4139472442222530969}
+  m_Layer: 7
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4139472442222530969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540881263749358162}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.31000033, y: 3.883, z: 2.4099984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 872354496514985283}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2582907347843972549
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +744,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8873745700952300847}
+  - component: {fileID: 6248481019621656431}
+  - component: {fileID: 2138705604966149358}
+  - component: {fileID: 8539820660959566117}
   m_Layer: 7
   m_Name: Punchie
   m_TagString: Untagged
@@ -734,7 +762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2892628149348372902}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.99539775, z: -0, w: -0.095830336}
+  m_LocalRotation: {x: -0, y: -0.99539787, z: 0, w: -0.09582839}
   m_LocalPosition: {x: 12.96, y: -3.32, z: 36.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -742,6 +770,127 @@ Transform:
   - {fileID: 872354496514985283}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -190.998, z: 0}
+--- !u!114 &6248481019621656431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892628149348372902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
+  m_Graph: {fileID: -1822016723341414701, guid: 28995d8d22c96e5468b4e3ad9bc7d601, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 607187209706013483
+  - rid: 607187209706013569
+  - rid: 607187209706013570
+  - rid: 607187209706013571
+  - rid: 607187209979691888
+  m_OriginalGraph: {fileID: 0}
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 607187209706013483
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 2892628149348372902}
+    - rid: 607187209706013569
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 4881936210045941322
+          m_Value1: 2151083013416447146
+        Name: Target
+        m_Value: {fileID: 0}
+    - rid: 607187209706013570
+      type: {class: 'BlackboardVariable`1[[AlertEvent, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5225817740093784797
+          m_Value1: 2412095331691495292
+        Name: AlertEvent
+        m_Value: {fileID: 11400000, guid: 4a1a9436d30f11c4e84415beed7db730, type: 2}
+    - rid: 607187209706013571
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 17605701862587700986
+          m_Value1: 17590911110854854329
+        Name: PunchieAnimator
+        m_Value: {fileID: 1587612190328160512}
+    - rid: 607187209979691888
+      type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 11363977253652842359
+          m_Value1: 13804634011692656283
+        Name: PatrolPoints
+        m_Value:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+--- !u!195 &2138705604966149358
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892628149348372902}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.06
+  m_Speed: 5
+  m_Acceleration: Infinity
+  avoidancePriority: 50
+  m_AngularSpeed: 555
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 5.73
+  m_BaseOffset: -0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!54 &8539820660959566117
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892628149348372902}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 2
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 1
 --- !u!1 &3120600381879153441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7787327265405791502}
   - component: {fileID: 1587612190328160512}
+  - component: {fileID: 1640976756195960329}
   m_Layer: 7
   m_Name: PunchieMesh
   m_TagString: Untagged
@@ -1216,6 +1366,51 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1640976756195960329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4374354140109093706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6884f40cef54f49950c2f82c9d9b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_AnimationEventReceiver
+  animationEvents:
+  - recivedEventName: OnJab
+    onAnimationEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766940199052819610}
+          m_TargetAssemblyTypeName: SC_EnemyAttack, Assembly-CSharp
+          m_MethodName: AttackEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - recivedEventName: OnHook
+    onAnimationEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 766940199052819610}
+          m_TargetAssemblyTypeName: SC_EnemyAttack, Assembly-CSharp
+          m_MethodName: AttackEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4382360870973348846
 GameObject:
   m_ObjectHideFlags: 0
