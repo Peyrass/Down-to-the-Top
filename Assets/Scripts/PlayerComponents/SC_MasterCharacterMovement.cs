@@ -45,6 +45,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     [SerializeField] private float rotationSpeed = 15f;
     [SerializeField] private Transform cameraTransform;
 
+    public int life = 5; 
+
 
     public enum EMovementState
     {
@@ -168,6 +170,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         {
             dashComponent.HandleDashTimer();
         }
+        
+        
     }
 
     private void FixedUpdate()
