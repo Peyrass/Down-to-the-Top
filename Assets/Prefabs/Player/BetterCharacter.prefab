@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 8718498523077088956}
   - component: {fileID: 2184163491328883501}
   - component: {fileID: 170382514031281663}
-  - component: {fileID: 5312495959880192810}
+  - component: {fileID: 7752682150029041932}
+  - component: {fileID: 6360579592040653308}
   - component: {fileID: 6438957937998008064}
+  - component: {fileID: 5312495959880192810}
   m_Layer: 3
   m_Name: ExplorationCam
   m_TagString: Untagged
@@ -171,7 +173,7 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
---- !u!114 &5312495959880192810
+--- !u!114 &7752682150029041932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,27 +182,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 30231175396431579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca7de3aefa901374ba29464584a3109a, type: 3}
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDecollider
-  CameraRadius: 0.4
-  Decollision:
-    Enabled: 0
-    ObstacleLayers:
-      serializedVersion: 2
-      m_Bits: 1
-    UseFollowTarget:
-      Enabled: 0
-      YOffset: 0
-    Damping: 0.5
-    SmoothingTime: 0
-  TerrainResolution:
-    Enabled: 1
-    TerrainLayers:
-      serializedVersion: 2
-      m_Bits: 1
-    MaximumRaycast: 10
-    Damping: 0.5
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBasicMultiChannelPerlin
+  NoiseProfile: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 1
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &6360579592040653308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30231175396431579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c8541492ba300499a8936203810d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_CameraShake
 --- !u!114 &6438957937998008064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +254,36 @@ MonoBehaviour:
         DecelTime: 0
   PlayerIndex: -1
   AutoEnableInputs: 1
+--- !u!114 &5312495959880192810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30231175396431579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7de3aefa901374ba29464584a3109a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDecollider
+  CameraRadius: 0.4
+  Decollision:
+    Enabled: 0
+    ObstacleLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    UseFollowTarget:
+      Enabled: 0
+      YOffset: 0
+    Damping: 0.5
+    SmoothingTime: 0
+  TerrainResolution:
+    Enabled: 1
+    TerrainLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    MaximumRaycast: 10
+    Damping: 0.5
 --- !u!1 &394537093867880601
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,7 +341,7 @@ Transform:
   m_GameObject: {fileID: 785097461694839687}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.224, z: 0.949}
+  m_LocalPosition: {x: 0, y: -0.106, z: 0.795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1431,6 +1462,8 @@ GameObject:
   - component: {fileID: 6203304368605208359}
   - component: {fileID: 6203304368605208348}
   - component: {fileID: 6225427881934911742}
+  - component: {fileID: 7852371338169914086}
+  - component: {fileID: 110584496633596532}
   m_Layer: 3
   m_Name: CharacterContainer
   m_TagString: Player
@@ -1557,14 +1590,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f89dee5f954c5e44a5b6d27302fe300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_TatakaeComponent
+  anim: {fileID: 4230606101839507832}
+  attackCooldown: 0.5
+  hitStopTime: 0.2
   attackPoint: {fileID: 1830162605648486347}
   attackRange: 1.5
   attackDamage: 1
-  attackCooldown: 0.5
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 128
-  anim: {fileID: 4230606101839507832}
+  camShake: {fileID: 6360579592040653308}
+  shakeIntensity: 2
+  shakeTime: 0.2
 --- !u!54 &6203304368605208359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1664,11 +1701,55 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: cccabcd8-fb07-4ace-ad4a-d60c9316b8b6
     m_ActionName: 'Player/kickInput[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cd961ccb-27b6-4f4f-9cb9-2a4cb89717f8
+    m_ActionName: 'Player/pauseInput[/Keyboard/p,/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7852371338169914086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203304368605208357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99a67ba19a5c4844af04a659699b3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_CallPauseMessager
+  onPause:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 93c1f874ea12b0b4ca526a2647c99b7c, type: 2}
+        m_TargetAssemblyTypeName: SC_ScriptableEvents, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 20
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &110584496633596532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203304368605208357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d490487a63c0e9347983a978ad80b148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_PlayerBeenHit
+  healthDown: {fileID: 11400000, guid: 54051702f2cf47d4dba0a69da137f123, type: 2}
 --- !u!1 &6439945776941176829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,6 +1795,8 @@ GameObject:
   - component: {fileID: 6330322579895063545}
   - component: {fileID: 4230606101839507832}
   - component: {fileID: 8831997080207948363}
+  - component: {fileID: 2490429703621966475}
+  - component: {fileID: 6412129787741130604}
   m_Layer: 0
   m_Name: CharacterMesh
   m_TagString: Untagged
@@ -1789,6 +1872,86 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2490429703621966475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670396696586340675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57630357c7dd919448ac19542f526144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_GameEventListeners
+  Event: {fileID: 11400000, guid: 812919ada1771474ba33c95aa82a537e, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2e49482d165eec2498b9865791857ea0, type: 2}
+        m_TargetAssemblyTypeName: SC_ScriptableEvents, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6412129787741130604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670396696586340675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57630357c7dd919448ac19542f526144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_GameEventListeners
+  Event: {fileID: 11400000, guid: 812919ada1771474ba33c95aa82a537e, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 2e49482d165eec2498b9865791857ea0, type: 2}
+        m_TargetAssemblyTypeName: SC_ScriptableEvents, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6790589705915391335
 GameObject:
   m_ObjectHideFlags: 0

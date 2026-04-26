@@ -19,7 +19,6 @@ public class SC_ScriptableEvents : ScriptableObject
             
             eventListeners.Add(listener);
         }
-            
     }
 
     public void UnregisterListener(SC_GameEventListeners listener)
