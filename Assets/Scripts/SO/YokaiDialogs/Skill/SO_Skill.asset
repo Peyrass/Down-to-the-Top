@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f89176d7b45ea7e428b2cb58ce25e320, type: 3}
-  m_Name: SO_Skill1
+  m_Name: SO_Skill
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "\xBFZumo? \xBFEnerg\xEDa? \xBFNada? Estamos m\xE1s secos que el desierto de"
-  - "datos. \xA1Gestiona esas pilas o seremos un pisapapeles muy caro!"
+  - "\xA1No me quedan pilas, Yomi! Deja de intentar usar trucos caros y"
+  - "vuelve a lo b\xE1sico: \xA1tus pies y mis insultos!"
