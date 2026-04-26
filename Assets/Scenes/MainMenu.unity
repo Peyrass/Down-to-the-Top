@@ -1450,6 +1450,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3843901532152507103, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4949158231289917734, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: onRemoveEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4949158231289917734, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: onRemoveAudioEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4949158231289917734, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: onRemoveFloatEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4949158231289917734, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: onRemoveEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: cbb9e9dbecf3e2e4da9046ea05bcca4e, type: 2}
     - target: {fileID: 5421134136249247684, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
       propertyPath: m_Name
       value: SceneManager
