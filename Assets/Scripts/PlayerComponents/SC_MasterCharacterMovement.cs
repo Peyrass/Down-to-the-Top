@@ -4,9 +4,8 @@ using UnityEngine.InputSystem;
 
 
 
-//ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER 
-//ADEMÁS MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER ASÍ COMO LA CÁMARA
-//(en próximas entregas habrá un componente aparte para la cámara)
+//ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER
+
 
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
