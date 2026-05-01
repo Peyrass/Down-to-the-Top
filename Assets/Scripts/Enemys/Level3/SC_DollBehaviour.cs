@@ -16,8 +16,6 @@ public class SC_DollBehaviour : MonoBehaviour
 
     [SerializeField] int secondsToExplosion = 4;
     private float leftTimeToExplosion;
-    private bool countingExplosion = false;
-
 
     private void Awake()
     {
@@ -59,7 +57,6 @@ public class SC_DollBehaviour : MonoBehaviour
     private void StartExplosion(int sec)
     {
         leftTimeToExplosion = sec;
-        countingExplosion = true;
         Debug.Log("Explosion started! Time to explosion: ");
         StartCoroutine(ExplosionCountdown());
     }
@@ -71,7 +68,6 @@ public class SC_DollBehaviour : MonoBehaviour
             leftTimeToExplosion -= Time.deltaTime;
             yield return null;
         }
-        countingExplosion = false;
         Debug.Log("BOOM!");
         // Añadir animación de explosión y daño a jugador
         Destroy(gameObject); 
