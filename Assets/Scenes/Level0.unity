@@ -4133,9 +4133,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6203304368605208348, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 1a5777128d3febb49b8255437c44b25d, type: 2}
     - target: {fileID: 6412129787741130604, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265088406155351940, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: walkSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265088406155351940, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: runMultiplier
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
