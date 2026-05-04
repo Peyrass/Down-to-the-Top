@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: SO_InitialDialog
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - Buenos dias en el yermo
-  - Mi nombre es lucifer
-  - y vengo a cobrarme tu alma
+  - "\xA1Venga, Yomi! Mis sensores detectan que tienes el paso de un"
+  - "caracol con reuma. \xA1Usa el Dash pulsando \"E\" si no quieres"
+  - "que el pr\xF3ximo barrendero te confunda con basura!"
+  - "\xBFVes esa caja? Pues no es para quedarse mirando. Salta como si"
+  - 'tu vida dependiera de ello... porque, spoiler: lo hace.'
+  - 
+  - 
+  - "\xA1Patea, Yomi! Izquierda, derecha, remate. No es un baile de gala,"
+  - "es una auditor\xEDa de huesos rotos. \xA1Ens\xE9\xF1ale ese Drunk Thai!"

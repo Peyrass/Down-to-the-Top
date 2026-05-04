@@ -11,8 +11,7 @@ public class SC_CallPauseMessager : MonoBehaviour
 
     private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
-
+        playerInput = GetComponentInChildren<PlayerInput>();
     }
 
     private void OnEnable()

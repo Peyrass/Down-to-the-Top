@@ -31,6 +31,8 @@ public class SC_DashComponent : MonoBehaviour
         DashActive = true;
         dashTimer = maxDashTime;
 
+        
+        
         // 1. Se extrae la orientación de la cámara (igual que en el Master)
         Transform cam = master.CameraTransform;
         
@@ -51,10 +53,8 @@ public class SC_DashComponent : MonoBehaviour
         camRight.y = 0f;
         camForward.Normalize();
         camRight.Normalize();
-
-        //anim.SetTrigger("Dash");
         
-        // 2. Calculamos la dirección relativa a la CÁMARA, no al jugador
+        // 2. Se calcula la dirección relativa a la CÁMARA, no al jugador
         Vector3 inputDir = camForward * master.MoveInput.y + camRight * master.MoveInput.x;
 
         if (inputDir.sqrMagnitude > 0.01f)

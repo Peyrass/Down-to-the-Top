@@ -29,7 +29,7 @@ public class SC_TatakaeComponent : MonoBehaviour
 
     private void Awake()
     {
-        controls = GetComponent<PlayerInput>();
+        controls = GetComponentInChildren<PlayerInput>();
         anim = GetComponentInChildren<Animator>();
     }
 

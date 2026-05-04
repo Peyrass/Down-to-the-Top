@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SO_Random2
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - walalalla
+  - "Oye Yomi... \xBFcrees que Tokono-San se limpia el polvo \xE9l mismo o"
+  - tiene drones para que le saquen brillo a su calva cromada?

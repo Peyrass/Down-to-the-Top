@@ -12,12 +12,7 @@ public class SC_SceneLogic : MonoBehaviour
     [SerializeField] private UnityEvent onRemoveEvent;
     [SerializeField] private UnityEvent onRemoveAudioEvent;
     [SerializeField] private UnityEvent onRemoveFloatEvent;
-
-    private void Start()
-    {
-        Debug.LogWarning(SceneManager.loadedSceneCount);
-    }
-
+    
     public void LoadGameScene(int index)
     {
         StartCoroutine(WaitTillLoadScene(index));

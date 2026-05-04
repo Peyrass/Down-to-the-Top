@@ -4,14 +4,14 @@ using UnityEngine.InputSystem;
 
 
 
-//ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER 
-//ADEMÁS MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER ASÍ COMO LA CÁMARA
-//(en próximas entregas habrá un componente aparte para la cámara)
+//ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER
+
 
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
     private PlayerInput controls;
     private Rigidbody rb;
+    private Animator anim;
 
     // referencias a los componentes (cada uno se encarga de lo suyo)
     private SC_CrouchComponent crouchComponent;
@@ -66,7 +66,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        controls = GetComponent<PlayerInput>();
+        anim = GetComponentInChildren<Animator>();
+        controls = GetComponentInChildren<PlayerInput>();
 
         // se referencian los otros componentes del mismo objeto
         crouchComponent = GetComponent<SC_CrouchComponent>();
@@ -81,9 +82,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["jumpInput"].started += JumpAction;
         controls.actions["runInput"].started += RunStartedAction;
         controls.actions["runInput"].canceled += RunCanceledAction;
+        controls.actions["crouchInput"].performed += CrouchAction;
         controls.actions["crouchInput"].started += CrouchStartedAction;
         controls.actions["crouchInput"].canceled += CrouchCanceledAction;
-        controls.actions["dashInput"].started += DashAction;
+        controls.actions["dashInput"].started += DashStartedAction;
     }
 
     private void OnDisable()
@@ -93,9 +95,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["jumpInput"].started -= JumpAction;
         controls.actions["runInput"].started -= RunStartedAction;
         controls.actions["runInput"].canceled -= RunCanceledAction;
+        controls.actions["crouchInput"].performed += CrouchAction;
         controls.actions["crouchInput"].started -= CrouchStartedAction;
         controls.actions["crouchInput"].canceled -= CrouchCanceledAction;
-        controls.actions["dashInput"].started -= DashAction;
+        controls.actions["dashInput"].started -= DashStartedAction;
     }
 
     private void MoveAction(InputAction.CallbackContext obj)
@@ -107,6 +110,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void JumpAction(InputAction.CallbackContext obj)
     {
         jumpComponent.HandleJumpInput();
+        anim.SetTrigger("Jump");
     }
 
     private void RunStartedAction(InputAction.CallbackContext obj)
@@ -119,6 +123,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         runActive = false;
     }
     
+    private void CrouchAction(InputAction.CallbackContext obj)
+    {
+            anim.SetTrigger("Crouch");
+    }
     private void CrouchStartedAction(InputAction.CallbackContext obj)
     {
         if (grounded)
@@ -132,9 +140,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         crouchComponent.StopCrouch();
     }
     
-    private void DashAction(InputAction.CallbackContext obj)
+    private void DashStartedAction(InputAction.CallbackContext obj)
     {
         dashComponent.StartDash();
+        anim.SetTrigger("Dash");
     }
 
     private void Start()
@@ -164,7 +173,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
         StateHandler();
         HandleDrag();
-
+        UpdateAnimator();
         // control del tiempo del dash
         if (dashComponent.DashActive)
         {
@@ -172,6 +181,27 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         }
         
         
+    }
+
+    private void UpdateAnimator()
+    {
+        // 1. Tomamos el valor de tu Joystick o teclado (por defecto van de -1 a 1)
+        float inputX = moveInput.x;
+        float inputY = moveInput.y;
+
+        
+        // Si no corre, dividimos el valor a la mitad para que se reproduzca la animación de caminar en lugar de correr.
+        if (runActive == false)
+        {
+            inputX = inputX / 2f;
+            inputY = inputY / 2f;
+        }
+        
+        anim.SetFloat("x", inputX, 0.1f, Time.deltaTime);
+        anim.SetFloat("y", inputY, 0.1f, Time.deltaTime);
+
+        // 4. Le decimos al Animator si estamos tocando el suelo
+        anim.SetBool("isGrounded", grounded);
     }
 
     private void FixedUpdate()
@@ -211,7 +241,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         grounded = Physics.CheckSphere(feet.position, 
             detectionRadius,
             whatIsGround
-            );
+       );
     }
 
     private void ApplyGravity()
