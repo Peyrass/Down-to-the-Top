@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/UI/TX_Conversation.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UI/TX_Conversation.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_SceneLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_SceneLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_YokaiDialogLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/SC_YokaiDialogLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/PlayerRelated/SC_PlayerManaBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/PlayerRelated/SC_PlayerManaBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_PlayerBeenHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_PlayerBeenHit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_YokaiText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_YokaiText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_Dialog.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -78,7 +72,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -153,6 +147,7 @@
       <workItem from="1776764285411" duration="3527000" />
       <workItem from="1776783816283" duration="2849000" />
       <workItem from="1776898714958" duration="5222000" />
+      <workItem from="1776956347829" duration="1689000" />
     </task>
     <servers />
   </component>
