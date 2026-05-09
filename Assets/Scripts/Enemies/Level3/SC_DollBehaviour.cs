@@ -21,6 +21,7 @@ public class SC_DollBehaviour : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        targetToFollow = SC_GameManager.Instance.playerFeet; // Asignar el objetivo a seguir desde el GameManager
     }
 
     private void Update()
