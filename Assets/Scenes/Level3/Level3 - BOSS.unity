@@ -607,6 +607,7 @@ MonoBehaviour:
   invencibility: 0
   rb: {fileID: 1030545537}
   anim: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!135 &1030545539
 SphereCollider:
   m_ObjectHideFlags: 0
