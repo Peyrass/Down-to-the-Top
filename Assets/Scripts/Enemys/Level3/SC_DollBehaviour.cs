@@ -25,13 +25,16 @@ public class SC_DollBehaviour : MonoBehaviour
 
     private void Update()
     {
-        agent.SetDestination(targetToFollow.position);
-
-        if (DestinationReached()) //si estas listo y ... PREGUNTA DE EXAMEN
+        if (agent.enabled)
         {
-            LookToTarget();
-            animator.SetBool("Reached", true);
-            agent.isStopped = true; //Me aseguro de estar quieto mientras lanzo el ataque
+            agent.SetDestination(targetToFollow.position);
+
+            if (DestinationReached()) //si estas listo y ... PREGUNTA DE EXAMEN
+            {
+                LookToTarget();
+                animator.SetBool("Reached", true);
+                agent.isStopped = true; //Me aseguro de estar quieto mientras lanzo el ataque
+            }
         }
     }
 
