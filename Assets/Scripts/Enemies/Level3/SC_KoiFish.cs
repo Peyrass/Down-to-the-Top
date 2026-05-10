@@ -1,4 +1,4 @@
-using UnityEditor.Build;
+//using UnityEditor.Build; SUPONGO QUE ESTO ES UN ERROR
 using UnityEngine;
 
 public class SC_KoiFish : MonoBehaviour
@@ -19,8 +19,8 @@ public class SC_KoiFish : MonoBehaviour
     public void ShootProjectile()
     {
         GameObject projectil = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
-        projectil.transform.LookAt(SC_GameManager.Instance.player.position); // Asegúrate de que el proyectil mire hacia el objetivo
-        projectil.GetComponent<Rigidbody>().linearVelocity = projectil.transform.forward * 10f; // Ajusta la velocidad del proyectil según sea necesario
+        projectil.transform.LookAt(SC_GameManager.Instance.player.position); // Asegï¿½rate de que el proyectil mire hacia el objetivo
+        projectil.GetComponent<Rigidbody>().linearVelocity = projectil.transform.forward * 10f; // Ajusta la velocidad del proyectil segï¿½n sea necesario
     }
 
     public void SetKoiPosition()
