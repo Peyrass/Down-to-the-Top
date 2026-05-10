@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e504bbc1cdf71048aa1ec73e962b7a8
+guid: 4e064effa8079d240a89a349a4b4487b
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Border
-    second: {fileID: 2100000, guid: 51465daa897e42947af3e85494f36ca3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BossEnemy
-    second: {fileID: 2100000, guid: ae4ffd9139db3e04a8df0bd24052a4fb, type: 2}
+      name: Base
+    second: {fileID: 2100000, guid: e26bc82ed0b57dd4d8c291a9129e131c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +40,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1

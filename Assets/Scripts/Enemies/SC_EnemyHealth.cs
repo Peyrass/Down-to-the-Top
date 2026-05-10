@@ -10,6 +10,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     public Rigidbody rb;
     public Animator anim;
     public NavMeshAgent agent;
+    [SerializeField] private float deathTime = 2f; 
 
 
     private void Awake()
@@ -31,9 +32,9 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         //knockback
         Vector3 dir = (transform.position - attacker.position).normalized;
         dir.y = 0.5f;
-        rb.AddForce(dir*10f,ForceMode.Impulse);
+        if (rb != null) rb.AddForce(dir * 10f, ForceMode.Impulse);
 
-        
+
         if (health > 0)
             StartCoroutine(OnHit());
         else
@@ -52,7 +53,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         Debug.Log("He muerto x_x");
         
         if (agent != null) agent.enabled = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(deathTime);
         Destroy(gameObject);
     }
 }
