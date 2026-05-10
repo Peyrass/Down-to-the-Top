@@ -288,11 +288,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedDoll
       objectReference: {fileID: 0}
+    - target: {fileID: 7492879937066059622, guid: 4eaa2bab0d1304f4e9f0bd4dfbfcffe7, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1354955110}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1438968604361296345, guid: 4eaa2bab0d1304f4e9f0bd4dfbfcffe7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1354955110}
   m_SourcePrefab: {fileID: 100100000, guid: 4eaa2bab0d1304f4e9f0bd4dfbfcffe7, type: 3}
+--- !u!1 &272901627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9180118195872135637, guid: a0123c94124e6bd4c90e71ed1f585e92, type: 3}
+  m_PrefabInstance: {fileID: 477333099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &272901632
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272901627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4730f5bfc83d3574a98680cd941f49e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &461406920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,10 +440,17 @@ PrefabInstance:
       propertyPath: targetToFollow
       value: 
       objectReference: {fileID: 580683635}
+    - target: {fileID: 7572857994749510608, guid: a0123c94124e6bd4c90e71ed1f585e92, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 272901632}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9180118195872135637, guid: a0123c94124e6bd4c90e71ed1f585e92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 272901632}
   m_SourcePrefab: {fileID: 100100000, guid: a0123c94124e6bd4c90e71ed1f585e92, type: 3}
 --- !u!4 &580683635 stripped
 Transform:
@@ -534,11 +575,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7318900612198088492, guid: 5fd82cf2f8f37a843bea417f6d93ab47, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1835561633}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7229651047512439501, guid: 5fd82cf2f8f37a843bea417f6d93ab47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1835561633}
   m_SourcePrefab: {fileID: 100100000, guid: 5fd82cf2f8f37a843bea417f6d93ab47, type: 3}
+--- !u!1 &1354955105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1438968604361296345, guid: 4eaa2bab0d1304f4e9f0bd4dfbfcffe7, type: 3}
+  m_PrefabInstance: {fileID: 152369504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1354955110
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354955105}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4730f5bfc83d3574a98680cd941f49e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1633349938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6203304368605208358, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
@@ -661,6 +736,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6303d15fd0c2b540b14593d6331ff78, type: 3}
+--- !u!1 &1835561628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7229651047512439501, guid: 5fd82cf2f8f37a843bea417f6d93ab47, type: 3}
+  m_PrefabInstance: {fileID: 954950701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1835561633
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835561628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4730f5bfc83d3574a98680cd941f49e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2119718595
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,9 +938,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3843901532152507103, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5421134136249247684, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
       propertyPath: m_Name
       value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721008571557093003, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

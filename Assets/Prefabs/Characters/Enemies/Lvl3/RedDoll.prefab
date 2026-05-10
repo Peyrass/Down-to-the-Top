@@ -111,7 +111,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4493585093827132993, guid: d9033310323ee0d4f8e3c4e03520c470, type: 3}
 --- !u!1 &4883123146811942709
@@ -298,7 +298,8 @@ MonoBehaviour:
   invencibility: 0
   rb: {fileID: 1429058227622363654}
   anim: {fileID: 0}
-  agent: {fileID: 0}
+  agent: {fileID: 554140495112578467}
+  deathTime: 2
 --- !u!195 &554140495112578467
 NavMeshAgent:
   m_ObjectHideFlags: 0

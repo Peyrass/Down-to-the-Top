@@ -23,7 +23,9 @@ public class SC_DollBehaviour : MonoBehaviour
         animator = GetComponent<Animator>();
         targetToFollow = SC_GameManager.Instance.playerFeet; // Asignar el objetivo a seguir desde el GameManager
     }
-
+//nono, esto mejor se hace con Behaviour Graphs
+    
+    
     private void Update()
     {
         if (agent.enabled)
@@ -73,7 +75,7 @@ public class SC_DollBehaviour : MonoBehaviour
             yield return null;
         }
         Debug.Log("BOOM!");
-        // Añadir animación de explosión y daño a jugador
+        // Aï¿½adir animaciï¿½n de explosiï¿½n y daï¿½o a jugador
         Destroy(gameObject); 
     }
 }
