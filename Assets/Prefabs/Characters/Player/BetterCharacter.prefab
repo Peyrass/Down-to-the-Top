@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.03361782, y: -0.7063072, z: -0.033617817, w: 0.70630723}
-  m_LocalPosition: {x: 1.1080211, y: -0.96526223, z: 1.5900016}
+  m_LocalRotation: {x: -0.00000013825598, y: -0.99886924, z: -0.047542796, w: 0.0000028744907}
+  m_LocalPosition: {x: -0.11938858, y: -0.96526223, z: 2.8174167}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1205,8 +1205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.033617835, y: -0.7063072, z: -0.033617828, w: 0.70630723}
-  m_LocalPosition: {x: 1.1080211, y: -0.96526223, z: 1.5900016}
+  m_LocalRotation: {x: -0.0000001368128, y: -0.99886924, z: -0.047542807, w: 0.000002874422}
+  m_LocalPosition: {x: -0.11938858, y: -0.96526223, z: 2.8174167}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b14cd927d287194991f5c2f4fc3de79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_JumpComponent
-  jumpForce: 20
+  jumpForce: 25
   jumpCooldown: 0.4
   doubleJump: 1
 --- !u!114 &5749407942504746099
