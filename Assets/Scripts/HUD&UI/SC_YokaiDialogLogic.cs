@@ -112,13 +112,18 @@ public class SC_YokaiDialogLogic : MonoBehaviour
             
         } while (1 > 0);
     }
+    
 
     private void RandomDialog(SC_YokaiText[] cuoteGroup)
     {
-        do
+        if (cuoteGroup.Length > 1)
         {
-            newText = Random.Range(0, cuoteGroup.Length);
-        } while (lastText == newText);
+            do
+            {
+                newText = Random.Range(0, cuoteGroup.Length);
+            } while (lastText == newText);
+        }
+        
         lastText = newText;
 
         if (dialogueStarted == false)
