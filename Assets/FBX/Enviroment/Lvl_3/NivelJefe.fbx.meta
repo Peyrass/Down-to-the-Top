@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ventana
-    second: {fileID: 2100000, guid: 01efd3bbe20b0744198b61dc9c6c7793, type: 2}
+    second: {fileID: 2100000, guid: 87fb7862c518b3b48a9196b3ab57e9d3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
