@@ -4211,7 +4211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2582007683997369263, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: manaCost
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2582007683997369263, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: m_Enabled
@@ -17668,10 +17668,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
       propertyPath: 'batterylines.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 18ef104cf1f83814788159d990b55fee, type: 2}
-    - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
-      propertyPath: 'batterylines.Array.data[1]'
       value: 
       objectReference: {fileID: 11400000, guid: 18ef104cf1f83814788159d990b55fee, type: 2}
     - target: {fileID: 4503998233669946340, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}

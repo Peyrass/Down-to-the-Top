@@ -4,7 +4,10 @@ public class SC_JumpComponent : MonoBehaviour
 {
     private SC_MasterCharacterMovement master;
 
+    [SerializeField] private SC_ScriptableEvents eventoYokai;
+    [SerializeField] private SC_ScriptableFloatEvent eventoMana;
     [Header("Jump")]
+    [SerializeField] private float manaCost;
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private int doubleJump;
@@ -45,6 +48,8 @@ public class SC_JumpComponent : MonoBehaviour
 
         master.Rb.linearVelocity = new Vector3(master.Rb.linearVelocity.x, 0f, master.Rb.linearVelocity.z);
         master.Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        eventoMana.Raise(manaCost);
+        eventoYokai.Raise();
         doubleJumpsLeft--;
     }
 

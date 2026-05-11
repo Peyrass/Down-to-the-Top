@@ -3,6 +3,8 @@ using UnityEngine;
 public class SC_DashComponent : MonoBehaviour
 {
     private SC_MasterCharacterMovement master;
+    
+    [SerializeField] private SC_ScriptableFloatEvent eventoMana;
 
     [Header("Dash")]
     [SerializeField] private float maxDashTime = 0.3f;
