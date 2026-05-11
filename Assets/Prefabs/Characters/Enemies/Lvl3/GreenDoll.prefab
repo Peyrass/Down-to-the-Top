@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5062182780972740739}
   - component: {fileID: 102905444987148340}
   - component: {fileID: 4075477041452667388}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ MonoBehaviour:
   health: 1
   invencibility: 0
   rb: {fileID: 2136907657864848505}
-  anim: {fileID: 0}
+  anim: {fileID: 8523979821129331026}
   agent: {fileID: 8993741081123645315}
   deathTime: 2
 --- !u!54 &2136907657864848505
@@ -268,7 +268,8 @@ GameObject:
   - component: {fileID: 956393466282843581}
   - component: {fileID: 3901418013501705353}
   - component: {fileID: 2063988090368525031}
-  m_Layer: 0
+  - component: {fileID: 8523979821129331026}
+  m_Layer: 7
   m_Name: MS_Gueisha3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,3 +371,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2228417370725966487, guid: fc4df6aa66d2ba744b724c90c6d9c59a, type: 3}
+--- !u!95 &8523979821129331026
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229651047512439501}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4730f5bfc83d3574a98680cd941f49e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
