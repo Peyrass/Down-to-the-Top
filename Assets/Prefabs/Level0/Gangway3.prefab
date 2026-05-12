@@ -50,7 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
       propertyPath: m_Name
-      value: Pasarela (3)
+      value: Gangway3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
