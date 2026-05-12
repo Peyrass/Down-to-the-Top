@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000013825598, y: -0.99886924, z: -0.047542796, w: 0.0000028744907}
-  m_LocalPosition: {x: -0.11938858, y: -0.96526223, z: 2.8174167}
+  m_LocalRotation: {x: -0.03361783, y: -0.70630723, z: -0.03361783, w: 0.7063072}
+  m_LocalPosition: {x: 1.1080211, y: -0.96526223, z: 1.5900016}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1205,8 +1205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000001368128, y: -0.99886924, z: -0.047542807, w: 0.000002874422}
-  m_LocalPosition: {x: -0.11938858, y: -0.96526223, z: 2.8174167}
+  m_LocalRotation: {x: -0.03361784, y: -0.70630723, z: -0.033617843, w: 0.7063072}
+  m_LocalPosition: {x: 1.1080211, y: -0.96526223, z: 1.5900016}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1500,8 +1500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b0372e7a1de5a4487f93baaf51789b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_CharacterMovement
-  walkSpeed: 13
-  runMultiplier: 2
+  walkSpeed: 8
+  runMultiplier: 1.5
   gravityScale: 40
   groundDrag: 5
   moveInput: {x: 0, y: 0}
@@ -1527,6 +1527,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b14cd927d287194991f5c2f4fc3de79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_JumpComponent
+  eventoYokai: {fileID: 11400000, guid: cf5b5daa836e52c4987544fd0533d2cc, type: 2}
+  eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
+  manaCost: 50
   jumpForce: 25
   jumpCooldown: 0.4
   doubleJump: 1
@@ -1555,6 +1558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5b23282a9450d45888ee29c264a444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DashComponent
+  eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
   maxDashTime: 0.3
   dashForce: 22
   dashCooldown: 1
@@ -1636,7 +1640,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6203304368605208357}
-  m_Material: {fileID: 13400000, guid: 2be13e73fc92abf4c9c054b8633672bf, type: 2}
+  m_Material: {fileID: 13400000, guid: 1a5777128d3febb49b8255437c44b25d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

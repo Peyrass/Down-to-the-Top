@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level4/Level4 - Fall.unity
     guid: 078ca85b1fb48244596792c042ee458c
+  - enabled: 1
+    path: Assets/Scenes/Shaders.unity
+    guid: 5b58ff7147609d747b211bc6d3092f7a
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
