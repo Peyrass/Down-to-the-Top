@@ -615,15 +615,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemySpawn
   enemyPrefab:
   - {fileID: 3215613454509155465, guid: 5fd82cf2f8f37a843bea417f6d93ab47, type: 3}
+  - {fileID: 1434939700604934214, guid: f60ef78c4ba2093499eaa12c11d73c94, type: 3}
+  - {fileID: 6885527989126079189, guid: 777fd5ffc595cc24691b62422fcd92b8, type: 3}
+  dollVariants:
+  - {fileID: 3215613454509155465, guid: 5fd82cf2f8f37a843bea417f6d93ab47, type: 3}
   - {fileID: 3342512975833116216, guid: a0123c94124e6bd4c90e71ed1f585e92, type: 3}
   - {fileID: 6837752551714860454, guid: 4eaa2bab0d1304f4e9f0bd4dfbfcffe7, type: 3}
-  - {fileID: 6374303904754318244, guid: 1ba1ddb1f31ec1845b44e7e8304c9418, type: 3}
-  - {fileID: 17610421642511465, guid: e6303d15fd0c2b540b14593d6331ff78, type: 3}
-  spawnPoint:
+  spawnLocations:
   - {fileID: 734065934}
   - {fileID: 505222775}
   - {fileID: 350415818}
   - {fileID: 1189926008}
+  bossMaxHealth: 20
+  bossAvailableHealth: 0
 --- !u!4 &1504544946
 Transform:
   m_ObjectHideFlags: 0
@@ -885,6 +889,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 932109343160379942, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
   m_PrefabInstance: {fileID: 2124009794}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2141740588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141740590}
+  - component: {fileID: 2141740589}
+  m_Layer: 0
+  m_Name: Decal 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2141740589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141740588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 31d0dcc6f2dd4e4408d18036a2c93862, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_RenderingLayerMask:
+    serializedVersion: 0
+    m_Bits: 2
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 20, y: 20, z: 1}
+  m_FadeFactor: 1
+  version: 1
+  m_DecalLayerMask: 1
+--- !u!4 &2141740590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141740588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: -2.1, y: -7, z: -27.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!1 &358804661992218692
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,8 +1024,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 111.39852, y: 22.10756, z: 66.675804}
-  m_Center: {x: 17.377384, y: -30.537735, z: 2.821598}
+  m_Size: {x: 81.375946, y: 22.10756, z: 66.675804}
+  m_Center: {x: 2.3660984, y: -30.537735, z: 2.821598}
 --- !u!65 &1931125507597480904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1129,3 +1193,4 @@ SceneRoots:
   - {fileID: 1389885121}
   - {fileID: 461406920}
   - {fileID: 1504544946}
+  - {fileID: 2141740590}
