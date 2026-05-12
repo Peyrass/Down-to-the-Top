@@ -190,7 +190,7 @@ MonoBehaviour:
   health: 3
   invencibility: 0
   rb: {fileID: 8539820660959566117}
-  anim: {fileID: 0}
+  anim: {fileID: 7870669083287541367}
   agent: {fileID: 2138705604966149358}
   deathTime: 2
 --- !u!1 &2475804486593435817
