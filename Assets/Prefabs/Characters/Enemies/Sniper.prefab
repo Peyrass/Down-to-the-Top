@@ -768,7 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3905998901180339873}
   m_Layer: 0
-  m_Name: Sniper
+  m_Name: MS_SniperEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1364,7 +1364,7 @@ GameObject:
   - component: {fileID: 139070087123441731}
   - component: {fileID: 6826900850888070513}
   m_Layer: 6
-  m_Name: SorcererContainer
+  m_Name: SniperContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
