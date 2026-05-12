@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SC_EnemySpawner : MonoBehaviour
+public class SC_SPE : MonoBehaviour
 {
     [Header("Doll Prefabs")]
     [SerializeField] private GameObject[] dollPrefabs;
