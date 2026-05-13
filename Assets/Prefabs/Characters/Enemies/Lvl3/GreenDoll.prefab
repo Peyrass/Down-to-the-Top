@@ -167,7 +167,7 @@ MonoBehaviour:
   whatIsDamagable:
     serializedVersion: 2
     m_Bits: 8
-  damageAmount: 0
+  damageAmount: 5
   secondsToExplosion: 2
 --- !u!195 &8993741081123645315
 NavMeshAgent:
