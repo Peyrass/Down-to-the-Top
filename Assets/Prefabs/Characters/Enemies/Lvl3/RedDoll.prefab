@@ -300,10 +300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DollBehaviour
   targetToFollow: {fileID: 0}
-  explosionRadius: 4
+  explosionRadius: 8
   whatIsDamagable:
     serializedVersion: 2
     m_Bits: 8
+  danhoAmount: 25
   secondsToExplosion: 4
 --- !u!114 &7492879937066059622
 MonoBehaviour:

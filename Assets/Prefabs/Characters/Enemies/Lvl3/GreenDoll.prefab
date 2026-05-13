@@ -163,11 +163,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DollBehaviour
   targetToFollow: {fileID: 0}
-  explosionRadius: 4
+  explosionRadius: 8
   whatIsDamagable:
     serializedVersion: 2
     m_Bits: 8
-  secondsToExplosion: 4
+  damageAmount: 0
+  secondsToExplosion: 2
 --- !u!195 &8993741081123645315
 NavMeshAgent:
   m_ObjectHideFlags: 0

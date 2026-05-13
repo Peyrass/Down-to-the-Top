@@ -12,6 +12,7 @@ public class SC_DollBehaviour : MonoBehaviour
     [Header("Attack Behavior")]
     [SerializeField] private float explosionRadius;
     [SerializeField] private LayerMask whatIsDamagable;
+    [SerializeField] private float damageAmount = 0;
 
     [SerializeField] private int secondsToExplosion = 4;
 
@@ -119,10 +120,13 @@ public class SC_DollBehaviour : MonoBehaviour
 
         foreach (Collider hit in hitObjects)
         {
-            Debug.Log("Dañado: " + hit.name);
-
-            // Aquí puedes aplicar daño
-            // hit.GetComponent<Vida>()?.TakeDamage();
+            if (hit.TryGetComponent(out SC_PlayerBeenHit si))
+            {
+                if (hit.TryGetComponent(out SC_IHittable damage))
+                {
+                    damage.Damage(damageAmount, transform);
+                }
+            }
         }
 
         Destroy(gameObject);
