@@ -14,6 +14,8 @@ public class SC_DollBehaviour : MonoBehaviour
     [SerializeField] private LayerMask whatIsDamagable;
     [SerializeField] private float damageAmount = 0;
 
+    private Transform finalBoss; 
+
     [SerializeField] private int secondsToExplosion = 4;
 
     private float leftTimeToExplosion;
@@ -127,6 +129,11 @@ public class SC_DollBehaviour : MonoBehaviour
                     damage.Damage(damageAmount, transform);
                 }
             }
+        }
+        finalBoss = transform.GetComponent<SC_EnemyHealth>()?.finalBoss;
+        if (finalBoss != null)
+        {
+            finalBoss.GetComponent<SC_BossLogic>().TakeDamage(transform.GetComponent< SC_EnemyHealth > ().maxHealth);
         }
 
         Destroy(gameObject);

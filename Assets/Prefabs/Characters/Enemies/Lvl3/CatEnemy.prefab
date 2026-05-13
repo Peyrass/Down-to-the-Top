@@ -137,12 +137,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
-  health: 4
+  maxHealth: 4
   invencibility: 0
   rb: {fileID: 0}
   anim: {fileID: 0}
   agent: {fileID: 0}
   deathTime: 0
+  finalBoss: {fileID: 0}
 --- !u!114 &112258953862388871
 MonoBehaviour:
   m_ObjectHideFlags: 0

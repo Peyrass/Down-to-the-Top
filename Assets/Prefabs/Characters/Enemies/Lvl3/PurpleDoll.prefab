@@ -167,7 +167,7 @@ MonoBehaviour:
   whatIsDamagable:
     serializedVersion: 2
     m_Bits: 8
-  danhoAmount: 25
+  damageAmount: 0
   secondsToExplosion: 4
 --- !u!195 &9081270166957956745
 NavMeshAgent:
@@ -203,12 +203,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
-  health: 1
+  maxHealth: 1
   invencibility: 0
   rb: {fileID: 8105720450795868317}
   anim: {fileID: 4686553397258306059}
   agent: {fileID: 9081270166957956745}
   deathTime: 2
+  finalBoss: {fileID: 0}
 --- !u!54 &8105720450795868317
 Rigidbody:
   m_ObjectHideFlags: 0
