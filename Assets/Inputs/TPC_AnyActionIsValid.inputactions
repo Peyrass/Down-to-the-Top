@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "name": "TPC_AnyActionIsValid",
+    "maps": [
+        {
+            "name": "AnyAction",
+            "id": "be926a30-dda1-4987-a0dd-f7ae8da2835c",
+            "actions": [
+                {
+                    "name": "Anything",
+                    "type": "Button",
+                    "id": "b1fd12d2-6044-45a9-a481-4c3544fa2660",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ff9a4cfc-cdd3-4b6f-8287-a5598565de68",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Anything",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "NoAction",
+            "id": "2c75b125-625d-4c1b-a052-3a2975d43c53",
+            "actions": [],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}

@@ -6,12 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/AC_Sniper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/AC_Sniper.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_4/Plano Ventana.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_4/Plano Ventana.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_4/VentanaCaidafbx.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Enviroment/Lvl_4/VentanaCaidafbx.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationLvlChange/AnimationLevel.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationLvlChange/AnimationLevel.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3/Level3 - BOSS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3/Level3 - BOSS.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shaders.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shaders.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/DoTween/SC_BoxMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/DoTween/SC_BoxMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Decals/SH_Tokono.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Decals/SH_Tokono.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/SC_ComicLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/CameraRelated/SC_CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/SC_YokaiText.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@04ab0eefa0c3/Runtime/Debugging/Prefabs/Scripts/DebugUIHandlerMessageBox.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@37e0d4fc2503/Editor/2D/Overrides/MeshEditor2DURP.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -50,22 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Pey&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Sergio__(NuevaRama)",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/BUILD-0.5\Down-to-the-Top.exe" />
@@ -80,7 +92,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -92,7 +104,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -185,6 +197,7 @@
       <workItem from="1778518989665" duration="1779000" />
       <workItem from="1778528826551" duration="269000" />
       <workItem from="1778598371753" duration="530000" />
+      <workItem from="1778794670816" duration="4369000" />
     </task>
     <servers />
   </component>

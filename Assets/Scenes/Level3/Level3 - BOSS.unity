@@ -930,6 +930,7 @@ MonoBehaviour:
   - {fileID: 1502652944}
   - {fileID: 1677714500}
   bossMaxHealth: 20
+  bossCurrentHealth: 0
   bossAvailableHealth: 0
   BossFillBar: {fileID: 511233548}
 --- !u!4 &1504544946
@@ -1306,7 +1307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3843901532152507103, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5421134136249247684, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
       propertyPath: m_Name
@@ -1314,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8721008571557093003, guid: 62b86ac859a73e1499c5e862d5453cee, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

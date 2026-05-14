@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f52e78dfe3f509e41836f1766193d7dd
+guid: a7c9c4c708b7b0c4489b067752b80e55
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Base
     second: {fileID: 2100000, guid: e26bc82ed0b57dd4d8c291a9129e131c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Border
+    second: {fileID: 2100000, guid: 51465daa897e42947af3e85494f36ca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Transparente
+    second: {fileID: 2100000, guid: 87fb7862c518b3b48a9196b3ab57e9d3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
