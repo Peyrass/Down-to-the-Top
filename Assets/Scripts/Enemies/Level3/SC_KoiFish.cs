@@ -8,19 +8,20 @@ public class SC_KoiFish : MonoBehaviour
 
     private void Start()
     {
-        ShootProjectile();
+        Invoke("ShootProjectile", 4f); // Dispara un proyectil cada 3 segundos, ajusta el tiempo segun sea necesario
+
     }
     private void Update()
     {
         SetKoiPosition();
-
     }
 
     public void ShootProjectile()
     {
         GameObject projectil = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
-        projectil.transform.LookAt(SC_GameManager.Instance.player.position); // Aseg�rate de que el proyectil mire hacia el objetivo
+        projectil.transform.LookAt(SC_GameManager.Instance.player.position); // Asegurate de que el proyectil mire hacia el objetivo
         projectil.GetComponent<Rigidbody>().linearVelocity = projectil.transform.forward * 10f; // Ajusta la velocidad del proyectil seg�n sea necesario
+        Invoke("ShootProjectile", 4f); // Dispara un proyectil cada 3 segundos, ajusta el tiempo segun sea necesario
     }
 
     public void SetKoiPosition()
@@ -31,6 +32,7 @@ public class SC_KoiFish : MonoBehaviour
         targetPosition.y = transform.position.y;
 
         transform.LookAt(targetPosition);
+        transform.Rotate(-90f, 0, -90f); 
     }
 
 }

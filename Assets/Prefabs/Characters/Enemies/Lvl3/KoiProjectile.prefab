@@ -153,3 +153,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8550f72f71989743ab9e054759c9328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  danhoAmount: 5

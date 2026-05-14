@@ -2,10 +2,7 @@ using PlayerComponents;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
-
 //ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER
-
 
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
@@ -146,6 +143,14 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         anim.SetTrigger("Dash");
     }
 
+    //debuggin
+    private void OnDrawGizmosSelected()
+    {
+        if (feet == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(feet.position, detectionRadius);
+    }
+    
     private void Start()
     {
         // bloquea cursor y lo oculta

@@ -279,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 6837752551714860454}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -28.3, y: -18, z: 18.9}
   m_LocalScale: {x: 1.4707108, y: 1.6904165, z: 1.4707108}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -300,10 +300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DollBehaviour
   targetToFollow: {fileID: 0}
-  explosionRadius: 4
+  explosionRadius: 8
   whatIsDamagable:
     serializedVersion: 2
     m_Bits: 8
+  damageAmount: 5
   secondsToExplosion: 4
 --- !u!114 &7492879937066059622
 MonoBehaviour:
@@ -317,12 +318,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
-  health: 1
+  maxHealth: 1
   invencibility: 0
   rb: {fileID: 1429058227622363654}
   anim: {fileID: 5750015591880794787}
   agent: {fileID: 554140495112578467}
   deathTime: 2
+  finalBoss: {fileID: 0}
 --- !u!195 &554140495112578467
 NavMeshAgent:
   m_ObjectHideFlags: 0

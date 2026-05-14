@@ -5,12 +5,14 @@ using UnityEngine.AI;
 
 public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
 {
-    public float health = 3;
+    private float currentHealth = 0;
+    public float maxHealth = 3;
     public bool invencibility = false;
     public Rigidbody rb;
     public Animator anim;
     public NavMeshAgent agent;
-    [SerializeField] private float deathTime = 2f; 
+    [SerializeField] private float deathTime = 2f;
+    [SerializeField] public Transform finalBoss; 
 
 
     private void Awake()
@@ -18,13 +20,14 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         rb = GetComponentInParent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        currentHealth = maxHealth;
     }
     
     public void Damage(float damage, Transform attacker)
     {
         if(invencibility) return;
         invencibility = true;
-        health -= damage;
+        currentHealth -= damage;
         //anim.SetTrigger("Hit");
         
         if (agent != null) agent.enabled = false;
@@ -35,7 +38,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         if (rb != null) rb.AddForce(dir * 10f, ForceMode.Impulse);
 
 
-        if (health > 0)
+        if (currentHealth > 0)
             StartCoroutine(OnHit());
         else
             StartCoroutine(OnDeath());
@@ -44,16 +47,18 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
 
     private IEnumerator OnHit()
     {
-        Debug.Log("AU!!  Tengo: " + health + " Hps");
         yield return new WaitForSeconds(0.5f);
         invencibility = false;
     }
     private IEnumerator OnDeath()
     {
-        Debug.Log("He muerto x_x");
-        
         if (agent != null) agent.enabled = false;
         yield return new WaitForSeconds(deathTime);
+        if (finalBoss != null)
+        {
+            finalBoss.GetComponent<SC_BossLogic>().TakeDamage(maxHealth); 
+        }
         Destroy(gameObject);
+
     }
 }
