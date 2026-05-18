@@ -187,12 +187,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
-  health: 3
+  maxHealth: 3
   invencibility: 0
   rb: {fileID: 8539820660959566117}
   anim: {fileID: 7870669083287541367}
   agent: {fileID: 2138705604966149358}
-  deathTime: 2
+  deathTime: 0.5
+  finalBoss: {fileID: 0}
 --- !u!1 &2475804486593435817
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +380,7 @@ MonoBehaviour:
           m_Value0: 17605701862587700986
           m_Value1: 17590911110854854329
         Name: PunchieAnimator
-        m_Value: {fileID: 0}
+        m_Value: {fileID: 7870669083287541367}
     - rid: 607187209979691888
       type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -388,9 +389,6 @@ MonoBehaviour:
           m_Value1: 13804634011692656283
         Name: PatrolPoints
         m_Value:
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
@@ -878,7 +876,7 @@ Transform:
   m_GameObject: {fileID: 5322660327202629276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.35, z: 0}
+  m_LocalPosition: {x: 0, y: 1.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -4,9 +4,12 @@ public class SC_DashComponent : MonoBehaviour
 {
     private SC_MasterCharacterMovement master;
     
+    [SerializeField] private SC_ScriptableEvents eventoYokai;
     [SerializeField] private SC_ScriptableFloatEvent eventoMana;
 
+
     [Header("Dash")]
+    [SerializeField] private float manaCost;
     [SerializeField] private float maxDashTime = 0.3f;
     [SerializeField] private float dashForce = 12f; 
     [SerializeField] private float dashCooldown = 1f;
@@ -32,13 +35,14 @@ public class SC_DashComponent : MonoBehaviour
         readyToDash = false;
         DashActive = true;
         dashTimer = maxDashTime;
-
+        eventoMana.Raise(manaCost);
+        eventoYokai.Raise();
         
         
-        // 1. Se extrae la orientación de la cámara (igual que en el Master)
+        //Se extrae la orientación de la cámara (igual que en el Master)
         Transform cam = master.CameraTransform;
         
-        // Si la cámara del master no está asignada, buscamos la principal como plan B
+        // se busca la "main camera" por si la cámara del master no está asignada 
         if (cam == null)
             cam = Camera.main?.transform; 
         
@@ -56,18 +60,17 @@ public class SC_DashComponent : MonoBehaviour
         camForward.Normalize();
         camRight.Normalize();
         
-        // 2. Se calcula la dirección relativa a la CÁMARA, no al jugador
+        // Se calcula la dirección relativa a la CÁMARA, no al jugador
         Vector3 inputDir = camForward * master.MoveInput.y + camRight * master.MoveInput.x;
 
         if (inputDir.sqrMagnitude > 0.01f)
         {
-            // Dash hacia donde apunta el joystick/teclado
+            // dash hacia donde apunta el joystick/teclado
             dashDirection = inputDir.normalized;
         }
         else
         {
-            // 3. Si NO hay input: Dash hacia la espalda del personaje (Esquiva)
-            // Aquí sí usamos transform.forward porque es una reacción física del cuerpo
+            //si no hay input de movimiento el Dash va hacia la espalda del personaje
             dashDirection = -transform.forward;
         }
 
@@ -76,7 +79,7 @@ public class SC_DashComponent : MonoBehaviour
 
     public void DashMovement()
     {
-        // empuje continuo mientras dura el dash
+        // Empuje continuo mientras dura el dash
         master.Rb.AddForce(dashDirection * dashForce, ForceMode.Impulse);
     }
 

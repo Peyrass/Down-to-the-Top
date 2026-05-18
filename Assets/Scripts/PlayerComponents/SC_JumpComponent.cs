@@ -20,7 +20,7 @@ public class SC_JumpComponent : MonoBehaviour
         master = GetComponent<SC_MasterCharacterMovement>();
         doubleJumpsLeft = doubleJump;
     }
-
+    
     public void HandleJumpInput()
     {
         if (readyToJump && master.Grounded)

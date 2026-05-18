@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: SO_Random1
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "A veces me pregunto si Tokono-San duerme con la m\xE1scara puesta"
+  - A veces me pregunto si Tokono-San
+  - "duerme con la m\xE1scara puesta"
   - "o si naci\xF3 con esa cara de tarjeta gr\xE1fica."
