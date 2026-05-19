@@ -10,5 +10,4 @@ public class SC_GameManager : MonoBehaviour
     {
         Instance = this;
     }
-
 }

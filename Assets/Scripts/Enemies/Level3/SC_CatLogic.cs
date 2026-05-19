@@ -20,11 +20,8 @@ public class SC_CatLogic : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         agent.SetDestination(player.transform.position);
-    }
+        targetToFollow = SC_GameManager.Instance.playerFeet;
 
-    private bool ReachedDestination()
-    {
-        return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance;
     }
 
     private void Update()
