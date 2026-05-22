@@ -480,6 +480,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffee6d50b19010843a5a7279798421ee, type: 3}
+--- !u!1 &177534092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497284423265474808, guid: ffee6d50b19010843a5a7279798421ee, type: 3}
+  m_PrefabInstance: {fileID: 177534091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &224357603
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +779,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0, g: 0.31132078, b: 0.027824152, a: 1}
+  m_Color: {r: 1, g: 0.051886797, b: 0.051886797, a: 1}
   m_Intensity: 1000
   m_Range: 10
   m_SpotAngle: 30
@@ -1855,6 +1860,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Punchie
       objectReference: {fileID: 0}
+    - target: {fileID: 2892628149348372902, guid: a786e9da634e24f418c8b8b44e69526b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519724960761078417, guid: a786e9da634e24f418c8b8b44e69526b, type: 3}
+      propertyPath: changeScene1_2
+      value: 
+      objectReference: {fileID: 1922261755}
     - target: {fileID: 6248481019621656431, guid: a786e9da634e24f418c8b8b44e69526b, type: 3}
       propertyPath: 'managedReferences[607187209979691888].m_Value.Array.data[0]'
       value: 
@@ -1916,6 +1929,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a786e9da634e24f418c8b8b44e69526b, type: 3}
+--- !u!1 &1920634040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2892628149348372902, guid: a786e9da634e24f418c8b8b44e69526b, type: 3}
+  m_PrefabInstance: {fileID: 1920634039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1922261753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,6 +1943,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1922261754}
+  - component: {fileID: 1922261755}
+  - component: {fileID: 1922261756}
   m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Untagged
@@ -1950,6 +1970,44 @@ Transform:
   - {fileID: 1718650879}
   m_Father: {fileID: 795007380}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1922261755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922261753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8925f27fb07da47418294415b1d69ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_SceneChange1_2
+  enemies:
+  - {fileID: 1920634040}
+  - {fileID: 177534092}
+  exitLight: {fileID: 425785374}
+  collider: {fileID: 1922261756}
+--- !u!65 &1922261756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922261753}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 4.6202545, y: 6.0755577, z: 5.605179}
+  m_Center: {x: 22.749187, y: 6.364213, z: 130.64407}
 --- !u!1 &1924289666
 GameObject:
   m_ObjectHideFlags: 0

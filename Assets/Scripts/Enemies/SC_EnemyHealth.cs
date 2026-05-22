@@ -12,7 +12,8 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     public Animator anim;
     public NavMeshAgent agent;
     [SerializeField] private float deathTime = 2f;
-    [SerializeField] public Transform finalBoss; 
+    [SerializeField] public Transform finalBoss;
+    [SerializeField] private SC_SceneChange1_2 changeScene1_2;
 
 
     private void Awake()
@@ -58,6 +59,9 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         {
             finalBoss.GetComponent<SC_BossLogic>().TakeDamage(maxHealth); 
         }
+
+        if(changeScene1_2 != null) changeScene1_2.EnableDoor();
+
         Destroy(gameObject);
 
     }
