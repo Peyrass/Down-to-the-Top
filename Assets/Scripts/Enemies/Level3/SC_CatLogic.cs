@@ -1,5 +1,5 @@
 using System;
-using Unity.AI.Navigation.Editor;
+using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -56,7 +56,7 @@ public class SC_CatLogic : MonoBehaviour
     {
         Vector3 direction = targetToFollow.position - transform.position;
 
-        // Solo rotación en Y
+        // Solo rotaciï¿½n en Y
         direction.y = 0f;
 
         if (direction != Vector3.zero)

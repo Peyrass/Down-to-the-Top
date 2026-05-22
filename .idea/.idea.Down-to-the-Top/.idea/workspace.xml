@@ -6,14 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_DashComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_DashComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Random/SO_Random1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Random/SO_Random1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_InitialDialog.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_InitialDialog.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Level3/SC_CatLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Level3/SC_CatLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level3" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level5" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets3.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets3.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets.resS" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,22 +72,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Sergio__(NuevaRama)&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Clau",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/BUILD-0.5\Down-to-the-Top.exe" />
@@ -191,6 +209,7 @@
       <workItem from="1778598371753" duration="530000" />
       <workItem from="1778794670816" duration="4369000" />
       <workItem from="1779137727580" duration="540000" />
+      <workItem from="1779463499675" duration="1209000" />
     </task>
     <servers />
   </component>
