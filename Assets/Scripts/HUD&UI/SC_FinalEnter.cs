@@ -6,6 +6,8 @@ public class SC_FinalEnter : MonoBehaviour
 {
     private Animator animator;
     private PlayerInput input;
+    [SerializeField] private SC_ScriptableAudioEvents aEvent;
+    [SerializeField] private AudioClip clip;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -23,6 +25,7 @@ public class SC_FinalEnter : MonoBehaviour
     
     private void NextPanel(InputAction.CallbackContext obj)
     {
+        aEvent.Raise(clip);
         input.actions.FindActionMap("AnyAction").Disable();
         animator.SetTrigger("Enter");
     }

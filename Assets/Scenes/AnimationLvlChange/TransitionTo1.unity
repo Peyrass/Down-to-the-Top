@@ -799,6 +799,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6820324620208006204, guid: 24c136ef75973dc4abe2b3821c8ff3fc, type: 3}
+      propertyPath: m_Volume
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820324620208006204, guid: 24c136ef75973dc4abe2b3821c8ff3fc, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: a09921263aff59648996d0b9e1d95a28, type: 3}
     - target: {fileID: 6907153536695982575, guid: 24c136ef75973dc4abe2b3821c8ff3fc, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -1120,6 +1128,11 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 023039a04b7a20846af2473aaf6d1dc6, type: 2}
   newScale: 1.3
   wiggleTime: 0.5
+  aEvents: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+  clips:
+  - {fileID: 8300000, guid: 068a6405d0a334a4081596542a46a2ae, type: 3}
+  - {fileID: 8300000, guid: 0b89dc41a157ebc4cabe458b7e4cdd7f, type: 3}
+  soundWait: 1
 --- !u!212 &1909444168
 SpriteRenderer:
   serializedVersion: 2

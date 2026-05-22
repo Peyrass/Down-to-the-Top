@@ -5,7 +5,7 @@ public class SC_SceneChange1_2 : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
     [SerializeField] private Light exitLight;
-    [SerializeField] private Collider collider;
+    [SerializeField] private Collider coll;
 
     public void EnableDoor()
     { 
@@ -13,7 +13,7 @@ public class SC_SceneChange1_2 : MonoBehaviour
         if (!CheckEnemies())
         {
             exitLight.color = Color.green;
-            collider.enabled = true;
+            coll.enabled = true;
         }
     }
 

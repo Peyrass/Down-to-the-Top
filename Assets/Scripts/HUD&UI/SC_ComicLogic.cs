@@ -3,6 +3,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class SC_ComicLogic : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class SC_ComicLogic : MonoBehaviour
     private PlayerInput input;
     private int order;
     private bool permision = true;
+
+    [SerializeField] private SC_ScriptableAudioEvents aEvent;
+    [SerializeField] private AudioClip[] clip;
     private void Awake()
     {
         input = GetComponent<PlayerInput>();
@@ -34,6 +38,7 @@ public class SC_ComicLogic : MonoBehaviour
         {
             if (images.Length > order)
             {
+                aEvent.Raise(clip[Random.Range(0,clip.Length)]);
                 permision = false;
                 images[order].DOFade(1, 1f).OnComplete(ReturnBool);
                 order++;

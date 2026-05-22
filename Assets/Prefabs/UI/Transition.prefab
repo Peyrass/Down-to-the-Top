@@ -279,3 +279,15 @@ MonoBehaviour:
           m_StringArgument: AN_TransitionExit
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+        m_TargetAssemblyTypeName: SC_ScriptableAudioEvents, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b06c2388464af2c43b17c3233abaf1f1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AN_TransitionExit
+          m_BoolArgument: 0
+        m_CallState: 2

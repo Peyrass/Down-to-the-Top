@@ -1803,6 +1803,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6820324620208006204, guid: 24c136ef75973dc4abe2b3821c8ff3fc, type: 3}
+      propertyPath: m_Volume
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820324620208006204, guid: 24c136ef75973dc4abe2b3821c8ff3fc, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d7c403eb4766474f851aed56b20ef33, type: 3}
     - target: {fileID: 6907153536695982575, guid: 24c136ef75973dc4abe2b3821c8ff3fc, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -1986,7 +1994,7 @@ MonoBehaviour:
   - {fileID: 1920634040}
   - {fileID: 177534092}
   exitLight: {fileID: 425785374}
-  collider: {fileID: 1922261756}
+  coll: {fileID: 0}
 --- !u!65 &1922261756
 BoxCollider:
   m_ObjectHideFlags: 0
