@@ -6,32 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Level3/SC_CatLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Level3/SC_CatLogic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level3" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level5" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets3.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets3.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/SC_SceneChange1.2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SC_SceneChange1.2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +56,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Clau",
+    "git-widget-placeholder": "Pey",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

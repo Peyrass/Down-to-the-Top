@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class SC_TatakaeComponent : MonoBehaviour
 {
+    private SC_MasterCharacterMovement master;
     private PlayerInput controls;
     
     [Header("GeneralValues")]
@@ -29,6 +30,7 @@ public class SC_TatakaeComponent : MonoBehaviour
     {
         controls = GetComponentInChildren<PlayerInput>();
         anim = GetComponentInChildren<Animator>();
+        master = GetComponent<SC_MasterCharacterMovement>();
     }
 
     private void OnEnable()
@@ -43,7 +45,7 @@ public class SC_TatakaeComponent : MonoBehaviour
 
     private void AttackAction(InputAction.CallbackContext obj)
     {
-       if(isAttacking) return;
+       if(isAttacking || master.Grounded) return;
         isAttacking = true;
         anim.SetTrigger("Kick");
         Debug.Log("KIAAA!");

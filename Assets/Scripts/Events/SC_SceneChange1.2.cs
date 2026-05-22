@@ -7,7 +7,7 @@ public class SC_SceneChange1_2 : MonoBehaviour
     [SerializeField] private Light exitLight;
     [SerializeField] private Collider collider;
 
-    public void EnableDoor() 
+    public void EnableDoor()
     { 
         Debug.Log("Checking enemies...");
         if (!CheckEnemies())

@@ -4251,8 +4251,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711211479216220298, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: manaCost
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8711211479216220298, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: eventoYokai
+      value: 
+      objectReference: {fileID: 11400000, guid: cf5b5daa836e52c4987544fd0533d2cc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

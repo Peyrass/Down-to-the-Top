@@ -184,26 +184,23 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         {
             dashComponent.HandleDashTimer();
         }
-        
-        
     }
 
     private void UpdateAnimator()
     {
-        // 1. Tomamos el valor de tu Joystick o teclado (por defecto van de -1 a 1)
-        float inputX = moveInput.x;
-        float inputY = moveInput.y;
+        //da como resultado 0 o 1
+        float speedValue = moveInput.magnitude;
 
-        
-        // Si no corre, dividimos el valor a la mitad para que se reproduzca la animación de caminar en lugar de correr.
-        if (runActive == false)
+        //así se limíta para que no pase de 1
+        speedValue = Mathf.Clamp01(speedValue);
+
+        if (speedValue > 0.01f && !runActive)
         {
-            inputX = inputX / 2f;
-            inputY = inputY / 2f;
+            speedValue *= 0.5f;
         }
         
-        anim.SetFloat("x", inputX, 0.1f, Time.deltaTime);
-        anim.SetFloat("y", inputY, 0.1f, Time.deltaTime);
+        //se para el nombre del parámetro al animator suavizado
+        anim.SetFloat("Speed", speedValue, 0.1f, Time.deltaTime);
 
         // 4. Le decimos al Animator si estamos tocando el suelo
         anim.SetBool("isGrounded", grounded);
