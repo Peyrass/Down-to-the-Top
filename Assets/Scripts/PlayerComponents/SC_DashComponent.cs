@@ -26,7 +26,7 @@ public class SC_DashComponent : MonoBehaviour
     private void Awake()
     {
         master = GetComponent<SC_MasterCharacterMovement>();
-        mana = Object.FindFirstObjectByType<SC_PlayerManaBar>();
+        mana = Object.FindAnyObjectByType<SC_PlayerManaBar>();
         anim = GetComponentInChildren<Animator>();
     }
 
@@ -40,7 +40,7 @@ public class SC_DashComponent : MonoBehaviour
         dashTimer = maxDashTime;
         eventoMana.Raise(manaCost);
         eventoYokai.Raise();
-        anim.SetTrigger("Dash");
+        anim.SetBool("IsDashing", true);
         
         //Se extrae la orientación de la cámara (igual que en el Master)
         Transform cam = master.CameraTransform;
@@ -91,7 +91,10 @@ public class SC_DashComponent : MonoBehaviour
         dashTimer -= Time.deltaTime;
 
         if (dashTimer <= 0f)
+        {
             DashActive = false;
+            anim.SetBool("IsDashing", false);
+        }
     }
 
     private void ResetDash()

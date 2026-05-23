@@ -194,6 +194,7 @@ MonoBehaviour:
   agent: {fileID: 2138705604966149358}
   deathTime: 0.5
   finalBoss: {fileID: 0}
+  changeScene1_2: {fileID: 0}
 --- !u!1 &2475804486593435817
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,17 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Menus/AC_Transition.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Menus/AC_Transition.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inputs/TPC_InputMapping.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/TPC_InputMapping.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_PlayerManaBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_PlayerManaBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/PlayerLife.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/PlayerLife.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CrouchComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CrouchComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_DashComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_DashComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_MovementTranslator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SC_PEY_EnemiesHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/SC_ComicLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/CameraRelated/SC_CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.behavior@3bb86f7a073c/Authoring/Asset/BehaviorAuthoringGraph.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.behavior@3bb86f7a073c/Blackboard/BlackboardVariableElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.behavior@3bb86f7a073c/Runtime/Execution/Node.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.behavior@3bb86f7a073c/Runtime/Execution/Nodes/Actions/Navigation/PatrolAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.behavior@3bb86f7a073c/Runtime/Execution/Nodes/Events/EventAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Core/InputAxisControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@285f38545487/Runtime/Helpers/CinemachineInputAxisController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -197,7 +197,7 @@
       <workItem from="1779485185431" duration="1470000" />
       <workItem from="1779487375314" duration="5000" />
       <workItem from="1779488525975" duration="1313000" />
-      <workItem from="1779529370198" duration="8706000" />
+      <workItem from="1779529370198" duration="13603000" />
     </task>
     <servers />
   </component>
