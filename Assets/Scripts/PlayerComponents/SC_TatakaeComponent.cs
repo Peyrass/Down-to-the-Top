@@ -45,7 +45,7 @@ public class SC_TatakaeComponent : MonoBehaviour
 
     private void AttackAction(InputAction.CallbackContext obj)
     {
-       if(isAttacking || master.Grounded) return;
+       if(isAttacking || !master.Grounded) return;
         isAttacking = true;
         anim.SetTrigger("Kick");
         Debug.Log("KIAAA!");

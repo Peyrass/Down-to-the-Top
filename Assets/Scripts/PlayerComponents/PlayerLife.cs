@@ -6,7 +6,7 @@ public class PlayerLife : MonoBehaviour
     public Image fillBarLife;
     private SC_MasterCharacterMovement playerController;
     private float maxLife;
-
+    
     void Start()
     {
         playerController = GameObject.Find ("Player").GetComponent <SC_MasterCharacterMovement>();
@@ -17,5 +17,4 @@ public class PlayerLife : MonoBehaviour
     {
         fillBarLife.fillAmount = playerController.life / maxLife;
     }
-
 }

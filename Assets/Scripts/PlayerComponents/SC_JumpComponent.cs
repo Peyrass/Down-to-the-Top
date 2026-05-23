@@ -3,9 +3,12 @@ using UnityEngine;
 public class SC_JumpComponent : MonoBehaviour
 {
     private SC_MasterCharacterMovement master;
-
+    private SC_PlayerManaBar mana;
+    private Animator anim;
+    
     [SerializeField] private SC_ScriptableEvents eventoYokai;
     [SerializeField] private SC_ScriptableFloatEvent eventoMana;
+    
     [Header("Jump")]
     [SerializeField] private float manaCost;
     [SerializeField] private float jumpForce;
@@ -18,7 +21,9 @@ public class SC_JumpComponent : MonoBehaviour
     private void Awake()
     {
         master = GetComponent<SC_MasterCharacterMovement>();
+        mana = Object.FindFirstObjectByType<SC_PlayerManaBar>();
         doubleJumpsLeft = doubleJump;
+        anim = GetComponentInChildren<Animator>();
     }
     
     public void HandleJumpInput()
@@ -27,6 +32,7 @@ public class SC_JumpComponent : MonoBehaviour
         {
             readyToJump = false;
             Jump();
+            
             Invoke(nameof(ResetJump), jumpCooldown);
         }
         else if (!master.Grounded)
@@ -39,15 +45,16 @@ public class SC_JumpComponent : MonoBehaviour
     {
         // se resetea velocidad vertical para que el salto doble no acumule la velocidad del anterior
         master.Rb.linearVelocity = new Vector3(master.Rb.linearVelocity.x, 0f, master.Rb.linearVelocity.z);
+        anim.SetTrigger("Jump");
         master.Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
     private void DoubleJump()
     {
+        if (mana.PlayerActualMana < manaCost) return;
         if (doubleJumpsLeft <= 0) return;
 
-        master.Rb.linearVelocity = new Vector3(master.Rb.linearVelocity.x, 0f, master.Rb.linearVelocity.z);
-        master.Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        Jump();
         eventoMana.Raise(manaCost);
         eventoYokai.Raise();
         doubleJumpsLeft--;
@@ -58,9 +65,12 @@ public class SC_JumpComponent : MonoBehaviour
         readyToJump = true;
     }
 
+    //se llama en el master ;)
     public void ResetDoubleJumpsIfNeeded()
     {
         if (doubleJumpsLeft != doubleJump)
+        {
             doubleJumpsLeft = doubleJump;
+        }
     }
 }

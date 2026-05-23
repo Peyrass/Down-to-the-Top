@@ -11,6 +11,8 @@ public class SC_PlayerManaBar : SC_FloatEventListener
    private float playerActualMana;
    private bool manaRecover = false;
    
+   public float PlayerActualMana =>playerActualMana;
+
    private void Awake()
    {
       manaBar = GetComponent<Image>();

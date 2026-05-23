@@ -3,6 +3,7 @@ using UnityEngine;
 public class SC_DashComponent : MonoBehaviour
 {
     private SC_MasterCharacterMovement master;
+    private SC_PlayerManaBar mana;
     
     [SerializeField] private SC_ScriptableEvents eventoYokai;
     [SerializeField] private SC_ScriptableFloatEvent eventoMana;
@@ -24,12 +25,14 @@ public class SC_DashComponent : MonoBehaviour
 
     private void Awake()
     {
-        master = GetComponentInParent<SC_MasterCharacterMovement>();
+        master = GetComponent<SC_MasterCharacterMovement>();
+        mana = Object.FindFirstObjectByType<SC_PlayerManaBar>();
         anim = GetComponentInChildren<Animator>();
     }
 
     public void StartDash()
     {
+        if (mana.PlayerActualMana < manaCost) return;
         if (DashActive || !readyToDash|| master==null) return;
 
         readyToDash = false;
@@ -37,7 +40,7 @@ public class SC_DashComponent : MonoBehaviour
         dashTimer = maxDashTime;
         eventoMana.Raise(manaCost);
         eventoYokai.Raise();
-        
+        anim.SetTrigger("Dash");
         
         //Se extrae la orientación de la cámara (igual que en el Master)
         Transform cam = master.CameraTransform;

@@ -24,8 +24,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     
     [SerializeField] private float gravityScale = 20f;
     [SerializeField] private float groundDrag;
-
-    //[SerializeField] private float rotationSpeed = 10f;
+    
     public Vector2 moveInput;
     public Vector3 moveDirection;
 
@@ -79,7 +78,6 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["jumpInput"].started += JumpAction;
         controls.actions["runInput"].started += RunStartedAction;
         controls.actions["runInput"].canceled += RunCanceledAction;
-        controls.actions["crouchInput"].performed += CrouchAction;
         controls.actions["crouchInput"].started += CrouchStartedAction;
         controls.actions["crouchInput"].canceled += CrouchCanceledAction;
         controls.actions["dashInput"].started += DashStartedAction;
@@ -92,7 +90,6 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["jumpInput"].started -= JumpAction;
         controls.actions["runInput"].started -= RunStartedAction;
         controls.actions["runInput"].canceled -= RunCanceledAction;
-        controls.actions["crouchInput"].performed += CrouchAction;
         controls.actions["crouchInput"].started -= CrouchStartedAction;
         controls.actions["crouchInput"].canceled -= CrouchCanceledAction;
         controls.actions["dashInput"].started -= DashStartedAction;
@@ -107,7 +104,6 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void JumpAction(InputAction.CallbackContext obj)
     {
         jumpComponent.HandleJumpInput();
-        anim.SetTrigger("Jump");
     }
 
     private void RunStartedAction(InputAction.CallbackContext obj)
@@ -120,16 +116,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         runActive = false;
     }
     
-    private void CrouchAction(InputAction.CallbackContext obj)
-    {
-            anim.SetTrigger("Crouch");
-    }
     private void CrouchStartedAction(InputAction.CallbackContext obj)
     {
-        if (grounded)
-        {
-            crouchComponent.StartCrouch();
-        }
+        if (!grounded) return;
+        crouchComponent.StartCrouch();
     }
 
     private void CrouchCanceledAction(InputAction.CallbackContext obj)
@@ -140,7 +130,6 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void DashStartedAction(InputAction.CallbackContext obj)
     {
         dashComponent.StartDash();
-        anim.SetTrigger("Dash");
     }
 
     //debuggin
