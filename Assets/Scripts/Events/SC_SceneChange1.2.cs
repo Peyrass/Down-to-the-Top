@@ -5,34 +5,38 @@ public class SC_SceneChange1_2 : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemies;
     [SerializeField] private Light exitLight;
-    [SerializeField] private Collider coll;
+    [SerializeField] private Collider exitCollider;
 
     public void EnableDoor()
-    { 
-        Debug.Log("Checking enemies...");
+    {
+        Debug.Log($"Checking enemies: {CheckEnemies()}");
+
         if (!CheckEnemies())
         {
+            Debug.Log("All enemies defeated!");
+
             exitLight.color = Color.green;
-            coll.enabled = true;
+            exitCollider.enabled = true;
         }
     }
 
     private bool CheckEnemies()
     {
-        Debug.Log("Checking if enemies are still alive...");
-        for (int i = 0; i < enemies.Length; i++)
+        foreach (GameObject enemy in enemies)
         {
-            if (enemies[i] != null && enemies[i].activeInHierarchy)
+            if (enemy.activeInHierarchy)
             {
                 return true;
             }
         }
+
         return false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Player entered the exit trigger.");
+
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

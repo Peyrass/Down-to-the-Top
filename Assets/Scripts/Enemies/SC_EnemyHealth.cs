@@ -60,9 +60,11 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
             finalBoss.GetComponent<SC_BossLogic>().TakeDamage(maxHealth); 
         }
 
-        if(changeScene1_2 != null) changeScene1_2.EnableDoor();
+        gameObject.SetActive(false);
+        if (changeScene1_2 != null) changeScene1_2.EnableDoor();
 
         Destroy(gameObject);
 
     }
+
 }

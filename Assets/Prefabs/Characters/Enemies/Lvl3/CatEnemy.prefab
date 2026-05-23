@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66dfc96dbc39444d8eb5e92b8af8f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_CatDamage
-  damageAmount: 5
+  damageAmount: 25
 --- !u!1 &6251580966310613367
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,6 +80,8 @@ GameObject:
   - component: {fileID: 1495222729768096658}
   - component: {fileID: 112258953862388871}
   - component: {fileID: 5128277077353189255}
+  - component: {fileID: 4296078156818645517}
+  - component: {fileID: 533222745531866977}
   m_Layer: 7
   m_Name: CatEnemy
   m_TagString: Untagged
@@ -144,6 +146,7 @@ MonoBehaviour:
   agent: {fileID: 0}
   deathTime: 0
   finalBoss: {fileID: 0}
+  changeScene1_2: {fileID: 0}
 --- !u!114 &112258953862388871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,10 +179,46 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4.47
+  m_Radius: 3.9749188
   m_Height: 12
   m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: 0, y: 2, z: -0.49508142}
+--- !u!114 &4296078156818645517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6251580966310613367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66dfc96dbc39444d8eb5e92b8af8f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_CatDamage
+  damageAmount: 2
+--- !u!136 &533222745531866977
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6251580966310613367}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4.482014
+  m_Height: 12
+  m_Direction: 1
+  m_Center: {x: 0, y: 2, z: 0.012013912}
 --- !u!1 &7578321444087168577
 GameObject:
   m_ObjectHideFlags: 0
