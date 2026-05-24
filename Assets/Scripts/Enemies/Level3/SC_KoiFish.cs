@@ -5,6 +5,8 @@ public class SC_KoiFish : MonoBehaviour
 {
     [SerializeField] private Transform projectileSpawnPoint;
     [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private SC_ScriptableAudioEvents aEvent;
+    [SerializeField] private AudioClip clip;
 
     private void Start()
     {
@@ -18,6 +20,7 @@ public class SC_KoiFish : MonoBehaviour
 
     public void ShootProjectile()
     {
+        aEvent.Raise(clip);
         GameObject projectil = Instantiate(projectilePrefab, projectileSpawnPoint.position, projectileSpawnPoint.rotation);
         projectil.transform.LookAt(SC_GameManager.Instance.player.position); // Asegurate de que el proyectil mire hacia el objetivo
         projectil.GetComponent<Rigidbody>().linearVelocity = projectil.transform.forward * 10f; // Ajusta la velocidad del proyectil seg�n sea necesario

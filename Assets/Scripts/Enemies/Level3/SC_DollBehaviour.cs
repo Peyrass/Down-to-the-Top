@@ -8,6 +8,8 @@ public class SC_DollBehaviour : MonoBehaviour
     private Animator animator;
 
     [SerializeField] private Transform targetToFollow;
+    [SerializeField] private SC_ScriptableAudioEvents aEvent;
+    [SerializeField] private AudioClip clip;
 
     [Header("Attack Behavior")]
     [SerializeField] private float explosionRadius;
@@ -112,6 +114,8 @@ public class SC_DollBehaviour : MonoBehaviour
         }
 
         Debug.Log("BOOM!");
+        
+        aEvent.Raise(clip);
 
         // Detectar objetos dañables
         Collider[] hitObjects = Physics.OverlapSphere(

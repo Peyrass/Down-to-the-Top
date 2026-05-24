@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DollBehaviour
   targetToFollow: {fileID: 0}
+  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+  clip: {fileID: 8300000, guid: 3f069bb9595a92446b177445a763ce95, type: 3}
   explosionRadius: 8
   whatIsDamagable:
     serializedVersion: 2

@@ -130,6 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   projectileSpawnPoint: {fileID: 4486019079433471742}
   projectilePrefab: {fileID: 5304921254934722483, guid: b4f09586e39245142982bba04c720d7a, type: 3}
+  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+  clip: {fileID: 8300000, guid: 992a532fbc8fc9148843b5fd2e17bb41, type: 3}
 --- !u!114 &1335245368507649873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,12 +144,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
-  health: 3
+  maxHealth: 3
   invencibility: 0
   rb: {fileID: 0}
   anim: {fileID: 0}
   agent: {fileID: 0}
   deathTime: 1
+  finalBoss: {fileID: 0}
+  changeScene1_2: {fileID: 0}
 --- !u!64 &7410594961747925091
 MeshCollider:
   m_ObjectHideFlags: 0
