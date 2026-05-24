@@ -15,6 +15,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private SC_DashComponent dashComponent;
     private SC_JumpComponent jumpComponent;
     private SC_CameraComponent cameraComponent;
+    private SC_GlideComponent glideComponent;
     
     [Header("Movement")]
     private float moveSpeed;
@@ -65,10 +66,11 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         controls = GetComponentInChildren<PlayerInput>();
 
-        // se referencian los otros componentes del mismo objeto
+        // se instancian los otros componentes del player
         crouchComponent = GetComponent<SC_CrouchComponent>();
         dashComponent = GetComponent<SC_DashComponent>();
         jumpComponent = GetComponent<SC_JumpComponent>();
+        glideComponent = GetComponent<SC_GlideComponent>();
     }
 
     private void OnEnable()
@@ -76,6 +78,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["moveInput"].performed += MoveAction;
         controls.actions["moveInput"].canceled += MoveAction;
         controls.actions["jumpInput"].started += JumpAction;
+        controls.actions["jumpInput"].canceled += JumpCanceledAction;
         controls.actions["runInput"].started += RunStartedAction;
         controls.actions["runInput"].canceled += RunCanceledAction;
         controls.actions["crouchInput"].started += CrouchStartedAction;
@@ -88,12 +91,14 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["moveInput"].performed -= MoveAction;
         controls.actions["moveInput"].canceled -= MoveAction;
         controls.actions["jumpInput"].started -= JumpAction;
+        controls.actions["jumpInput"].canceled -= JumpCanceledAction;
         controls.actions["runInput"].started -= RunStartedAction;
         controls.actions["runInput"].canceled -= RunCanceledAction;
         controls.actions["crouchInput"].started -= CrouchStartedAction;
         controls.actions["crouchInput"].canceled -= CrouchCanceledAction;
         controls.actions["dashInput"].started -= DashStartedAction;
     }
+
 
     private void MoveAction(InputAction.CallbackContext obj)
     {
@@ -104,6 +109,14 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void JumpAction(InputAction.CallbackContext obj)
     {
         jumpComponent.HandleJumpInput();
+        if (glideComponent == null) return;
+        glideComponent.SetGlideInput(true);
+    }
+    private void JumpCanceledAction(InputAction.CallbackContext obj)
+    {
+        if (glideComponent == null) return;
+        glideComponent.SetGlideInput(false);
+        
     }
 
     private void RunStartedAction(InputAction.CallbackContext obj)
@@ -190,9 +203,10 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         
         //se para el nombre del parámetro al animator suavizado
         anim.SetFloat("Speed", speedValue, 0.1f, Time.deltaTime);
-
-        // 4. Le decimos al Animator si estamos tocando el suelo
+        
         anim.SetBool("isGrounded", grounded);
+        
+        anim.SetBool("isFalling", this);
     }
 
     private void FixedUpdate()
@@ -241,7 +255,12 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, -2f, rb.linearVelocity.z);
         }
-        else
+        else if (glideComponent != null && glideComponent.IsGliding)
+        {
+            // al planear se anulamos la gravedad y la velocidad de caída se reduce
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, glideComponent.GlideFallSpeed, rb.linearVelocity.z);
+        }
+        else 
         {
             rb.AddForce(Vector3.down * gravityScale, ForceMode.Force);
         }

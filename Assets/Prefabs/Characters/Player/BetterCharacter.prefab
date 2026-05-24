@@ -31,13 +31,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.03361788, y: -0.70630723, z: -0.03361788, w: 0.70630723}
+  m_LocalRotation: {x: -0.033617917, y: -0.7063072, z: -0.033617917, w: 0.70630723}
   m_LocalPosition: {x: 1.1080188, y: -0.96526223, z: 1.5900022}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6203304368396983091}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -5.19, y: -90, z: 0}
 --- !u!114 &8718498523077088956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,8 +1205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.033617895, y: -0.70630723, z: -0.033617895, w: 0.70630723}
-  m_LocalPosition: {x: 1.1080188, y: -0.96526223, z: 1.590002}
+  m_LocalRotation: {x: -0.03361793, y: -0.7063072, z: -0.033617925, w: 0.70630723}
+  m_LocalPosition: {x: 1.1080188, y: -0.96526223, z: 1.5900021}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1372,7 +1372,7 @@ Transform:
   m_GameObject: {fileID: 6203304366790174986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.915, z: 0.029}
+  m_LocalPosition: {x: 0, y: -0.892, z: 0.029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1527,9 +1527,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b14cd927d287194991f5c2f4fc3de79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_JumpComponent
-  eventoYokai: {fileID: 11400000, guid: cf5b5daa836e52c4987544fd0533d2cc, type: 2}
+  eventoYokai: {fileID: 11400000, guid: 944ea3c4d1805dc4890f494422a01f47, type: 2}
   eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
-  manaCost: 50
+  manaCost: 30
   jumpForce: 25
   jumpCooldown: 0.4
   doubleJump: 1
@@ -1546,6 +1546,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_CrouchComponent
   crouchMultiplier: 0.5
+  playerCollider: {fileID: 6203304368605208348}
+  crouchHeight: 1
+  groundOffset: 0.1
 --- !u!114 &8711211479216220298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,9 +1561,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5b23282a9450d45888ee29c264a444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DashComponent
-  eventoYokai: {fileID: 11400000, guid: cf5b5daa836e52c4987544fd0533d2cc, type: 2}
+  eventoYokai: {fileID: 11400000, guid: 944ea3c4d1805dc4890f494422a01f47, type: 2}
   eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
-  manaCost: 25
+  manaCost: 15
   maxDashTime: 0.3
   dashForce: 22
   dashCooldown: 1
@@ -1657,7 +1660,7 @@ CapsuleCollider:
   m_Radius: 0.2872921
   m_Height: 1.6110767
   m_Direction: 1
-  m_Center: {x: -0.01956451, y: -0.1944616, z: 0.043143366}
+  m_Center: {x: -0.01956451, y: -0.08, z: 0.043143366}
 --- !u!114 &7852371338169914086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,7 +2050,35 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ea9b960e-b5b3-4931-8de1-fe56a35f65eb
+    m_ActionName: 'Player/moveInput[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 817f9092-8f18-4325-ae48-5a0cc40cdea3
+    m_ActionName: 'Player/jumpInput[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: da31345a-7edd-4e89-ad9a-950da1bdcb7e
+    m_ActionName: 'Player/crouchInput[/Keyboard/ctrl]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 039a8f07-f29a-48f1-bba3-dd23bb02e687
+    m_ActionName: 'Player/dashInput[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3241d540-2606-4717-bd83-97bfdf1532a6
+    m_ActionName: 'Player/runInput[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cccabcd8-fb07-4ace-ad4a-d60c9316b8b6
+    m_ActionName: 'Player/kickInput[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cd961ccb-27b6-4f4f-9cb9-2a4cb89717f8
+    m_ActionName: 'Player/pauseInput[/Keyboard/p,/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

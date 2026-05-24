@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f89176d7b45ea7e428b2cb58ce25e320, type: 3}
-  m_Name: SO_Skill2
+  m_Name: SO_Mana3
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "\xA1Eh! Has intentado tirar de energ\xEDa y solo he o\xEDdo eco. \xA1Espera
-    a"
-  - "que se cargue antes de volver a hacer el rid\xEDculo!"
+  - "\xA1Eh! Has intentado tirar de energ\xEDa "
+  - "y solo he o\xEDdo eco."
+  - " \xA1Espera a que se cargue "
+  - "antes de volver a hacer el rid\xEDculo!"
+  - "\xA1CHAVAL!"

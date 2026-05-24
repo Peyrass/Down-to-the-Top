@@ -27,8 +27,7 @@ public partial class CheckLineOfSightAction : Action
           if (Target.Value == null) {Debug.Log("Objetivo no asignado para" + Self.Name); return Status.Failure;}
               //early return de emergencia
 
-  
-          // Calcula la distancia y dirección exacta hacia el Target declarado por el Chaser.
+              
           Vector3 distanceToTarget = Target.Value.transform.position - Self.Value.transform.position;
   
           // Se comprueba si hay linea de visión

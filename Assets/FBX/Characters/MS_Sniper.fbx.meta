@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: fe2c6e957bf3976489dab9d4462a4c2e
+guid: c5a38d57c740d934885438ab1ca4e384
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Border
+    second: {fileID: 2100000, guid: 7b951e53793637c4d835134ec7cab717, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 03d1660320d95424a86b83e692fa6132, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Texturas enemigos
+    second: {fileID: 2800000, guid: 7d05a3ed8b371604cb60f3c7bbbbbadd, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

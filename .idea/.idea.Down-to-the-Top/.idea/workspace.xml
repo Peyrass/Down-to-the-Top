@@ -5,8 +5,158 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Gunplay (1).anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Gunplay (1).anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Gunplay.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Gunplay.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Hit Reaction.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Hit Reaction.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Rifle Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/Rifle Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/Falling Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/Falling Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/MS_SniperRifle.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper/SC_EnemyShoot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper/SC_EnemyShoot.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_GlideComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_GlideComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Health/SO_Health.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill 5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.002.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.002.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.003.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.003.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.004.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.004.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Shaders/Weapons/Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets11.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets9.resource" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/AN_CrouchIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AN_CrouchIdle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/AN_CrouchIdle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AN_CrouchIdle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/AN_CrouchWalk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AN_CrouchWalk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/AN_CrouchWalk.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AN_CrouchWalk.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/AN_Platform.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AN_Platform.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/AN_Platform.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AN_Platform.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Punchie/AC_PunchieAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Punchie/AC_PunchieAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/AC_Sniper.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Sniper/AC_Sniper.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_LeftStrafeRun.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_LeftStrafeRun.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_LeftStrafeRun.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_LeftStrafeRun.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_RightStrafeRun.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_RightStrafeRun.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_RightStrafeRun.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_RightStrafeRun.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_RunBackward.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_RunBackward.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_RunBackward.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_RunBackward.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_Running.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_Running.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_Running.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_Running.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_WalkStrafeLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_WalkStrafeLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_WalkStrafeLeft.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_WalkStrafeLeft.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_WalkStrafeRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_WalkStrafeRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_WalkStrafeRight.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_WalkStrafeRight.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_WalkingBackwards.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_WalkingBackwards.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/dadaismo/AN_WalkingBackwards.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/StrafeMovement/AN_WalkingBackwards.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Punchie.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Punchie.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Sniper.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Sniper.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Sniper.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Sniper.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Sniper1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/MS_Sniper1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/MS_SniperRifle.blend.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/New Enemies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/New Enemies/MS_EnemyMele.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Characters/MS_EnemyMele.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/New Enemies/MS_EnemyMele.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FBX/Characters/MS_EnemyMele.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/New Enemies/MS_Shooter.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FBX/Characters/New Enemies/MS_Shooter.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Behavior/1.0.15/Unity Behavior Example/Materials/Nueva carpeta.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviorGraphScripts/CheckLineOfSightAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviorGraphScripts/CheckLineOfSightAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CrouchComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_CrouchComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_MasterCharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Random/SO_Random2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Random/SO_Random2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Random/SO_Random3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Random/SO_Random3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_InitialDialog-Lvl0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_InitialDialog-Lvl0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl0.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_InitialDialog-Lvl1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/SO_InitialDialog-Lvl1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Health/SO_Health.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana2.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Initial/SO_InitialDialog-Lvl2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill2.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana3.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Skill/SO_Skill3.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/YokaiDialogs/Mana/SO_Mana4.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unused/SC_DeathComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unused/SC_DeathComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level10" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level11" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level3" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level5" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level6" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level7" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level8" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level9" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.resource" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets0.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets1.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets11.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets11.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets3.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets3.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets5.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets7.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets7.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets9.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets9.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets9.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets9.assets.resS" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +170,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_MovementTranslator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SC_PEY_EnemiesHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper/SC_EnemyShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/SC_ComicLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/CameraRelated/SC_CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
@@ -192,6 +343,8 @@
       <workItem from="1779488525975" duration="1313000" />
       <workItem from="1779529370198" duration="13603000" />
       <workItem from="1779614463285" duration="5688000" />
+      <workItem from="1779638040272" duration="10698000" />
+      <workItem from="1779657043893" duration="2314000" />
     </task>
     <servers />
   </component>
