@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3982692345464988748}
   - component: {fileID: 3865385038553195375}
   - component: {fileID: 7072596410147211578}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MS_SwinguingFan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 596449286577179505}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalPosition: {x: 0, y: -36.2, z: 0}
   m_LocalScale: {x: 231.12201, y: 231.12201, z: 231.12201}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 3051078283150515525}
   - component: {fileID: 8845570677653373351}
   - component: {fileID: 5420462928451650567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PuntoRotacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6069909129700354901}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5706067937683416371}
   - component: {fileID: 8598233904526948718}
-  m_Layer: 0
+  - component: {fileID: 1301673792967231952}
+  - component: {fileID: 666258919231410995}
+  m_Layer: 7
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +293,7 @@ Transform:
   - {fileID: 6069909129700354901}
   - {fileID: 6045247851235961806}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -50.26125}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &8598233904526948718
 Animation:
   m_ObjectHideFlags: 0
@@ -309,3 +311,37 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &1301673792967231952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806498293582272674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66dfc96dbc39444d8eb5e92b8af8f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_CatDamage
+  damageAmount: 10
+--- !u!65 &666258919231410995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806498293582272674}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.432369, y: 4.940689, z: 1.0728714}
+  m_Center: {x: 0.032136917, y: -38.386375, z: -0.101824105}

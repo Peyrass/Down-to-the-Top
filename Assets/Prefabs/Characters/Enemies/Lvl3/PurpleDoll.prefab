@@ -167,7 +167,7 @@ MonoBehaviour:
   whatIsDamagable:
     serializedVersion: 2
     m_Bits: 8
-  damageAmount: 5
+  damageAmount: 10
   secondsToExplosion: 4
 --- !u!195 &9081270166957956745
 NavMeshAgent:
@@ -210,6 +210,7 @@ MonoBehaviour:
   agent: {fileID: 9081270166957956745}
   deathTime: 2
   finalBoss: {fileID: 0}
+  changeScene1_2: {fileID: 0}
 --- !u!54 &8105720450795868317
 Rigidbody:
   m_ObjectHideFlags: 0
