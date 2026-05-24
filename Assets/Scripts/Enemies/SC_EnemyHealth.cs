@@ -30,15 +30,16 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         if(invencibility) return;
         invencibility = true;
         currentHealth -= damage;
-        anim.SetTrigger("Hitted");
+        if (anim != null) anim.SetTrigger("Hitted");
         
-        // //knockback
-        //  agent.enabled = false;
-        //  rb.isKinematic = false;
-        //
-        // Vector3 dir = (transform.position - attacker.position).normalized;
-        // dir.y = 0.5f;
-        //  rb.AddForce(dir * 10f, ForceMode.Impulse);
+        //knockback
+        if (agent != null) agent.enabled = false;
+        if (rb != null) rb.isKinematic = false;
+
+        
+        Vector3 dir = (transform.position - attacker.position).normalized;
+        dir.y = 0.5f;
+        if (rb != null) rb.AddForce(dir * 10f, ForceMode.Impulse);
         
 
         StartCoroutine(currentHealth > 0 ? OnHit() : OnDeath());
@@ -47,8 +48,8 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     private IEnumerator OnHit()
     {
         yield return new WaitForSeconds(0.5f);
-        agent.enabled = true;
-        rb.isKinematic = true;
+        if (agent != null) agent.enabled = true;
+        if (rb != null) rb.isKinematic = true;
         invencibility = false;
     }
     private IEnumerator OnDeath()
