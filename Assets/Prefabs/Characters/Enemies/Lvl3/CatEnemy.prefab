@@ -139,12 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe0ce8aa077e94cbd29237bea30325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyHealth
-  maxHealth: 4
+  maxHealth: 3
   invencibility: 0
   rb: {fileID: 0}
   anim: {fileID: 0}
-  agent: {fileID: 0}
-  deathTime: 0
+  agent: {fileID: 8709211153289339171}
+  deathTime: 0.1
   finalBoss: {fileID: 0}
   changeScene1_2: {fileID: 0}
 --- !u!114 &112258953862388871
