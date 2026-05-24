@@ -143,8 +143,8 @@ MonoBehaviour:
   invencibility: 0
   rb: {fileID: 0}
   anim: {fileID: 0}
-  agent: {fileID: 0}
-  deathTime: 0
+  agent: {fileID: 8709211153289339171}
+  deathTime: 0.1
   finalBoss: {fileID: 0}
   changeScene1_2: {fileID: 0}
 --- !u!114 &112258953862388871
