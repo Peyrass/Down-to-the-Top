@@ -7,13 +7,14 @@
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Punchie.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AIBehaviour/BG_Sniper.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/PlayerYomi/AC_PlayerAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Inputs/TPC_InputMapping.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Inputs/TPC_InputMapping.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Punchie/AC_PunchieAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Enemies/Punchie/AC_PunchieAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse/NavMesh-NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse/NavMesh-NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_MovementTranslator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_MovementTranslator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_DashComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_DashComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_PEY_EnemiesHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_PEY_EnemiesHealth.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Pey",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Pey&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/BUILD-0.5\Down-to-the-Top.exe" />
@@ -198,6 +199,7 @@
       <workItem from="1779487375314" duration="5000" />
       <workItem from="1779488525975" duration="1313000" />
       <workItem from="1779529370198" duration="13603000" />
+      <workItem from="1779614463285" duration="5688000" />
     </task>
     <servers />
   </component>

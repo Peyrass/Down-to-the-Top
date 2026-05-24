@@ -12,15 +12,16 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     public Animator anim;
     public NavMeshAgent agent;
     [SerializeField] private float deathTime = 2f;
+    
+    [Header("BOSS Enemies only")]
     [SerializeField] public Transform finalBoss;
     [SerializeField] private SC_SceneChange1_2 changeScene1_2;
-
 
     private void Awake()
     {
         rb = GetComponentInParent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponentInParent<NavMeshAgent>();
         currentHealth = maxHealth;
     }
     
@@ -29,26 +30,25 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         if(invencibility) return;
         invencibility = true;
         currentHealth -= damage;
-        //anim.SetTrigger("Hit");
+        anim.SetTrigger("Hitted");
         
-        if (agent != null) agent.enabled = false;
+        // //knockback
+        //  agent.enabled = false;
+        //  rb.isKinematic = false;
+        //
+        // Vector3 dir = (transform.position - attacker.position).normalized;
+        // dir.y = 0.5f;
+        //  rb.AddForce(dir * 10f, ForceMode.Impulse);
         
-        //knockback
-        Vector3 dir = (transform.position - attacker.position).normalized;
-        dir.y = 0.5f;
-        if (rb != null) rb.AddForce(dir * 10f, ForceMode.Impulse);
 
-
-        if (currentHealth > 0)
-            StartCoroutine(OnHit());
-        else
-            StartCoroutine(OnDeath());
+        StartCoroutine(currentHealth > 0 ? OnHit() : OnDeath());
     }
-
 
     private IEnumerator OnHit()
     {
         yield return new WaitForSeconds(0.5f);
+        agent.enabled = true;
+        rb.isKinematic = true;
         invencibility = false;
     }
     private IEnumerator OnDeath()
@@ -59,12 +59,12 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         {
             finalBoss.GetComponent<SC_BossLogic>().TakeDamage(maxHealth); 
         }
+        //ternario para comprobar si el script está o no en el parent y así destruír bien al enemigo.
+        GameObject objectToDestroy = transform.parent != null ? transform.parent.gameObject : gameObject;
 
-        gameObject.SetActive(false);
+        objectToDestroy.SetActive(false);
         if (changeScene1_2 != null) changeScene1_2.EnableDoor();
 
-        Destroy(gameObject);
-
+        Destroy(objectToDestroy);
     }
-
 }

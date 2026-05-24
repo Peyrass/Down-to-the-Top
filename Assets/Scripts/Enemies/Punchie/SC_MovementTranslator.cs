@@ -6,7 +6,8 @@ public class SC_MovementTranslator : MonoBehaviour
     private CharacterController cc;
     private NavMeshAgent agent;
 
-    [Header("Knockback Settings")] [SerializeField]
+    [Header("Knockback Settings")] 
+    [SerializeField]
     private float knockbackFriction = 5f;
 
     [SerializeField] private float gravity = 20f;

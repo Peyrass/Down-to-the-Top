@@ -391,9 +391,6 @@ MonoBehaviour:
         Name: PatrolPoints
         m_Value:
         - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
-        - {fileID: 0}
 --- !u!195 &2138705604966149358
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -862,7 +859,7 @@ GameObject:
   - component: {fileID: 7870669083287541367}
   - component: {fileID: 3931756892983212244}
   m_Layer: 0
-  m_Name: Cuerpo a cuerpo (1)
+  m_Name: PunchieSkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
