@@ -6,6 +6,10 @@ namespace Enemies.Sniper
 {
     public class SC_EnemyShoot : MonoBehaviour
     {
+        [Header("Audio")]
+        [SerializeField] private SC_ScriptableAudioEvents aEvent;
+        [SerializeField] private AudioClip clip;
+        
         [Header("Shoot Settings")]
         [SerializeField] private Transform shootPoint;
         [SerializeField] private float bulletDamage = 2f;
@@ -37,6 +41,7 @@ namespace Enemies.Sniper
 
         public void ShootEvent()
         {
+            aEvent.Raise(clip);
             if (rifleFlashPrefab != null && shootPoint != null)
             {
                 Instantiate(rifleFlashPrefab, shootPoint.position, shootPoint.rotation);
