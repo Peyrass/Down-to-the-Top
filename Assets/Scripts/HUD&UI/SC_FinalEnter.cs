@@ -25,8 +25,14 @@ public class SC_FinalEnter : MonoBehaviour
     
     private void NextPanel(InputAction.CallbackContext obj)
     {
+        Cursor.lockState =CursorLockMode.None;
         aEvent.Raise(clip);
         input.actions.FindActionMap("AnyAction").Disable();
         animator.SetTrigger("Enter");
+    }
+
+    public void MouseChangeState()
+    {
+        Cursor.lockState =CursorLockMode.Locked;
     }
 }
