@@ -3303,8 +3303,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 73
   aimHeightOffset: 1
-  maxSpreadAngle: 0
-  distanceAffectsAccuracy: 0
+  distanceAffectsAccuracy: 1
+  maxSpreadAngle: 5
   rifleFlashPrefab: {fileID: 0}
   bulletImpactPrefab: {fileID: 0}
   aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}

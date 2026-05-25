@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4365679, y: 0.55624497, z: -0.4365678, w: -0.5562451}
-  m_LocalPosition: {x: 1.1080188, y: -0.96526223, z: 1.5900016}
+  m_LocalRotation: {x: -0.00000013825618, y: -0.99886924, z: -0.04754278, w: 0.0000029587843}
+  m_LocalPosition: {x: -0.11938858, y: -0.96526223, z: 2.8174167}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -273,10 +273,10 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 65
     UseFollowTarget:
-      Enabled: 0
+      Enabled: 1
       YOffset: 0
     Damping: 0.5
-    SmoothingTime: 0.526
+    SmoothingTime: 1.054
   TerrainResolution:
     Enabled: 1
     TerrainLayers:
@@ -1205,8 +1205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.43656778, y: 0.5562451, z: -0.43656784, w: -0.556245}
-  m_LocalPosition: {x: 1.1080188, y: 1.9103819, z: 1.5900016}
+  m_LocalRotation: {x: -0.00000014083395, y: -0.99886924, z: -0.04754279, w: 0.000002958907}
+  m_LocalPosition: {x: -0.11938858, y: -0.96526223, z: 2.8174167}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1512,7 +1512,7 @@ MonoBehaviour:
   detectionRadius: 0.6
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   rotationSpeed: 15
   cameraTransform: {fileID: 696332449242428827}
   life: 5
@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SC_JumpComponent
   eventoYokai: {fileID: 11400000, guid: 944ea3c4d1805dc4890f494422a01f47, type: 2}
   eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
-  manaCost: 30
+  manaCost: 10
   jumpForce: 25
   jumpCooldown: 0.4
   doubleJump: 1
@@ -1562,13 +1562,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5b23282a9450d45888ee29c264a444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_DashComponent
-  eventoYokai: {fileID: 11400000, guid: 944ea3c4d1805dc4890f494422a01f47, type: 2}
+  eventoYokai: {fileID: 11400000, guid: cf5b5daa836e52c4987544fd0533d2cc, type: 2}
   eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
-  manaCost: 15
+  manaCost: 25
   maxDashTime: 0.3
   dashForce: 22
   dashCooldown: 1
   anim: {fileID: 4230606101839507832}
+  punchImpactPrefab: {fileID: 0}
+  aEvent: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &6412421636249348650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,6 +1621,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 14e1a0e047bb8b14aaf300e00584a532, type: 3}
   - {fileID: 8300000, guid: 65f2aa45a92842f4e9afe0c9e52abe4a, type: 3}
   - {fileID: 8300000, guid: d409ad1e7463920458eb8d31b724efb4, type: 3}
+  punchImpactPrefab: {fileID: 0}
 --- !u!114 &5116074624614761211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1631,7 +1635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_GlideComponent
   glideFallSpeed: -2
-  anim: {fileID: 4230606101839507832}
 --- !u!54 &6203304368605208359
 Rigidbody:
   m_ObjectHideFlags: 0

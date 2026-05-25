@@ -54,6 +54,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     private IEnumerator OnDeath()
     {
         if (agent != null) agent.enabled = false;
+        rb.freezeRotation = false;
         yield return new WaitForSeconds(deathTime);
         if (finalBoss != null)
         {
