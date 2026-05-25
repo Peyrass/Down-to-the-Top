@@ -7,10 +7,10 @@ public class SC_GlideComponent : MonoBehaviour
     [Header("Glide Settings")]
     [Tooltip("La velocidad máxima a la que caerá el jugador mientras planea (debe ser negativa)")]
     [SerializeField] private float glideFallSpeed = -2f; 
-    [SerializeField] private Animator anim;
+    
 
-    // Variable pública para que el Master sepa si estamos planeando
-    public bool IsGliding { get; private set; } 
+    // Variable pública para que el Master sepa si estamos planeando 
+    public bool IsGliding { get; private set; } //pero con private set (solo de lectura)
     public float GlideFallSpeed => glideFallSpeed;
 
     private bool isJumpInputHeld;
@@ -18,7 +18,6 @@ public class SC_GlideComponent : MonoBehaviour
     private void Awake()
     {
         master = GetComponent<SC_MasterCharacterMovement>();
-        anim = GetComponentInChildren<Animator>();
         IsGliding = false;
     }
 
@@ -34,12 +33,10 @@ public class SC_GlideComponent : MonoBehaviour
         if (!master.Grounded && master.Rb.linearVelocity.y < 0 && isJumpInputHeld)
         {
             IsGliding = true;
-            anim.SetBool("isFalling", true);
         }
         else
         {
             IsGliding = false;
-            anim.SetBool("isFalling", false);
         }
     }
 }

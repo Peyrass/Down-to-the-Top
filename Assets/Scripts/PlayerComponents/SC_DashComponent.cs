@@ -16,6 +16,15 @@ public class SC_DashComponent : MonoBehaviour
     [SerializeField] private float dashCooldown = 1f;
     [SerializeField] private Animator anim;
 
+    [Header("VFX Settings")]
+    [SerializeField] private GameObject punchImpactPrefab;
+    
+    [Header("SFX Settings")]
+    [SerializeField] private SC_ScriptableAudioEvents aEvent;
+    [SerializeField] private AudioClip clip;
+    
+    
+    
     private float dashTimer;
     private bool readyToDash = true;
     private Vector3 dashDirection;

@@ -3296,8 +3296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433a5932e492d98459cc8726f4296781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies.Sniper.SC_EnemyShoot
-  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
-  clip: {fileID: 8300000, guid: 8e9a98a064c37c349b2ea6b8adb2b4a4, type: 3}
   shootPoint: {fileID: 3724930573011120422}
   bulletDamage: 20
   attackRange: 35
@@ -3305,10 +3303,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 73
   aimHeightOffset: 1
-  maxSpreadAngle: 2
-  distanceAffectsAccuracy: 1
+  maxSpreadAngle: 0
+  distanceAffectsAccuracy: 0
   rifleFlashPrefab: {fileID: 0}
   bulletImpactPrefab: {fileID: 0}
+  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+  clip: {fileID: 8300000, guid: 8e9a98a064c37c349b2ea6b8adb2b4a4, type: 3}
 --- !u!114 &3036417113405134797
 MonoBehaviour:
   m_ObjectHideFlags: 0

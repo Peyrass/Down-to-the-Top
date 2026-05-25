@@ -50,8 +50,8 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         Walking   = 0,
         Running   = 1,
         Crouching = 2, 
-        dashing   = 3,
-        air       = 4
+        Dashing   = 3,
+        Air       = 4
     }
 
     // getters para que los otros componentes puedan manejar info sin romper todo
@@ -206,7 +206,16 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         
         anim.SetBool("isGrounded", grounded);
         
-        anim.SetBool("isFalling", this);
+        
+        if (glideComponent != null && glideComponent.IsGliding)
+        {
+            anim.SetBool("isFalling", true);
+        }
+        else
+        {
+            bool isFallingNormal = !grounded && rb.linearVelocity.y < 0;
+            anim.SetBool("isFalling", isFallingNormal);
+        }
     }
 
     private void FixedUpdate()
@@ -269,7 +278,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     private void StateHandler()
     {//switch mejor
         if (dashComponent.DashActive)
-            courrentState = EMovementState.dashing;
+            courrentState = EMovementState.Dashing;
         else if (crouchComponent.CrouchActive)
             courrentState = EMovementState.Crouching;
         else if (runActive && grounded)
@@ -277,7 +286,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         else if (grounded)
             courrentState = EMovementState.Walking;
         else
-            courrentState = EMovementState.air;
+            courrentState = EMovementState.Air;
     }
     
     private void Movement()

@@ -4,9 +4,6 @@ namespace Enemies.Punchie
 {
     public class SC_EnemyAttack : MonoBehaviour
     {
-        [Header("Audio")]
-        [SerializeField] private SC_ScriptableAudioEvents aEvent;
-        [SerializeField] private AudioClip clip;
         [Header("Configuración del Golpe")]
         [SerializeField] private Transform attackPoint;
         [SerializeField] private float attackRange = 1f;
@@ -15,7 +12,11 @@ namespace Enemies.Punchie
 
         [Header("VFX Settings")]
         [SerializeField] private GameObject punchImpactPrefab;
-        [SerializeField] private AudioClip punchImpactSound;
+        
+        [Header("SFX Settings")]
+        [SerializeField] private SC_ScriptableAudioEvents aEvent;
+        [SerializeField] private AudioClip clip;
+        
         public void AttackEvent()
         {
             Collider[] colliders = Physics.OverlapSphere(attackPoint.position, attackRange, layerPlayer);

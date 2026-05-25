@@ -5038,6 +5038,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8831997080207948363, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: animationEvents.Array.data[0].onAnimationEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831997080207948363, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: animationEvents.Array.data[0].onAnimationEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831997080207948363, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: animationEvents.Array.data[0].onAnimationEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8831997080207948363, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: animationEvents.Array.data[0].onAnimationEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SC_TatakaeComponent, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9786,12 +9802,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2724470949405718520, guid: ffee6d50b19010843a5a7279798421ee, type: 3}
-      propertyPath: maxSpreadAngle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2724470949405718520, guid: ffee6d50b19010843a5a7279798421ee, type: 3}
       propertyPath: distanceAffectsAccuracy
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7497284423265474808, guid: ffee6d50b19010843a5a7279798421ee, type: 3}
       propertyPath: m_Name

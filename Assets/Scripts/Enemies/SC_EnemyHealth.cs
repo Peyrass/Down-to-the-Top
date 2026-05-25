@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -16,7 +15,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     [Header("BOSS Enemies only")]
     [SerializeField] public Transform finalBoss;
     [SerializeField] private SC_SceneChange1_2 changeScene1_2;
-
+    
     private void Awake()
     {
         rb = GetComponentInParent<Rigidbody>();
