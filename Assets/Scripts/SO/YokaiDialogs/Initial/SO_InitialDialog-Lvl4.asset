@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: SO_InitialDialog-Lvl4
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "Flipa Yomi, ahora apenas gastamos energ\xEDa, "
+  - "\xBFLa gravedad en este sector es opcional"
+  - '"o es que las botas te han venido con'
+  - "un modo Dios que yo no conoc\xEDa?"
+  - "\xA1Prueba a mantener el Espacio y ver\xE1s!"
+  - "Flipa Yomi, ahora apenas gastamos energ\xEDa,"
   - "as\xED que ya sabes. \xA1A fundir esta nueva bater\xEDa!"
-  - "\xA1Y baja de aqu\xED rapidito que nos quem\xE1mos!"
+  - "\xA1Y baja de aqu\xED cuanto antes que esto se derrumba!"
