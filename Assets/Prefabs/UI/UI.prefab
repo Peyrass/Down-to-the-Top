@@ -2049,12 +2049,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
   - {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
   - {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
-  healthlines: []
+  healthlines:
+  - {fileID: 11400000, guid: 962f37175cabdf148869cd3098c20229, type: 2}
+  - {fileID: 11400000, guid: 2b58896fbab056943bc222b0dbe7a87a, type: 2}
+  - {fileID: 11400000, guid: d6a10f763a5013640ab77e79e0c15c23, type: 2}
+  - {fileID: 11400000, guid: ce5b3ea1b54769d4c9b717f5a9510a89, type: 2}
+  - {fileID: 11400000, guid: 1269ad73b0cd09144b160f29c69ca276, type: 2}
+  - {fileID: 11400000, guid: b48b3fda6b0b812419d182d86ef2ecbf, type: 2}
+  - {fileID: 11400000, guid: 700993beb5e86454e86f21fc709ee228, type: 2}
+  - {fileID: 11400000, guid: 75ccf374665915d48b37efe5a7019bca, type: 2}
+  - {fileID: 11400000, guid: 291e6ad08570b63439e9ea91b3461232, type: 2}
+  - {fileID: 11400000, guid: 6a3fdf363948ed94aaf69f281c749bb1, type: 2}
   batterylines:
-  - {fileID: 11400000, guid: 18ef104cf1f83814788159d990b55fee, type: 2}
-  - {fileID: 11400000, guid: dc431cc5b883c2a40bf759acd51c05ab, type: 2}
-  - {fileID: 11400000, guid: a6afe99c42766a643ad9da761185e1d5, type: 2}
-  - {fileID: 11400000, guid: aee05020898acc849aa15de9dd8c8d65, type: 2}
+  - {fileID: 11400000, guid: 414bf19fd85499344a8db6e257b73181, type: 2}
+  - {fileID: 11400000, guid: 711ad4ae94b512c4cb191aa084358892, type: 2}
+  - {fileID: 11400000, guid: 4ffec1a6b86c73048805a558e5cde925, type: 2}
+  - {fileID: 11400000, guid: bb695aa9ce230104ca9023cc4c2b212b, type: 2}
+  - {fileID: 11400000, guid: 989fe1423e88c4547b2f2bca4a8143f5, type: 2}
+  - {fileID: 11400000, guid: 1eddb8e8dc28c344ab4fbb0411589e7c, type: 2}
   randomlines:
   - {fileID: 11400000, guid: ba2ed1e03bdc6854692576632063aa69, type: 2}
   - {fileID: 11400000, guid: 5a95356c8d03cc64e862e0ed7d80e182, type: 2}
