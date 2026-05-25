@@ -5,17 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/MS_SniperRifle.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/MS_SniperRifle.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Roomba.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Roomba.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Guards.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Flash_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Flash_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_PointGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_PointGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Shockwave_2x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Shockwave_2x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Smoke_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Smoke_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Smoke_02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_01_Smoke_02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_Flash_4x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_Flash_4x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_HazeBlur_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_HazeBlur_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_03_Flash_2x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_03_Flash_2x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_03_PointGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_03_PointGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_FlashRays_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_FlashRays_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_PointBlur_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_PointBlur_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_PointGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_PointGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_Shockwave_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Materials/Hits/HIE_Hit_04_Shockwave_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Pipeline Upgrade.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Guards.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Guards/Guard_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Guards/Guard_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Prefabs/Hits/Hit_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Haze_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Haze_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_01_Flash_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_01_Flash_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_01_Shockwave_2x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_01_Shockwave_2x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_02_Flash_4x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_02_Flash_4x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_03_Flash_2x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_03_Flash_2x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_03_Shockwave_2x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_03_Shockwave_2x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_04_FlashRays_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Hit_04_FlashRays_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_PointBlur_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_PointBlur_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_PointGlow_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_PointGlow_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Shockwave_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Shockwave_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Smoke_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hit Impact Effects-VFX/Textures/HIE_Smoke_01.tga.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/SC_SceneChange1.2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/SC_SceneChange1.2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +271,7 @@
       <workItem from="1779638040272" duration="10698000" />
       <workItem from="1779657043893" duration="2314000" />
       <workItem from="1779662254251" duration="448000" />
-      <workItem from="1779697271033" duration="9629000" />
+      <workItem from="1779697271033" duration="10501000" />
     </task>
     <servers />
   </component>
