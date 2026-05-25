@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
   - "\xA1Opa! Eso ha sido casi elegante."
-  - "Si sigues movi\xE9ndote as\xED hasta voy a empezar a respetarte."
+  - "Si sigues movi\xE9ndote as\xED"
+  - hasta voy a empezar a respetarte.
   - Pero solo un poco eh, no te flipes.

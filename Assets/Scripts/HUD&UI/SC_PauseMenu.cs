@@ -16,4 +16,9 @@ public class SC_PauseMenu : MonoBehaviour
         Cursor.visible = !Cursor.visible;
         Cursor.lockState = pauseMenu.activeSelf ? CursorLockMode.None : CursorLockMode.Locked;
     }
+    private void OnDestroy()
+    {
+        Time.timeScale = 1f;
+    }
+    
 }

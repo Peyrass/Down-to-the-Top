@@ -169,8 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22dedbac32002348b8f28f4840926e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_EnemyAttack
-  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
-  clip: {fileID: 8300000, guid: 8bc59ea17c4e6254987af382c4a43807, type: 3}
   attackPoint: {fileID: 4139472442222530969}
   attackRange: 1
   attackDamage: 10
@@ -178,7 +176,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   punchImpactPrefab: {fileID: 0}
-  punchImpactSound: {fileID: 0}
+  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+  clip: {fileID: 8300000, guid: 8bc59ea17c4e6254987af382c4a43807, type: 3}
 --- !u!114 &4519724960761078417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,6 +393,7 @@ MonoBehaviour:
           m_Value1: 13804634011692656283
         Name: PatrolPoints
         m_Value:
+        - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}

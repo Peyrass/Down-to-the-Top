@@ -2040,14 +2040,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiDialogLogic
   characterText: {fileID: 2033382602318740574}
-  initialDialog: {fileID: 11400000, guid: 2f81b0bb9e264f741a1d99eb3a7084d2, type: 2}
+  initialDialog: {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
   skillLines:
-  - {fileID: 11400000, guid: dc431cc5b883c2a40bf759acd51c05ab, type: 2}
+  - {fileID: 11400000, guid: 93caa60d609e83647b714a0723884fd3, type: 2}
+  - {fileID: 11400000, guid: 6ee8d86f9af99fc4a86eb586fcd225d5, type: 2}
+  - {fileID: 11400000, guid: 375ba05ca67af6a46bd0f424955d4949, type: 2}
+  - {fileID: 11400000, guid: e5feee09b13216a438c74b2d184d54a8, type: 2}
+  - {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
+  - {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
+  - {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
   healthlines: []
-  batterylines: []
+  batterylines:
+  - {fileID: 11400000, guid: 18ef104cf1f83814788159d990b55fee, type: 2}
+  - {fileID: 11400000, guid: dc431cc5b883c2a40bf759acd51c05ab, type: 2}
+  - {fileID: 11400000, guid: a6afe99c42766a643ad9da761185e1d5, type: 2}
+  - {fileID: 11400000, guid: aee05020898acc849aa15de9dd8c8d65, type: 2}
   randomlines:
   - {fileID: 11400000, guid: ba2ed1e03bdc6854692576632063aa69, type: 2}
   - {fileID: 11400000, guid: 5a95356c8d03cc64e862e0ed7d80e182, type: 2}
+  - {fileID: 11400000, guid: 7e3b047d1c3b5dd44a40151b6fe3fe43, type: 2}
   waitTillNextDialog: 5
   waitTillNextText: 2
   initialWait: 1.5

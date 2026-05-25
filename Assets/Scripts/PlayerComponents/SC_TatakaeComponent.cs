@@ -23,9 +23,12 @@ public class SC_TatakaeComponent : MonoBehaviour
     [SerializeField] private float shakeIntensity;
     [SerializeField] private float shakeTime;
     
-    [Header("Audio")]
+    [Header("SFX Settings")]
     [SerializeField] private SC_ScriptableAudioEvents aEvent;
     [SerializeField] private AudioClip[] clip;
+    
+    [Header("VFX Settings")]
+    [SerializeField] private GameObject punchImpactPrefab;
 
     
     private bool isAttacking = false;
@@ -59,7 +62,6 @@ public class SC_TatakaeComponent : MonoBehaviour
 
     public void AttackEvent()
     {
-        
         aEvent.Raise(clip[Random.Range(0,clip.Length-1)]);
         Collider[] colliders = Physics.OverlapSphere(attackPoint.position, attackRange, whatIsEnemy);
        

@@ -5,13 +5,147 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_LVL Complete.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_LVL Complete.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Punchie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Sniper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Explosio n.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Explosio n.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Explosio n.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Explosio n.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_LevelComplete.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_LevelComplete.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_LevelComplete.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_LevelComplete.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Page1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Page1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Page1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Page1.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch1.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch2.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch3.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch3.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch3.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch4.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Punch4.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Punch4.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Shoot1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Shoot1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Shoot1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Shoot1.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Shoot2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Shoot2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Shoot2.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Shoot2.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Transition1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Transition1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Transition1.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Transition1.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Transition2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Transition2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Transition2.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Transition2.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Transition3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Transition3.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_Transition3.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_Transition3.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_click1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_click1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/VFX/AC_click1.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/SFX/AC_click1.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Punchie/SC_PunchieAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level 2/Exit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level 2/Exit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0 - Warehouse.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/NavMesh-GameObject.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1/NavMesh-GameObject.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1/Level1 - Viewpoint/NavMesh-NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum/NavMesh-Enviroment.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum/NavMesh-Enviroment.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum/NavMesh-Enviroment.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2/Level2 - Museum/NavMesh-Enviroment.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper/SC_EnemyShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper/SC_EnemyShoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_TatakaeComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/SC_ScriptableEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Guards.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Flash_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Flash_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_PointGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_PointGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Shockwave_2x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Shockwave_2x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_Flash_4x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_Flash_4x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeBlur_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeBlur_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Flash_2x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Flash_2x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_PointGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_PointGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_03_Shockwave_2x2_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_FlashRays_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_FlashRays_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_PointBlur_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_PointBlur_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_PointGlow_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_PointGlow_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_Shockwave_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_04_Shockwave_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Pipeline Upgrade.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Guards.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Guards/Guard_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Guards/Guard_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Prefabs/Hits/Hit_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Haze_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Haze_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_01_Flash_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_01_Flash_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_01_Shockwave_2x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_01_Shockwave_2x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_02_Flash_4x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_02_Flash_4x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_03_Flash_2x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_03_Flash_2x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_03_Shockwave_2x2_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_03_Shockwave_2x2_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_04_FlashRays_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Hit_04_FlashRays_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_PointBlur_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_PointBlur_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_PointGlow_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_PointGlow_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Shockwave_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Shockwave_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Smoke_01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Textures/HIE_Smoke_01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top.exe" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level10" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level6" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level8" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/level8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets10.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets2.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.resource" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets4.resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets6.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.assets" beforeDir="false" afterPath="$PROJECT_DIR$/BUILD-0.5/Down-to-the-Top_Data/sharedassets8.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,22 +189,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Sergio__(NuevaRama)",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Pey&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/BUILD-0.5\Down-to-the-Top.exe" />
@@ -85,7 +219,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -97,7 +231,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -201,6 +335,8 @@
       <workItem from="1779638040272" duration="10698000" />
       <workItem from="1779657043893" duration="2314000" />
       <workItem from="1779662254251" duration="448000" />
+      <workItem from="1779697271033" duration="10501000" />
+      <workItem from="1779721487042" duration="3126000" />
     </task>
     <servers />
   </component>

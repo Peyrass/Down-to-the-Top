@@ -31,13 +31,13 @@ public class SC_SceneChange1_2 : MonoBehaviour
     {
         foreach (GameObject enemy in enemies)
         {
-            if (enemy.activeInHierarchy)
+            if (enemy != null && enemy.activeInHierarchy)
             {
                 return true;
             }
         }
-
-        return false;
+        // tanto si todos son null como sí están desactivados, devuelve false (abre)
+        return false; 
     }
 
     private void OnTriggerEnter(Collider other)

@@ -1,42 +1,37 @@
 using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Enemies.Sniper
 {
     public class SC_EnemyShoot : MonoBehaviour
-    {
-        [Header("Audio")]
-        [SerializeField] private SC_ScriptableAudioEvents aEvent;
-        [SerializeField] private AudioClip clip;
-        
+    {        
         [Header("Shoot Settings")]
         [SerializeField] private Transform shootPoint;
         [SerializeField] private float bulletDamage = 2f;
         [SerializeField] private float attackRange = 100f;
         [SerializeField] private LayerMask layerToHit;
 
-        [Header("Targeting")] 
+        [Header("Targeting")]
         private Transform targetPlayer;
         [SerializeField] private float aimHeightOffset = 1f; // asegurar que se apunta al centro estimado del player
         
         [Header("Humanization")]
-        [Tooltip("Ángulo máximo de desviación de la bala en grados. 0 = Láser perfecto, 2 = Francotirador hábil, 5 = Novato.")]
-        [SerializeField] private float maxSpreadAngle = 2.0f;
         [Tooltip("Si está activo, el error aumenta según se alarga la distancia al objetivo.")]
         [SerializeField] private bool distanceAffectsAccuracy = true;
+        [Tooltip("Ángulo máximo de desviación de la bala en grados. 0 - 1 = Láser perfecto, 5 = Francotirador hábil, 10+ = Novato.")]
+        [SerializeField] private float maxSpreadAngle = 2.0f;
 
         [Header("VFX Settings")]
         [SerializeField] private GameObject rifleFlashPrefab;
         [SerializeField] private GameObject bulletImpactPrefab;
-
-        private void Awake()
+        
+        [Header("SFX Settings")]
+        [SerializeField] private SC_ScriptableAudioEvents aEvent;
+        [SerializeField] private AudioClip clip;
+        
+        public void SetTarget(Transform newTarget)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-            {
-                targetPlayer = player.transform;
-            }
+            targetPlayer = newTarget;
         }
 
         public void ShootEvent()
@@ -47,15 +42,41 @@ namespace Enemies.Sniper
                 Instantiate(rifleFlashPrefab, shootPoint.position, shootPoint.rotation);
             }
             
-            Vector3 shootDirection = shootPoint.forward;
+            Vector3 shootOriginalDirection = shootPoint.forward;
+            float distanceToTarget = attackRange;
 
             if (targetPlayer != null)
             {
                 // se busca el centro del player
                 Vector3 targetCenter = targetPlayer.position + Vector3.up * aimHeightOffset;
-                // así se consigue la dirección exacta para impactar al player en caso de que esté a la vista
-                shootDirection = (targetCenter - shootPoint.position).normalized; 
+                
+                // se saca el vector y la distancia al objetivo
+                Vector3 vecToTarget = targetCenter - shootPoint.position;
+                distanceToTarget = vecToTarget.magnitude;
+                
+                //se fija la orientación exacta para impactar a Yomi
+                shootOriginalDirection = vecToTarget.normalized;
             }
+
+            float currentSpread = maxSpreadAngle;
+            
+            if (distanceAffectsAccuracy && targetPlayer != null)
+            {
+                // 0 = Yomi está frente al Sniper / 1 = Yomi está en el límite del rango de detección
+                float distanceFactor = Mathf.InverseLerp(0f, attackRange, distanceToTarget);
+                currentSpread = maxSpreadAngle * distanceFactor;
+            }
+
+            //se desplaza aleatoriamente la rotación en los ejes X e Y dentro del límite de Spread
+            Quaternion randomErrorRotation = Quaternion.Euler(
+                UnityEngine.Random.Range(-currentSpread, currentSpread), // Desvío vertical (palo de futbolín)
+                UnityEngine.Random.Range(-currentSpread, currentSpread), // Desvío horizontal (barra de pole dance)
+                0f
+            );
+            // Quaternion.LookRotation convierte el vector (shootDirection) en una rotación base a la que se le suma
+            // el desvío aleatorio y el resultado se convierte en un vector (shootDirection)
+            var shootDirection = Quaternion.LookRotation(shootOriginalDirection) * randomErrorRotation * Vector3.forward;
+        
             
             // disparar rayo
             if (!Physics.Raycast(
@@ -82,6 +103,15 @@ namespace Enemies.Sniper
             if (bulletImpactPrefab != null)
             {
                 Instantiate(bulletImpactPrefab, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
+            }
+        }
+        
+        private void Update()
+        {
+            if (targetPlayer != null)
+            {
+                // Dibuja una línea azul en la vista de Escena hacia donde el Sniper cree que está Yomi
+                Debug.DrawLine(transform.position, targetPlayer.position, Color.blue);
             }
         }
 

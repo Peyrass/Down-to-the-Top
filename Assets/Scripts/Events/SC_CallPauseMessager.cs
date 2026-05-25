@@ -21,13 +21,11 @@ public class SC_CallPauseMessager : MonoBehaviour
 
     private void OnDisable()
     {
-        playerInput.actions["pauseInput"].started += CallPause;
-
+        playerInput.actions["pauseInput"].started -= CallPause;
     }
 
     private void CallPause(InputAction.CallbackContext context)
     {
-        onPause.Invoke();
-        
+        onPause?.Invoke();
     }
 }
