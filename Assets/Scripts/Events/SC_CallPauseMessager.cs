@@ -26,6 +26,6 @@ public class SC_CallPauseMessager : MonoBehaviour
 
     private void CallPause(InputAction.CallbackContext context)
     {
-        onPause.Invoke();
+        onPause?.Invoke();
     }
 }

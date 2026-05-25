@@ -20,6 +20,6 @@ public class SC_GameEventListeners : MonoBehaviour
 
   public void OnEventRaise()
     {
-      Response.Invoke();
+      Response?.Invoke();
     }
 }
