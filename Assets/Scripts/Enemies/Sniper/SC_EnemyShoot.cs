@@ -4,9 +4,7 @@ using UnityEngine;
 namespace Enemies.Sniper
 {
     public class SC_EnemyShoot : MonoBehaviour
-    {
-        
-        
+    {        
         [Header("Shoot Settings")]
         [SerializeField] private Transform shootPoint;
         [SerializeField] private float bulletDamage = 2f;

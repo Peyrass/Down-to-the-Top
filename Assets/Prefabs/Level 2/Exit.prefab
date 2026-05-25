@@ -48,12 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8925f27fb07da47418294415b1d69ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_SceneChange1_2
-  enemies:
-  - {fileID: 0}
+  enemies: []
   exitLight: {fileID: 1967705299728011356}
   exitCollider: {fileID: 4216080290278323697}
   aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
-  clip: {fileID: 8300000, guid: 03e20afcab07dd74ab1028130ea4ac7d, type: 3}
+  clip: {fileID: 8300000, guid: fcfce44ae3310eb4492e1877c698498a, type: 3}
   mEvent: {fileID: 11400000, guid: 52ad7b6730b406f4b871f74d1345c269, type: 2}
   music: {fileID: 8300000, guid: 6b0bf91020fb01141acc8760fae52516, type: 3}
 --- !u!65 &4216080290278323697

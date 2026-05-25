@@ -1,18 +1,24 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using Unity.Behavior;
 
 public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
 {
+    [Header("Presets")]
     private float currentHealth = 0;
     public float maxHealth = 3;
     public bool invencibility = false;
+    
+    [Header("Componentes")]
+    private BehaviorGraphAgent behaviorGraph;
     public Rigidbody rb;
     public Animator anim;
     public NavMeshAgent agent;
     [SerializeField] private float deathTime = 2f;
     
     [Header("BOSS Enemies only")]
+    [Tooltip("Si está activo, el error aumenta según se alarga la distancia al objetivo.")]
     [SerializeField] public Transform finalBoss;
     [SerializeField] private SC_SceneChange1_2 changeScene1_2;
     
@@ -21,6 +27,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         rb = GetComponentInParent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
         agent = GetComponentInParent<NavMeshAgent>();
+        behaviorGraph = GetComponentInParent<BehaviorGraphAgent>();
         currentHealth = maxHealth;
     }
     
@@ -32,6 +39,7 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
         if (anim != null) anim.SetTrigger("Hitted");
         
         //knockback
+        if (behaviorGraph != null) behaviorGraph.enabled = false;
         if (agent != null) agent.enabled = false;
         if (rb != null) rb.isKinematic = false;
 
@@ -47,8 +55,21 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     private IEnumerator OnHit()
     {
         yield return new WaitForSeconds(0.5f);
-        if (agent != null) agent.enabled = true;
-        if (rb != null) rb.isKinematic = true;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.isKinematic = true;
+        }
+
+        if (agent != null)
+        {
+            agent.Warp(transform.position); 
+            agent.enabled = true;
+        }
+        
+        if (behaviorGraph != null) behaviorGraph.enabled = true;
+        
         invencibility = false;
     }
     private IEnumerator OnDeath()
