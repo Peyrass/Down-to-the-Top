@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: SO_Skill 3
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "\xA1No te quedan pilas, Yomi! "
-  - Deja de intentar esos trucos caros y
-  - "vuelve a lo b\xE1sico: \xA1tus patadas y mis ocurrencias!"
+  - VACUO VACIO MUY MUCHO

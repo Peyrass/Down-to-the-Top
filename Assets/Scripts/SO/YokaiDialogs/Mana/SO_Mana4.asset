@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SO_Mana4
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "\xA1Bater\xEDa en las \xFAltimas!  vas a"
+  - "\xA1Bater\xEDa en las \xFAltimas!"
   - Si quieres efectos especiales,
   - vas a tener que esperar.
   - "De momento, conf\xEDa en"
