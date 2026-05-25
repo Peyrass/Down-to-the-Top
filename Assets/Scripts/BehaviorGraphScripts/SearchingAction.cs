@@ -22,13 +22,16 @@ public partial class SearchingAction : Action
         protected override Status OnStart()
         {
             targetLayerMask = LayerMask.GetMask(TargetLayerName.Value); //Capa objetivo.
-            obstacleLayerMask = ~LayerMask.GetMask(TargetLayerName, EnemyLayerName.Value); //Cualquier capa que no sea la objetivo o la enemigo
+            obstacleLayerMask = ~LayerMask.GetMask(TargetLayerName.Value, EnemyLayerName.Value); //Cualquier capa que no sea la objetivo o la enemigo
             return Status.Running; //La tarea continua
         }
         
         protected override Status OnUpdate()
         {
-            if (Physics.OverlapSphereNonAlloc(Self.Value.transform.position, DetectionRadius.Value, results,
+            if (Physics.OverlapSphereNonAlloc(
+                    Self.Value.transform.position,
+                    DetectionRadius.Value,
+                    results,
                     targetLayerMask) <= 0) return Status.Running; 
             //Detecta datos dentro del Sphere, si un dato con la layer "target" es identíficado se obtiene toda su información.
             //Se extrae la dirección del objetivo
@@ -37,14 +40,38 @@ public partial class SearchingAction : Action
             Vector3 distanceToTarget = results[0].transform.position - Self.Value.transform.position;
         
             //se comprueba que el Target está en el rango de detección
-            if (!(Vector3.Angle(distanceToTarget, Self.Value.transform.forward) < DetectionAngle.Value / 2))  
+            if (!(Vector3.Angle(
+                    distanceToTarget,
+                    Self.Value.transform.forward) < DetectionAngle.Value / 2)
+                )  
                 return Status.Running; //early return.
         
         
-            if (Physics.Raycast(Self.Value.transform.position, distanceToTarget, distanceToTarget.magnitude,
-                    obstacleLayerMask)) return Status.Running;
+            if (Physics.Raycast(
+                    Self.Value.transform.position,
+                    distanceToTarget,
+                    distanceToTarget.magnitude,
+                    obstacleLayerMask)
+                ) return Status.Running;
         
-            Target.Value = results[0].gameObject; //Objetivo setteado
+            Target.Value = results[0].gameObject; //Objetivo setteado en el Blackboard
+            
+            //le pasa la info del target a SC_EnemyShoot
+            Enemies.Sniper.SC_EnemyShoot sniperShoot =
+                Self.Value.GetComponentInChildren<Enemies.Sniper.SC_EnemyShoot>();
+          
+            if (sniperShoot != null)
+            {
+                sniperShoot.SetTarget(results[0].transform);
+            }
+            else
+            {
+                // por si en algún momento coloco el SC_Shoot al mismo nivel que el Behaviour
+                if (Self.Value.TryGetComponent(out Enemies.Sniper.SC_EnemyShoot shootOnSelf))
+                {
+                    shootOnSelf.SetTarget(results[0].transform);
+                }
+            }
             return Status.Success;
         }
     }

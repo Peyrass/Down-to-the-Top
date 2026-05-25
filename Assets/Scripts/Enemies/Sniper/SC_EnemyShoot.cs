@@ -29,14 +29,10 @@ namespace Enemies.Sniper
         [Header("VFX Settings")]
         [SerializeField] private GameObject rifleFlashPrefab;
         [SerializeField] private GameObject bulletImpactPrefab;
-
-        private void Awake()
+        
+        public void SetTarget(Transform newTarget)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
-            {
-                targetPlayer = player.transform;
-            }
+            targetPlayer = newTarget;
         }
 
         public void ShootEvent()
@@ -82,6 +78,15 @@ namespace Enemies.Sniper
             if (bulletImpactPrefab != null)
             {
                 Instantiate(bulletImpactPrefab, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
+            }
+        }
+        
+        private void Update()
+        {
+            if (targetPlayer != null)
+            {
+                // Dibuja una línea azul en la vista de Escena hacia donde el Sniper cree que está Yomi
+                Debug.DrawLine(transform.position, targetPlayer.position, Color.blue);
             }
         }
 

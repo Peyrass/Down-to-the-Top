@@ -19,6 +19,7 @@ public class SC_GlideComponent : MonoBehaviour
     {
         master = GetComponent<SC_MasterCharacterMovement>();
         anim = GetComponentInChildren<Animator>();
+        IsGliding = false;
     }
 
     // El Master llamará a esta función cuando pulsemos o soltemos el Espacio

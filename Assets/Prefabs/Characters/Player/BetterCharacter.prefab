@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.047542844, y: -0.00000004214685, z: 3.1568585e-15, w: 0.99886924}
-  m_LocalPosition: {x: -0.119396456, y: -0.96526223, z: 0.36258698}
+  m_LocalRotation: {x: -0.4365679, y: 0.55624497, z: -0.4365678, w: -0.5562451}
+  m_LocalPosition: {x: 1.1080188, y: -0.96526223, z: 1.5900016}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,20 +268,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDecollider
   CameraRadius: 0.4
   Decollision:
-    Enabled: 0
+    Enabled: 1
     ObstacleLayers:
       serializedVersion: 2
-      m_Bits: 1
+      m_Bits: 65
     UseFollowTarget:
       Enabled: 0
       YOffset: 0
     Damping: 0.5
-    SmoothingTime: 0
+    SmoothingTime: 0.526
   TerrainResolution:
     Enabled: 1
     TerrainLayers:
       serializedVersion: 2
-      m_Bits: 1
+      m_Bits: 64
     MaximumRaycast: 10
     Damping: 0.5
 --- !u!1 &394537093867880601
@@ -1205,8 +1205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04754285, y: -0.000000042242554, z: -0.000000002010605, w: 0.99886924}
-  m_LocalPosition: {x: -28.564425, y: -3.8397274, z: -13.157662}
+  m_LocalRotation: {x: -0.43656778, y: 0.5562451, z: -0.43656784, w: -0.556245}
+  m_LocalPosition: {x: 1.1080188, y: 1.9103819, z: 1.5900016}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1459,6 +1459,7 @@ GameObject:
   - component: {fileID: 8711211479216220298}
   - component: {fileID: 6412421636249348650}
   - component: {fileID: 283083037859812248}
+  - component: {fileID: 5116074624614761211}
   - component: {fileID: 6203304368605208359}
   - component: {fileID: 6203304368605208348}
   - component: {fileID: 7852371338169914086}
@@ -1617,6 +1618,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 14e1a0e047bb8b14aaf300e00584a532, type: 3}
   - {fileID: 8300000, guid: 65f2aa45a92842f4e9afe0c9e52abe4a, type: 3}
   - {fileID: 8300000, guid: d409ad1e7463920458eb8d31b724efb4, type: 3}
+--- !u!114 &5116074624614761211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203304368605208357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0049fcc0c93ec1344833fdabab2d9d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SC_GlideComponent
+  glideFallSpeed: -2
+  anim: {fileID: 4230606101839507832}
 --- !u!54 &6203304368605208359
 Rigidbody:
   m_ObjectHideFlags: 0

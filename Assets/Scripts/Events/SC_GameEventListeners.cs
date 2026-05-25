@@ -10,17 +10,16 @@ public class SC_GameEventListeners : MonoBehaviour
   public void OnEnable()
   {
      
-      Event.RegisterListener(this);
+      if (Event != null) Event.RegisterListener(this);
   }
 
   public void OnDisable()
   {
-      Event.UnregisterListener(this);
+      if (Event != null) Event.UnregisterListener(this);
   }
 
   public void OnEventRaise()
     {
-        
       Response.Invoke();
     }
 }
