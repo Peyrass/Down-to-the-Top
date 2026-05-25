@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f89176d7b45ea7e428b2cb58ce25e320, type: 3}
-  m_Name: SO_Mana
+  m_Name: SO_Battery 5
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
-  - "\xA1No te quedan pilas, Yomi! "
-  - 'Deja de intentar esos trucos caros '
-  - "y vuelve a lo b\xE1sico:"
-  - " \xA1tus patadas y mis ocurrencias!"
+  - "Por m\xE1s que lo intentes, no tienen bater\xEDa. "
+  - "\xA1ESP\xC9RATE!\r\n"
