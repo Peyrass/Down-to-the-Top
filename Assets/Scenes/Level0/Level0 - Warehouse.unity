@@ -4981,6 +4981,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8711211479216220298, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 62f0c3c00622dcd419ade3c71303ddbe, type: 3}
+    - target: {fileID: 8711211479216220298, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: aEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+    - target: {fileID: 8711211479216220298, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: dashVFXPrefab
+      value: 
+      objectReference: {fileID: 2653153344604433488, guid: f6bbcfa7e746d0340bd78dd22f35b3b3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
