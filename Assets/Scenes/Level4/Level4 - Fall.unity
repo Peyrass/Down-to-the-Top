@@ -12496,17 +12496,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
-      propertyPath: batterylines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
-      propertyPath: 'batterylines.Array.data[0]'
+      propertyPath: 'skillLines.Array.data[10]'
       value: 
-      objectReference: {fileID: 11400000, guid: 7e3b047d1c3b5dd44a40151b6fe3fe43, type: 2}
-    - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
-      propertyPath: 'batterylines.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: ba2ed1e03bdc6854692576632063aa69, type: 2}
+      objectReference: {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
     - target: {fileID: 4503998233669946340, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
       propertyPath: m_Name
       value: UI
