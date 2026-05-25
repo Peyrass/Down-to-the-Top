@@ -5,9 +5,9 @@ public class SC_DashComponent : MonoBehaviour
     private SC_MasterCharacterMovement master;
     private SC_PlayerManaBar mana;
     
-    [SerializeField] private SC_ScriptableEvents eventoYokai;
+    [SerializeField] private SC_ScriptableEvents yokaiSkill;
+    [SerializeField] private SC_ScriptableEvents yokaiBatery;
     [SerializeField] private SC_ScriptableFloatEvent eventoMana;
-
 
     [Header("Dash")]
     [SerializeField] private float manaCost;
@@ -17,13 +17,11 @@ public class SC_DashComponent : MonoBehaviour
     [SerializeField] private Animator anim;
 
     [Header("VFX Settings")]
-    [SerializeField] private GameObject punchImpactPrefab;
+    [SerializeField] private GameObject dashVFXPrefab;
     
     [Header("SFX Settings")]
     [SerializeField] private SC_ScriptableAudioEvents aEvent;
     [SerializeField] private AudioClip clip;
-    
-    
     
     private float dashTimer;
     private bool readyToDash = true;
@@ -41,15 +39,33 @@ public class SC_DashComponent : MonoBehaviour
 
     public void StartDash()
     {
-        if (mana.PlayerActualMana < manaCost) return;
+        if (mana.PlayerActualMana < manaCost)
+        {
+            yokaiBatery.Raise();
+            return;
+        }
+        
         if (DashActive || !readyToDash|| master==null) return;
 
         readyToDash = false;
         DashActive = true;
         dashTimer = maxDashTime;
+        
         eventoMana.Raise(manaCost);
-        eventoYokai.Raise();
-        anim.SetBool("IsDashing", true);
+        yokaiSkill.Raise();
+        
+        if (anim != null) anim.SetBool("IsDashing", true);
+        
+        if (aEvent != null && clip != null)
+        {
+            aEvent.Raise(clip);
+        }
+
+        // 3. INSTANCIAR POLVO/VFX EN LOS PIES DEL JUGADOR
+        if (dashVFXPrefab != null)
+        {
+            Instantiate(dashVFXPrefab, transform.position, Quaternion.identity);
+        }
         
         //Se extrae la orientación de la cámara (igual que en el Master)
         Transform cam = master.CameraTransform;

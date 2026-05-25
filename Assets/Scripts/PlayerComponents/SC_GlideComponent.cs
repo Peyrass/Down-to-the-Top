@@ -6,7 +6,7 @@ public class SC_GlideComponent : MonoBehaviour
     
     [Header("Glide Settings")]
     [Tooltip("La velocidad máxima a la que caerá el jugador mientras planea (debe ser negativa)")]
-    [SerializeField] private float glideFallSpeed = -2f; 
+    [SerializeField] private float glideFallSpeed = -2f;
     
 
     // Variable pública para que el Master sepa si estamos planeando 

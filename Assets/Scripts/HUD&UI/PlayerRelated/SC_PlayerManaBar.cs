@@ -12,7 +12,7 @@ public class SC_PlayerManaBar : SC_FloatEventListener
    private bool manaRecover = false;
    
    public float PlayerActualMana =>playerActualMana;
-
+   public float PlayerMaxMana => playerMaxMana;
    private void Awake()
    {
       manaBar = GetComponent<Image>();

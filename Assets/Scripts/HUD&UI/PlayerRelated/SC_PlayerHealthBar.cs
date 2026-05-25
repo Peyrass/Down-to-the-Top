@@ -9,6 +9,9 @@ public class SC_PlayerHealthBar : SC_FloatEventListener
     private Image healthBar;
     private float playerActualHealth;
 
+    public float PlayerActualHealth => playerActualHealth;
+    public float PlayerMaxHealth => playerMaxHealth;
+
     private void Awake()
     {
         healthBar = GetComponent<Image>();

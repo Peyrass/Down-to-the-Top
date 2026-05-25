@@ -6,7 +6,8 @@ public class SC_JumpComponent : MonoBehaviour
     private SC_PlayerManaBar mana;
     private Animator anim;
     
-    [SerializeField] private SC_ScriptableEvents eventoYokai;
+    [SerializeField] private SC_ScriptableEvents yokaiSkill;
+    [SerializeField] private SC_ScriptableEvents yokaiBatery;
     [SerializeField] private SC_ScriptableFloatEvent eventoMana;
     
     [Header("Jump")]
@@ -51,12 +52,16 @@ public class SC_JumpComponent : MonoBehaviour
 
     private void DoubleJump()
     {
-        if (mana.PlayerActualMana < manaCost) return;
+        if (mana.PlayerActualMana < manaCost)
+        {
+            yokaiBatery.Raise();
+            return;
+        }
         if (doubleJumpsLeft <= 0) return;
 
         Jump();
         eventoMana.Raise(manaCost);
-        eventoYokai.Raise();
+        yokaiSkill.Raise();
         doubleJumpsLeft--;
     }
 

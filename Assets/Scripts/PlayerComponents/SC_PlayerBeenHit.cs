@@ -5,24 +5,26 @@ public class SC_PlayerBeenHit : MonoBehaviour, SC_IHittable
 {
     [Header("General Values")]
     [SerializeField] private SC_ScriptableFloatEvent healthDown;
+    [SerializeField] private SC_ScriptableEvents yokaiVida;
+    private SC_PlayerHealthBar health;
+    
     [SerializeField] private Animator anim;
     
     [Header("Feedback")]
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float knockbackForce = 10f;
     [SerializeField] private float invincibilityTime = 0.5f;
     private bool isInvincible = false;
     
-
+    
     private void Awake()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
+        health = Object.FindAnyObjectByType<SC_PlayerHealthBar>();
     }
 
     public void Damage(float damage, Transform attacker)
     {
-        
         if (isInvincible) return;
         
         //quitar vida mediante el SO
@@ -30,12 +32,14 @@ public class SC_PlayerBeenHit : MonoBehaviour, SC_IHittable
         
         isInvincible = true;
 
-        anim.SetTrigger("Hitted");
-        
-        // knockback
-        Vector3 dir = (transform.position - attacker.position).normalized;
-        dir.y = 0.5f;
-        rb.AddForce(dir*knockbackForce,ForceMode.Impulse);
+        if(anim!=null) anim.SetTrigger("Hitted");
+        if (health != null)
+        {
+            if (health.PlayerActualHealth < health.PlayerMaxHealth * 0.40f)
+            {
+                yokaiVida.Raise();
+            }
+        }
         
         StartCoroutine(ResetInvincibility());
     }
