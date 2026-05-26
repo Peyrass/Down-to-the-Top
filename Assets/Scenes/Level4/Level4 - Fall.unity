@@ -8307,10 +8307,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1790322687}
     m_Modifications:
     - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
-      propertyPath: initialDialog
-      value: 
-      objectReference: {fileID: 11400000, guid: c51566c3b5ce9ad46abca347b28212bf, type: 2}
-    - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
       propertyPath: 'skillLines.Array.data[10]'
       value: 
       objectReference: {fileID: 11400000, guid: d37429bc35e41f94fb3ba6a387a38005, type: 2}
