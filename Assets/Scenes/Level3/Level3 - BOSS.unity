@@ -497,6 +497,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2618662798356735736, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
+      propertyPath: initialDialog
+      value: 
+      objectReference: {fileID: 11400000, guid: b95a2403ae67c5143a362366b63a1603, type: 2}
     - target: {fileID: 3329764871717658034, guid: caa967d3ca0ede54a9fa2b71e9afce12, type: 3}
       propertyPath: m_IsActive
       value: 1
