@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Lvl3/CatEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Lvl3/CatEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Lvl3/KoiFish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Lvl3/KoiFish.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3/Level3 - BOSS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3/Level3 - BOSS.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SC_EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventReciver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventReciver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DownToTheTop-BUILD-0.5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationLvlChange/End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationLvlChange/End.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/SC_FinalEnter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/SC_FinalEnter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -97,7 +95,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\pirex\OneDrive\Documentos\UnityVersions\6000.3.10f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\serse\OneDrive\Escritorio\Repositorios\Down-to-the-Top" />
       <option name="PASS_PARENT_ENVS" value="1" />
