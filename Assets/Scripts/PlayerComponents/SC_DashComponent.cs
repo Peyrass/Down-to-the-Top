@@ -18,6 +18,7 @@ public class SC_DashComponent : MonoBehaviour
 
     [Header("VFX Settings")]
     [SerializeField] private GameObject dashVFXPrefab;
+    [SerializeField] private GameObject dustVFXPrefab;
     
     [Header("SFX Settings")]
     [SerializeField] private SC_ScriptableAudioEvents aEvent;
@@ -26,7 +27,8 @@ public class SC_DashComponent : MonoBehaviour
     private float dashTimer;
     private bool readyToDash = true;
     private Vector3 dashDirection;
-
+    private GameObject activeDashVFX;
+    
     public bool DashActive { get; private set; }
     public float DashForce => dashForce;
 
@@ -60,12 +62,18 @@ public class SC_DashComponent : MonoBehaviour
         {
             aEvent.Raise(clip);
         }
-
-        // 3. INSTANCIAR POLVO/VFX EN LOS PIES DEL JUGADOR
+        
+        if (dustVFXPrefab != null)
+        {
+            GameObject dustInstance = Instantiate(dustVFXPrefab, master.Feet.position, Quaternion.identity);
+            Destroy(dustInstance, 0.5f);
+        }
+        
         if (dashVFXPrefab != null)
         {
-            Instantiate(dashVFXPrefab, transform.position, Quaternion.identity);
+            activeDashVFX = Instantiate(dashVFXPrefab, transform.position, transform.rotation, transform);
         }
+        
         
         //Se extrae la orientación de la cámara (igual que en el Master)
         Transform cam = master.CameraTransform;
@@ -98,7 +106,7 @@ public class SC_DashComponent : MonoBehaviour
         }
         else
         {
-            //si no hay input de movimiento el Dash va hacia la espalda del personaje
+            //si no hay input de movimiento el Dash va hacia la espalda del personaje (esquiva)
             dashDirection = -transform.forward;
         }
 
@@ -119,6 +127,14 @@ public class SC_DashComponent : MonoBehaviour
         {
             DashActive = false;
             anim.SetBool("IsDashing", false);
+            
+            if (activeDashVFX != null)
+            {
+                //se suelta
+                activeDashVFX.transform.SetParent(null);
+                // se destruye
+                Destroy(activeDashVFX, 1f);
+            }
         }
     }
 

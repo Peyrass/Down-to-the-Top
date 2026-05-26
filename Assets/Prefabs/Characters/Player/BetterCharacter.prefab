@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5d7c088409d9a40b7b09aa707777f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineOrbitalFollow
-  TargetOffset: {x: 0, y: -0.6, z: 0}
+  TargetOffset: {x: 0, y: -1.09, z: 0}
   TrackerSettings:
     BindingMode: 4
     PositionDamping: {x: 1, y: 0, z: 1}
@@ -101,7 +101,7 @@ MonoBehaviour:
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
   OrbitStyle: 0
-  Radius: 3.58
+  Radius: 6.02
   Orbits:
     Top:
       Radius: 2.9
@@ -1536,6 +1536,7 @@ MonoBehaviour:
   jumpForce: 25
   jumpCooldown: 0.4
   doubleJump: 1
+  dustVFXPrefab: {fileID: 100000, guid: 5b6c2f68addb63847b151f0d41a9d3b1, type: 3}
 --- !u!114 &5749407942504746099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1569,12 +1570,13 @@ MonoBehaviour:
   eventoMana: {fileID: 11400000, guid: 20963c4d0e3320c4181087dc0d6ca7f0, type: 2}
   manaCost: 25
   maxDashTime: 0.3
-  dashForce: 22
+  dashForce: 25
   dashCooldown: 1
   anim: {fileID: 4230606101839507832}
-  dashVFXPrefab: {fileID: 0}
-  aEvent: {fileID: 0}
-  clip: {fileID: 0}
+  dashVFXPrefab: {fileID: 2653153344604433488, guid: f6bbcfa7e746d0340bd78dd22f35b3b3, type: 3}
+  dustVFXPrefab: {fileID: 100000, guid: 5b6c2f68addb63847b151f0d41a9d3b1, type: 3}
+  aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
+  clip: {fileID: 8300000, guid: 62f0c3c00622dcd419ade3c71303ddbe, type: 3}
 --- !u!114 &6412421636249348650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,7 +1626,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 14e1a0e047bb8b14aaf300e00584a532, type: 3}
   - {fileID: 8300000, guid: 65f2aa45a92842f4e9afe0c9e52abe4a, type: 3}
   - {fileID: 8300000, guid: d409ad1e7463920458eb8d31b724efb4, type: 3}
-  punchImpactPrefab: {fileID: 0}
+  punchImpactPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
 --- !u!114 &5116074624614761211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1741,7 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_PlayerBeenHit
   healthDown: {fileID: 11400000, guid: 54051702f2cf47d4dba0a69da137f123, type: 2}
-  yokaiVida: {fileID: 0}
+  yokaiVida: {fileID: 11400000, guid: f4c408ad0b367504db6a025d81af0cf3, type: 2}
   anim: {fileID: 4230606101839507832}
   rb: {fileID: 6203304368605208359}
   invincibilityTime: 0.5

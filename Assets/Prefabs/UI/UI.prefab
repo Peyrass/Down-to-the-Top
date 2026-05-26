@@ -2077,7 +2077,7 @@ MonoBehaviour:
   waitTillNextDialog: 5
   waitTillNextText: 2
   initialWait: 1.5
-  randomWait: 30
+  randomWait: 25
   anim: {fileID: 2887388893598978046}
   box: {fileID: 5930251324587460702}
 --- !u!114 &4821223395179397278

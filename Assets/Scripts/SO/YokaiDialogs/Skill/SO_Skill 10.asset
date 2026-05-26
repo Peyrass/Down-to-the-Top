@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SC_YokaiText
   dialog:
   - "\xA1Menuda acrobacia! Menos mal que ha salido bien,"
-  - "porque mi seguro de IA no cubre ca\xEDdas"
-  - desde el techo de la oficina.
+  - porque tu seguro no cubre ni virus de portatil

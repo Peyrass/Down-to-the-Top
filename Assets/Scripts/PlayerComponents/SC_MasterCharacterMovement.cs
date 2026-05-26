@@ -56,6 +56,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
 
     // getters para que los otros componentes puedan manejar info sin romper todo
     public Rigidbody Rb => rb;
+    public Transform Feet => feet;
     public bool Grounded => grounded;
     public Vector2 MoveInput => moveInput;
     public Transform CameraTransform => cameraTransform;
@@ -98,8 +99,7 @@ public class SC_MasterCharacterMovement : MonoBehaviour
         controls.actions["crouchInput"].canceled -= CrouchCanceledAction;
         controls.actions["dashInput"].started -= DashStartedAction;
     }
-
-
+    
     private void MoveAction(InputAction.CallbackContext obj)
     {
         // solo guarda el input, la dirección se recalcula continuamente

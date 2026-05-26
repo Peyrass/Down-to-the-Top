@@ -70,6 +70,7 @@ public class SC_TatakaeComponent : MonoBehaviour
             if (collider.TryGetComponent(out SC_IHittable hit))
             {
                 hit.Damage(attackDamage, transform);
+                if(punchImpactPrefab!=null) Instantiate(punchImpactPrefab, attackPoint.position, attackPoint.rotation);
                 camShake.ShakeCam(shakeIntensity, shakeTime);
                 StartCoroutine(HitStop(0.05f));
             }

@@ -82,7 +82,7 @@ TrailRenderer:
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Time: 2
-  m_PreviewTimeScale: 1
+  m_PreviewTimeScale: 0.5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 2
@@ -103,7 +103,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.54823536, b: 0.100000024, a: 0}
+      key0: {r: 0.13521993, g: 1, b: 0.4307442, a: 0}
       key1: {r: 1, g: 1, b: 1, a: 0.3019608}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -168,7 +168,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4.893858, y: 14.3174715, z: 4.893858}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5138860128888308404}
@@ -258,7 +258,7 @@ TrailRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Time: 1
-  m_PreviewTimeScale: 1
+  m_PreviewTimeScale: 0.5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -279,7 +279,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.49781662, b: 0, a: 0}
+      key0: {r: 0.5057354, g: 0, b: 1, a: 0}
       key1: {r: 1, g: 0.100000024, b: 1, a: 1}
       key2: {r: 1, g: 0.100000024, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -400,7 +400,7 @@ TrailRenderer:
   m_SortingOrder: -50
   m_MaskInteraction: 0
   m_Time: 1
-  m_PreviewTimeScale: 1
+  m_PreviewTimeScale: 0.5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

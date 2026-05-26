@@ -16,6 +16,9 @@ public class SC_JumpComponent : MonoBehaviour
     [SerializeField] private float jumpCooldown;
     [SerializeField] private int doubleJump;
 
+    [Header("VFX Settings")]
+    [SerializeField] private GameObject dustVFXPrefab;
+    
     private bool readyToJump = true;
     private int doubleJumpsLeft;
 
@@ -47,6 +50,16 @@ public class SC_JumpComponent : MonoBehaviour
         // se resetea velocidad vertical para que el salto doble no acumule la velocidad del anterior
         master.Rb.linearVelocity = new Vector3(master.Rb.linearVelocity.x, 0f, master.Rb.linearVelocity.z);
         anim.SetTrigger("Jump");
+        
+        if (dustVFXPrefab != null)
+        {
+            Vector3 basePosition = master.Feet.position;
+            Vector3 spawnPosition = new Vector3(basePosition.x, basePosition.y + 2f, basePosition.z);
+            
+            GameObject dustInstance = Instantiate(dustVFXPrefab, spawnPosition, Quaternion.identity);
+            Destroy(dustInstance, 0.5f);
+        }
+        
         master.Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 

@@ -21,15 +21,13 @@ namespace Enemies.Punchie
         {
             Collider[] colliders = Physics.OverlapSphere(attackPoint.position, attackRange, layerPlayer);
             
-            aEvent.Raise(clip);
-       
             foreach (var collider in colliders)
             {
                 if (collider.TryGetComponent(out SC_IHittable hit))
                 {
                     hit.Damage(attackDamage, transform);
-                    // vfx VISUAL
-                    //vfx SONORO
+                   if(punchImpactPrefab!=null) Instantiate(punchImpactPrefab, attackPoint.position, attackPoint.rotation);
+                    aEvent.Raise(clip);
                     Debug.Log("¡Punchie ha golpeado a Yomi!");
                 }
             }

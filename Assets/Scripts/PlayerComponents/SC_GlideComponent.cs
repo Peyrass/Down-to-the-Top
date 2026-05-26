@@ -21,7 +21,7 @@ public class SC_GlideComponent : MonoBehaviour
         IsGliding = false;
     }
 
-    // El Master llamará a esta función cuando pulsemos o soltemos el Espacio
+    // El Master llama a esta función en cuanto se pulse o se suelte el salto
     public void SetGlideInput(bool isHeld)
     {
         isJumpInputHeld = isHeld;
@@ -29,7 +29,7 @@ public class SC_GlideComponent : MonoBehaviour
 
     private void Update()
     {
-        // Condiciones: No estar en el suelo, estar cayendo (velocidad Y negativa) y mantener el botón pulsado
+        // Condiciones: No estar en el suelo && estar cayendo && mantener el botón pulsado
         if (!master.Grounded && master.Rb.linearVelocity.y < 0 && isJumpInputHeld)
         {
             IsGliding = true;

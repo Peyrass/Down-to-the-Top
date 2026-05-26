@@ -175,7 +175,7 @@ MonoBehaviour:
   layerPlayer:
     serializedVersion: 2
     m_Bits: 8
-  punchImpactPrefab: {fileID: 0}
+  punchImpactPrefab: {fileID: 7226583673155636401, guid: 9fc6c80d3c5fa644098ef505ecc9f99f, type: 3}
   aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
   clip: {fileID: 8300000, guid: 8bc59ea17c4e6254987af382c4a43807, type: 3}
 --- !u!114 &4519724960761078417
