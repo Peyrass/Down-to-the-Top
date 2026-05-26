@@ -75,11 +75,19 @@ public class SC_EnemyHealth : MonoBehaviour, SC_IHittable
     private IEnumerator OnDeath()
     {
         if (agent != null) agent.enabled = false;
-        rb.freezeRotation = false;
+        if (rb != null) rb.freezeRotation = false;
         yield return new WaitForSeconds(deathTime);
         if (finalBoss != null)
         {
-            finalBoss.GetComponent<SC_BossLogic>().TakeDamage(maxHealth); 
+           SC_BossLogic bossLogic = finalBoss.GetComponent<SC_BossLogic>();
+            if (bossLogic != null)
+            {
+                bossLogic.TakeDamage(maxHealth);
+            }
+            else
+            {
+                Debug.LogWarning("¡Cuidado! El transform 'finalBoss' está asignado pero no tiene el script SC_BossLogic.");
+            }
         }
         //ternario para comprobar si el script está o no en el parent y así destruír bien al enemigo.
         GameObject objectToDestroy = transform.parent != null ? transform.parent.gameObject : gameObject;

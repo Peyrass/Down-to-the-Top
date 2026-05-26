@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 567034725138792507}
   - component: {fileID: 1335245368507649873}
   - component: {fileID: 7410594961747925091}
+  - component: {fileID: 4699964758839276869}
   m_Layer: 7
   m_Name: KoiFish
   m_TagString: Untagged
@@ -147,7 +148,7 @@ MonoBehaviour:
   maxHealth: 3
   invencibility: 0
   rb: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 4699964758839276869}
   agent: {fileID: 0}
   deathTime: 1
   finalBoss: {fileID: 0}
@@ -174,6 +175,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1550514412580984892, guid: 4e504bbc1cdf71048aa1ec73e962b7a8, type: 3}
+--- !u!95 &4699964758839276869
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6885527989126079189}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 637806c2c7694c746b8a1300fd989625, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7103509576494608278
 GameObject:
   m_ObjectHideFlags: 0

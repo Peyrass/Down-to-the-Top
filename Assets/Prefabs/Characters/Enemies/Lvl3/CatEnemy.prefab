@@ -82,6 +82,7 @@ GameObject:
   - component: {fileID: 5128277077353189255}
   - component: {fileID: 4296078156818645517}
   - component: {fileID: 533222745531866977}
+  - component: {fileID: 5639901194786729201}
   m_Layer: 7
   m_Name: CatEnemy
   m_TagString: Untagged
@@ -142,7 +143,7 @@ MonoBehaviour:
   maxHealth: 3
   invencibility: 0
   rb: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 5639901194786729201}
   agent: {fileID: 8709211153289339171}
   deathTime: 0.1
   finalBoss: {fileID: 0}
@@ -219,6 +220,28 @@ CapsuleCollider:
   m_Height: 12
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: 0.012013912}
+--- !u!95 &5639901194786729201
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6251580966310613367}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 752d3e5aa751c9248b1f70a4a5bc0c8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7578321444087168577
 GameObject:
   m_ObjectHideFlags: 0
