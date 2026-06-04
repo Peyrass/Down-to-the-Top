@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class SC_FallTimer : MonoBehaviour
 {
     [Header("Configuración de Caída")]

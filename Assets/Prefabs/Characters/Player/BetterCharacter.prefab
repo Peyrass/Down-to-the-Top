@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30231175396431579}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12393884, y: -0.393984, z: 0.053710155, w: 0.90913755}
-  m_LocalPosition: {x: 0.60698384, y: -0.8910428, z: 0.9093157}
+  m_LocalRotation: {x: 0.1985921, y: 0.35915723, z: -0.0785079, w: 0.90851736}
+  m_LocalPosition: {x: -1.2640125, y: -0.7196029, z: 0.3685478}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1205,8 +1205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5972769571070657324}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12393885, y: -0.393984, z: 0.053710148, w: 0.90913755}
-  m_LocalPosition: {x: 0.60698384, y: -0.8910428, z: 0.9093157}
+  m_LocalRotation: {x: 0.19859208, y: 0.35915723, z: -0.0785079, w: 0.90851736}
+  m_LocalPosition: {x: -1.2640125, y: -0.7196029, z: 0.3685478}
   m_LocalScale: {x: 0.27717477, y: 0.27717477, z: 0.27717477}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1618,7 +1618,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   camShake: {fileID: 6360579592040653308}
-  shakeIntensity: 2
+  shakeIntensity: 1
   shakeTime: 0.2
   aEvent: {fileID: 11400000, guid: 0a75706d64d90f04ea4fe15939ec17df, type: 2}
   clip:
