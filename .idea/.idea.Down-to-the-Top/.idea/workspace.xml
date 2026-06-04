@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_FallBillboard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_FallBillboard.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_FallTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_FallTimer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/SC_PEY_EnemiesHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Sniper/SC_EnemyShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/AnimationEvents/SC_AnimationEventStateBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_FallBillboard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/SC_ComicLogic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/CameraRelated/SC_CameraShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_JumpComponent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -204,7 +208,7 @@
       <workItem from="1779793525415" duration="884000" />
       <workItem from="1779800818929" duration="1294000" />
       <workItem from="1779829897602" duration="2000" />
-      <workItem from="1780566604027" duration="619000" />
+      <workItem from="1780566604027" duration="3784000" />
     </task>
     <servers />
   </component>

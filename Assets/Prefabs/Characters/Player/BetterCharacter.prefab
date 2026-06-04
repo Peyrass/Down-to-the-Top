@@ -1653,6 +1653,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SC_FallTimer
   maxAirTime: 3
+  timerCanvas: {fileID: 0}
+  radialBar: {fileID: 0}
+  safeColor: {r: 0.65076053, g: 0.51886785, b: 1, a: 1}
+  dangerColor: {r: 0.7484276, g: 0.035303097, b: 0.035303097, a: 1}
 --- !u!54 &6203304368605208359
 Rigidbody:
   m_ObjectHideFlags: 0
