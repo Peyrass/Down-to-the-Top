@@ -35,7 +35,11 @@ public class SC_MasterCharacterMovement : MonoBehaviour
     [SerializeField] private Transform feet;
     [SerializeField] private float detectionRadius = 0.3f;
     [SerializeField] private LayerMask whatIsGround;
+    
     private bool grounded;
+    
+    
+   
     
     [Header("Camera")]
     

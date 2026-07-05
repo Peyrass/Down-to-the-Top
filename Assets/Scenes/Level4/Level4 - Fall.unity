@@ -1046,6 +1046,30 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4585195419265780856, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: radialBar
+      value: 
+      objectReference: {fileID: 759102272}
+    - target: {fileID: 4585195419265780856, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: maxAirTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585195419265780856, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: safeColor.b
+      value: 0.27020285
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585195419265780856, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: safeColor.g
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585195419265780856, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: safeColor.r
+      value: 0.29048315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585195419265780856, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: timerCanvas
+      value: 
+      objectReference: {fileID: 1911441807}
     - target: {fileID: 5116074624614761211, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: manaCost
       value: 5
@@ -1053,6 +1077,10 @@ PrefabInstance:
     - target: {fileID: 5116074624614761211, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972769571070657324, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     - target: {fileID: 6203304367237142539, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: m_Name
@@ -1097,6 +1125,10 @@ PrefabInstance:
     - target: {fileID: 6203304367237142540, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203304368396983090, guid: 4e3151441b12dfd42a6730af7adc617e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1723,6 +1755,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1269908440}
     m_Modifications:
+    - target: {fileID: 1250418978426610647, guid: 4b173a620c6edf8499d0c6b5076dc2ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1250418978426610647, guid: 4b173a620c6edf8499d0c6b5076dc2ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.52
+      objectReference: {fileID: 0}
     - target: {fileID: 3969351812612803276, guid: 4b173a620c6edf8499d0c6b5076dc2ad, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -15248,6 +15288,7 @@ GameObject:
   - component: {fileID: 2082441922110145024}
   - component: {fileID: 7269289209616251513}
   - component: {fileID: 8215738829919452712}
+  - component: {fileID: 8215738829919452713}
   m_Layer: 6
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -15475,13 +15516,36 @@ GameObject:
   - component: {fileID: 2709821007233542740}
   - component: {fileID: 2433435668045211705}
   - component: {fileID: 623044252786643610}
-  m_Layer: 0
+  - component: {fileID: 7662031362128743037}
+  m_Layer: 8
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7662031362128743037
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662031362128743036}
+  m_Material: {fileID: 13400000, guid: 1a5777128d3febb49b8255437c44b25d, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1277366460620338370, guid: c471e3dbde4e2b74780ef39b7c740228, type: 3}
 --- !u!64 &7675655666069325087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16917,6 +16981,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8215738829919452713
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294040205225214617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3185056376471686388, guid: c471e3dbde4e2b74780ef39b7c740228, type: 3}
 --- !u!23 &8403380090747503857
 MeshRenderer:
   m_ObjectHideFlags: 0
