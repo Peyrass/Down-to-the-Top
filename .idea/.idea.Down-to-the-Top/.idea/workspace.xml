@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0395c5-0840-44c1-90c7-851eb305d5c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_FallBillboard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HUD&amp;UI/PlayerRelated/SC_FallBillboard.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Down-to-the-Top/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player/BetterCharacter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4/Level4 - Fall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_FallTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerComponents/SC_FallTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/BUILDS/Windows_v1.0\Down-to-the-Top.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/BUILDS/Windows_v1.5\Down-to-the-Top.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\pirex\Game Development\LastTryFork\Down-to-the-Top\BUILD-0.5" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -209,6 +206,7 @@
       <workItem from="1779800818929" duration="1294000" />
       <workItem from="1779829897602" duration="2000" />
       <workItem from="1780566604027" duration="3784000" />
+      <workItem from="1780761715770" duration="242000" />
     </task>
     <servers />
   </component>
