@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5176839995575834044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pasarel1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,6 +86,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
       propertyPath: m_Name
       value: Pasarela (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -297,6 +301,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
       propertyPath: m_Name
       value: Pasarela
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -719,6 +727,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
       propertyPath: m_Name
       value: Pasarela (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 01bb78208e4ffac4385266310b428164, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

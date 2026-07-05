@@ -1,295 +1,368 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using PlayerComponents;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//ESTE SCRIPT CONTIENE LAS REFERENCIAS PRINCIPALES DEL PLAYER MANEJA EL MOVIMIENTO BÁSICO DEL PLAYER
+
 public class SC_MasterCharacterMovement : MonoBehaviour
 {
-    private TPC_InputMapping controls;
+    private PlayerInput controls;
+    private Rigidbody rb;
+    private Animator anim;
+
+    // referencias a los componentes (cada uno se encarga de lo suyo)
+    private SC_CrouchComponent crouchComponent;
+    private SC_DashComponent dashComponent;
+    private SC_JumpComponent jumpComponent;
+    private SC_CameraComponent cameraComponent;
+    private SC_GlideComponent glideComponent;
     
     [Header("Movement")]
     private float moveSpeed;
     [SerializeField] private float walkSpeed;
-    [SerializeField] private float runSpeed;
+    [SerializeField] private float runMultiplier; 
+    private bool runActive = false;
+    
+    [SerializeField] private float gravityScale = 20f;
     [SerializeField] private float groundDrag;
-    [SerializeField] private float airMultiplier;
-    //nuevo input system
-    private Vector2 moveInput; 
-    private Vector3 moveDirection; 
     
-    
-    [Header("Jumping")]
-    bool readyToJump;
-    [SerializeField] private float jumpForce;
-    [SerializeField] private float jumpCooldown;
-    [SerializeField] private int doubleJump;
-    private int doubleJumpsLeft;
+    public Vector2 moveInput;
+    public Vector3 moveDirection;
 
-    [Header("Crouch & Sliding")] 
-    [SerializeField] private float crouchSpeed;
-    [SerializeField] private float crouchYScale;
+    public EMovementState courrentState;
     
-    [SerializeField] private float maxSlideTime;
-    [SerializeField] private float slideForce;
-    private float regularYScale;
-    private float slideTimer;
-    private bool slidingActive;
-    
-
     [Header("Ground Check")]
-    [SerializeField] private float playerHeight;
+    [SerializeField] private Transform feet;
+    [SerializeField] private float detectionRadius = 0.3f;
     [SerializeField] private LayerMask whatIsGround;
+    
     private bool grounded;
-    [SerializeField] private Transform orientation;
-    
-    Rigidbody rb;
     
     
+   
     
+    [Header("Camera")]
     
-    
-    public MovementState courrentState;
-    public enum MovementState
-    { walking, running, crouching, sliding, air }
+    [SerializeField] private float rotationSpeed = 15f;
+    [SerializeField] private Transform cameraTransform;
+
+    public int life = 5; 
+
+
+    public enum EMovementState
+    {
+        Walking   = 0,
+        Running   = 1,
+        Crouching = 2, 
+        Dashing   = 3,
+        Air       = 4
+    }
+
+    // getters para que los otros componentes puedan manejar info sin romper todo
+    public Rigidbody Rb => rb;
+    public Transform Feet => feet;
+    public bool Grounded => grounded;
+    public Vector2 MoveInput => moveInput;
+    public Transform CameraTransform => cameraTransform;
     
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        //instanciación de los controles
-        controls = new TPC_InputMapping();
+        anim = GetComponentInChildren<Animator>();
+        controls = GetComponentInChildren<PlayerInput>();
+
+        // se instancian los otros componentes del player
+        crouchComponent = GetComponent<SC_CrouchComponent>();
+        dashComponent = GetComponent<SC_DashComponent>();
+        jumpComponent = GetComponent<SC_JumpComponent>();
+        glideComponent = GetComponent<SC_GlideComponent>();
     }
 
-    // Suscripciones de eventos
     private void OnEnable()
     {
-        controls.Enable();
+        controls.actions["moveInput"].performed += MoveAction;
+        controls.actions["moveInput"].canceled += MoveAction;
+        controls.actions["jumpInput"].started += JumpAction;
+        controls.actions["jumpInput"].canceled += JumpCanceledAction;
+        controls.actions["runInput"].started += RunStartedAction;
+        controls.actions["runInput"].canceled += RunCanceledAction;
+        controls.actions["crouchInput"].started += CrouchStartedAction;
+        controls.actions["crouchInput"].canceled += CrouchCanceledAction;
+        controls.actions["dashInput"].started += DashStartedAction;
     }
 
     private void OnDisable()
     {
-        controls.Disable();
+        controls.actions["moveInput"].performed -= MoveAction;
+        controls.actions["moveInput"].canceled -= MoveAction;
+        controls.actions["jumpInput"].started -= JumpAction;
+        controls.actions["jumpInput"].canceled -= JumpCanceledAction;
+        controls.actions["runInput"].started -= RunStartedAction;
+        controls.actions["runInput"].canceled -= RunCanceledAction;
+        controls.actions["crouchInput"].started -= CrouchStartedAction;
+        controls.actions["crouchInput"].canceled -= CrouchCanceledAction;
+        controls.actions["dashInput"].started -= DashStartedAction;
+    }
+    
+    private void MoveAction(InputAction.CallbackContext obj)
+    {
+        // solo guarda el input, la dirección se recalcula continuamente
+        moveInput = obj.ReadValue<Vector2>();
     }
 
+    private void JumpAction(InputAction.CallbackContext obj)
+    {
+        jumpComponent.HandleJumpInput();
+        if (glideComponent == null) return;
+        glideComponent.SetGlideInput(true);
+    }
+    private void JumpCanceledAction(InputAction.CallbackContext obj)
+    {
+        if (glideComponent == null) return;
+        glideComponent.SetGlideInput(false);
+        
+    }
 
+    private void RunStartedAction(InputAction.CallbackContext obj)
+    {
+        runActive = true;
+    }
+
+    private void RunCanceledAction(InputAction.CallbackContext obj)
+    {
+        runActive = false;
+    }
     
+    private void CrouchStartedAction(InputAction.CallbackContext obj)
+    {
+        if (!grounded) return;
+        crouchComponent.StartCrouch();
+    }
+
+    private void CrouchCanceledAction(InputAction.CallbackContext obj)
+    {
+        crouchComponent.StopCrouch();
+    }
+    
+    private void DashStartedAction(InputAction.CallbackContext obj)
+    {
+        dashComponent.StartDash();
+    }
+
+    //debuggin
+    private void OnDrawGizmosSelected()
+    {
+        if (feet == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(feet.position, detectionRadius);
+    }
     
     private void Start()
     {
-        rb.freezeRotation = true;
-
-        readyToJump = true;
-
-        //empieza con la altura normal (2)
-        regularYScale = transform.localScale.y;
+        // bloquea cursor y lo oculta
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         
-        //tatakaeMode = false;
+        if (cameraTransform == null)
+        {
+            cameraTransform = Camera.main.transform;
+        }
+        
+        moveSpeed = walkSpeed;
+        rb.freezeRotation = true;
     }
 
     private void Update()
     {
-        
-        moveInput = controls.Player.moveInput.ReadValue<Vector2>();
-        
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        GroundCheck();
 
-        // recupera los saltos dobles siempre que se toque el suelo
-        if (grounded && doubleJumpsLeft != doubleJump)
+        // tocando suelo reseteamos doble salto
+        if (grounded)
         {
-            ResetDoubleJumps();
+            jumpComponent.ResetDoubleJumpsIfNeeded();
         }
-        
-        MyInput();
-        SpeedControl();
+
         StateHandler();
         HandleDrag();
+        UpdateAnimator();
+        // control del tiempo del dash
+        if (dashComponent.DashActive)
+        {
+            dashComponent.HandleDashTimer();
+        }
+    }
+
+    private void UpdateAnimator()
+    {
+        //da como resultado 0 o 1
+        float speedValue = moveInput.magnitude;
+
+        //así se limíta para que no pase de 1
+        speedValue = Mathf.Clamp01(speedValue);
+
+        if (speedValue > 0.01f && !runActive)
+        {
+            speedValue *= 0.5f;
+        }
         
-        if(slidingActive) {HandleSlidingTimer();}
+        //se para el nombre del parámetro al animator suavizado
+        anim.SetFloat("Speed", speedValue, 0.1f, Time.deltaTime);
         
+        anim.SetBool("isGrounded", grounded);
+        
+        
+        if (glideComponent != null && glideComponent.IsGliding)
+        {
+            anim.SetBool("isFalling", true);
+        }
+        else
+        {
+            bool isFallingNormal = !grounded && rb.linearVelocity.y < 0;
+            anim.SetBool("isFalling", isFallingNormal);
+        }
     }
 
     private void FixedUpdate()
     {
-        if (slidingActive) {SlidingMovement();}
-        else {Movement();}
-    }
+        ApplyGravity();
 
-    private void MyInput()
-    {
-        //Crouch
-        if (controls.Player.crouchInput.WasPerformedThisFrame() && grounded)
-        {
-            //si se esta moviendo al agacharse entra al estado "Sliding"
-            if(moveInput.magnitude >= 0.1f)
-            {
-                StartSlide();
-            }
-            //el personaje se encoge
-            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-            rb.AddForce(Vector3.down * 1f, ForceMode.Impulse);
-            
-        }
-        
-        //Uncrouch
-        if (controls.Player.crouchInput.WasReleasedThisFrame())
-        {
-            transform.localScale = new Vector3(transform.localScale.x, regularYScale, transform.localScale.z);
-        }
-        
-        // Jump
-        if(controls.Player.jumpInput.WasPressedThisFrame())
-        {
-            if (readyToJump && grounded)
-            {
-                readyToJump = false;
-                Jump();
-                Invoke(nameof(ResetJump), jumpCooldown);
-            }
-            else if(!grounded)
-             {
-                 DoubleJump();
-             }
-        }
-    }
+// 1. calcular dirección
+        Vector3 camForward = cameraTransform.forward;
+        Vector3 camRight = cameraTransform.right;
 
+        camForward.y = 0f;
+        camRight.y = 0f;
 
-    private void StateHandler()
-    {
-        // Mode - Crouch
-        if (slidingActive)
+        camForward.Normalize();
+        camRight.Normalize();
+
+        moveDirection = camForward * moveInput.y + camRight * moveInput.x;
+
+// 2. rotar con esa dirección
+        HandleRotation();
+
+// 3. mover
+        if (dashComponent.DashActive)
         {
-            courrentState = MovementState.sliding;
+            dashComponent.DashMovement();
         }
-        
-        // Mode - Crouch
-        else if (controls.Player.crouchInput.IsPressed())
-        {
-            courrentState = MovementState.crouching;
-            moveSpeed = crouchSpeed;
-        }
-        
-        // Mode - Running
-        else if (grounded && controls.Player.runInput.IsPressed())
-        {
-            courrentState = MovementState.running;
-            moveSpeed = runSpeed;
-        }
-        
-        // Mode - Walking
-        else if(grounded)
-        {
-            courrentState = MovementState.walking;
-            moveSpeed = walkSpeed;
-        }
-        
-        //Mode - Air
         else
         {
-            courrentState = MovementState.air;
+            Movement();
         }
+
+        SpeedControl();
+    }
+
+    private void GroundCheck()
+    {
+        grounded = Physics.CheckSphere(feet.position, 
+            detectionRadius,
+            whatIsGround
+       );
+    }
+
+    private void ApplyGravity()
+    {
+        if (grounded && rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, -2f, rb.linearVelocity.z);
+        }
+        else if (glideComponent != null && glideComponent.IsGliding)
+        {
+            // al planear se anulamos la gravedad y la velocidad de caída se reduce
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, glideComponent.GlideFallSpeed, rb.linearVelocity.z);
+        }
+        else 
+        {
+            rb.AddForce(Vector3.down * gravityScale, ForceMode.Force);
+        }
+    }
+
+    private void StateHandler()
+    {//switch mejor
+        if (dashComponent.DashActive)
+            courrentState = EMovementState.Dashing;
+        else if (crouchComponent.CrouchActive)
+            courrentState = EMovementState.Crouching;
+        else if (runActive && grounded)
+            courrentState = EMovementState.Running;
+        else if (grounded)
+            courrentState = EMovementState.Walking;
+        else
+            courrentState = EMovementState.Air;
     }
     
     private void Movement()
     {
-        moveDirection = orientation.forward * moveInput.y + orientation.right * moveInput.x;
-        
-        //está en el suelo
-        if (grounded)
-        {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-        }
-        
-        //está en el aire
-        else if(!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        float targetSpeed = walkSpeed;
+
+        if (runActive) 
+            targetSpeed *= runMultiplier;
+        if (crouchComponent.CrouchActive) 
+            targetSpeed *= crouchComponent.CrouchMultiplier;
+
+        Vector3 desiredVelocity = moveDirection.normalized * targetSpeed;
+        Vector3 currentVelocity = rb.linearVelocity;
+
+        // cuánto hay que ajustar velocidad
+        Vector3 velocityChange = desiredVelocity - new Vector3(currentVelocity.x, 0, currentVelocity.z);
+
+        rb.AddForce(velocityChange, ForceMode.VelocityChange);
+    }
+
+    private void HandleRotation()
+    {
+        if (moveDirection.sqrMagnitude < 0.01f) return;
+
+        Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+
+        Quaternion smoothRotation = Quaternion.Slerp(
+            rb.rotation,
+            targetRotation,
+            rotationSpeed * Time.fixedDeltaTime
+        );
+
+        rb.MoveRotation(smoothRotation);
     }
 
     private void HandleDrag()
     {
-        if (slidingActive)
-        { rb.linearDamping = 0.5f; }
+        // menos drag en dash para que deslice más
+        if (dashComponent.DashActive)
+            rb.linearDamping = 0.5f;
         else if (grounded)
-        { rb.linearDamping = groundDrag; }
+            rb.linearDamping = groundDrag;
         else
-        { rb.linearDamping = 0; }
+            rb.linearDamping = 0f;
     }
 
-    private void HandleSlidingTimer()
-    {
-        slideTimer -= Time.deltaTime;
-        if(slideTimer<=0) {StopSlide();}
-        
-    }
-    //Presentación
-    private void StartSlide()
-    {
-        // se activa el bool para mandar la acción al State Handler
-        slidingActive = true;
-        slideTimer = maxSlideTime;
-
-        // Reducir escala igual que al agacharse
-        transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-        rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
-    }
-    //Nudo
-    private void SlidingMovement()
-    {
-        Vector3 inputDir = orientation.forward * moveInput.y + orientation.right * moveInput.x;
-        // se aplica una fuerza constante durante el slide
-        rb.AddForce(inputDir.normalized * slideForce, ForceMode.Impulse);
-    }
-    //Desenlace
-    private void StopSlide()
-    {
-        slidingActive = false;
-        transform.localScale = new Vector3(transform.localScale.x, regularYScale, transform.localScale.z);
-    }
-
-    
     private void SpeedControl()
     {
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+    
+        float maxSpeed = walkSpeed;
 
-        // limito la velocidad por si acaso
-        if(flatVel.magnitude > moveSpeed)
+        if (dashComponent.DashActive)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
+            maxSpeed = dashComponent.DashForce;
         }
-    }
+        else
+        {
+            if (runActive)
+                maxSpeed *= runMultiplier;
+            if (crouchComponent.CrouchActive)
+                maxSpeed *= crouchComponent.CrouchMultiplier;
+        }
 
-    private void Jump()
-    {
-        //calcula (corrobora que la velocidad vertical sea nula)
-        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        //aplica el salto
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-    }
-    
-    public void DoubleJump()
-    {
-        if (doubleJumpsLeft <= 0) return;
-        
-        // get flat velocity
-        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        float flatVelMag = flatVel.magnitude;
-
-        // reinicia la velocidad vertical para que siempre salte a la misma altura
-        rb.linearVelocity = orientation.forward * flatVelMag;
-        
-        // aplica la fuerza
-        rb.AddForce(orientation.up * jumpForce, ForceMode.Impulse);
-
-        doubleJumpsLeft--;
-    }
-    
-    private void ResetJump()
-    {
-        readyToJump = true;
-    }
-    public void ResetDoubleJumps()
-    {
-        doubleJumpsLeft = doubleJump;
+        if(flatVel.magnitude > maxSpeed)
+        {
+            Vector3 limitedVel = flatVel.normalized * maxSpeed;
+            rb.linearVelocity = new Vector3(
+                limitedVel.x,
+                rb.linearVelocity.y,
+                limitedVel.z
+                );
+        }
     }
 }
