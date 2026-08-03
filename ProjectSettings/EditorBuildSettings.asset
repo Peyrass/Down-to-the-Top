@@ -6,8 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu/MainMenu.unity
+    guid: 529f5611ed83a134486c4a5cc3dfc401
+  - enabled: 1
+    path: Assets/Scenes/AnimationLvlChange/TransitionTo0.unity
+    guid: e2dff704309532c4494d08fa9cd51aff
+  - enabled: 1
+    path: Assets/Scenes/Level0/Level0 - Warehouse.unity
+    guid: c3831db12c1a68846872ec0da21e202c
+  - enabled: 1
+    path: Assets/Scenes/AnimationLvlChange/TransitionTo1.unity
+    guid: 983f5cfa2e2bc1044b6b59b153d701af
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level1 - Viewpoint.unity
+    guid: 6d61ae67352233a41bb2014dff7c30ca
+  - enabled: 1
+    path: Assets/Scenes/AnimationLvlChange/TransitionTo2.unity
+    guid: a41ce41727d5257489e9b1886e6f5036
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level2 - Museum.unity
+    guid: bdc62268603e5984eb1895599d755042
+  - enabled: 1
+    path: Assets/Scenes/AnimationLvlChange/TransitionTo3.unity
+    guid: 4bfc69bc77399904bbf45235cfe8716f
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level3 - BOSS.unity
+    guid: 2f2bec38c709f4749b3b15eca4568085
+  - enabled: 1
+    path: Assets/Scenes/AnimationLvlChange/TransitionTo4.unity
+    guid: 97fb6a6db28fe8a428d2d108ffaa7774
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level4 - Fall.unity
+    guid: 078ca85b1fb48244596792c042ee458c
+  - enabled: 1
+    path: Assets/Scenes/AnimationLvlChange/End.unity
+    guid: 3eb887dbd94e8304788d121d3df38ccc
   m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

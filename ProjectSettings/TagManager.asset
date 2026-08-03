@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - NextLevel
+  - whatIsGround
   layers:
   - Default
   - TransparentFX
@@ -12,8 +14,8 @@ TagManager:
   - Water
   - UI
   - whatIsGround
-  - 
-  - 
+  - Enemy
+  - Techos
   - 
   - 
   - 
@@ -43,7 +45,7 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
-  - Light Layer 1
+  - Decals
   - Light Layer 2
   - Light Layer 3
   - Light Layer 4
